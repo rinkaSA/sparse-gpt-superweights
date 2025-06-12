@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --job-name=nanogpt_prep
+#SBATCH --output=checkmodel_%j.out
+#SBATCH --error=checkmodel_%j.err
+#SBATCH --time=1:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gres=gpu:1
+#SBATCH --mem=16G
+
+
+source /software/rome/r24.04/Miniconda3/24.7.1-0/bin/activate universal-ner
+
+
+cd /data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT
+
+
+FILENAME="lth_train_392733.out"
+
+LOG_FILE_PATH="$(pwd)/train_out/${FILENAME}"
+
+python make_a_loss_plot.py --filename "$LOG_FILE_PATH"
+
+conda deactivate

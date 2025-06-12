@@ -1,0 +1,181 @@
+W0604 20:09:56.977218 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0604 20:09:56.977218 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:09:56.977218 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0604 20:09:56.977218 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:00.389058 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0604 20:10:00.389058 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:00.389058 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0604 20:10:00.389058 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:01.652866 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0604 20:10:01.652866 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:01.652866 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0604 20:10:01.652866 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:01.919734 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0604 20:10:01.919734 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0604 20:10:01.919734 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0604 20:10:01.919734 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+W0604 21:16:31.226685 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1331] The node 'c55.capella.hpc.tu-dresden.de_3883906_0' has failed to send a keep-alive heartbeat to the rendezvous '392733' due to an error of type RendezvousTimeoutError.
+W0604 21:19:00.217734 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1331] The node 'c56.capella.hpc.tu-dresden.de_1521399_0' has failed to send a keep-alive heartbeat to the rendezvous '392733' due to an error of type RendezvousTimeoutError.
+W0604 21:19:56.104069 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1331] The node 'c64.capella.hpc.tu-dresden.de_1043332_0' has failed to send a keep-alive heartbeat to the rendezvous '392733' due to an error of type RendezvousTimeoutError.
+[W604 22:33:59.440363822 socket.cpp:462] [c10d] waitForInput: poll for socket SocketImpl(fd=3, addr=[c60.capella.hpc.tu-dresden.de]:40128, remote=[c55.capella.hpc.tu-dresden.de]:13245) returned 0, likely a timeout
+[W604 22:33:59.440696431 socket.cpp:487] [c10d] waitForInput: socket SocketImpl(fd=3, addr=[c60.capella.hpc.tu-dresden.de]:40128, remote=[c55.capella.hpc.tu-dresden.de]:13245) timed out after 300000ms
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Error waiting on exit barrier. Elapsed: 300.0606327056885 seconds
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Traceback (most recent call last):
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 925, in _exit_barrier
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store_util.barrier(
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 203, in barrier
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     raise e
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 200, in barrier
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store.wait([last_member_key])
+E0604 22:33:59.741543 74376 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] torch.distributed.DistStoreError: wait timeout after 300000ms, keys: /torch.rendezvous.392733.0/torchelastic/agent/terminal_state/last_member
+[W604 22:34:00.140321234 socket.cpp:462] [c10d] waitForInput: poll for socket SocketImpl(fd=3, addr=[c64.capella.hpc.tu-dresden.de]:41972, remote=[c55.capella.hpc.tu-dresden.de]:13245) returned 0, likely a timeout
+[W604 22:34:00.140557664 socket.cpp:487] [c10d] waitForInput: socket SocketImpl(fd=3, addr=[c64.capella.hpc.tu-dresden.de]:41972, remote=[c55.capella.hpc.tu-dresden.de]:13245) timed out after 300000ms
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Error waiting on exit barrier. Elapsed: 300.1684012413025 seconds
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Traceback (most recent call last):
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 925, in _exit_barrier
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store_util.barrier(
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 203, in barrier
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     raise e
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 200, in barrier
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store.wait([last_member_key])
+E0604 22:34:00.495478 1043332 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] torch.distributed.DistStoreError: wait timeout after 300000ms, keys: /torch.rendezvous.392733.0/torchelastic/agent/terminal_state/last_member
+[W604 22:34:00.269891342 socket.cpp:462] [c10d] waitForInput: poll for socket SocketImpl(fd=3, addr=[c56.capella.hpc.tu-dresden.de]:43502, remote=[c55.capella.hpc.tu-dresden.de]:13245) returned 0, likely a timeout
+[W604 22:34:00.270103393 socket.cpp:487] [c10d] waitForInput: socket SocketImpl(fd=3, addr=[c56.capella.hpc.tu-dresden.de]:43502, remote=[c55.capella.hpc.tu-dresden.de]:13245) timed out after 300000ms
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Error waiting on exit barrier. Elapsed: 300.15801072120667 seconds
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] Traceback (most recent call last):
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 925, in _exit_barrier
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store_util.barrier(
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 203, in barrier
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     raise e
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py", line 200, in barrier
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939]     store.wait([last_member_key])
+E0604 22:34:00.797639 1521399 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py:939] torch.distributed.DistStoreError: wait timeout after 300000ms, keys: /torch.rendezvous.392733.0/torchelastic/agent/terminal_state/last_member
+[rank2]:[E604 22:38:36.160794166 ProcessGroupNCCL.cpp:1154] [PG ID 0 PG GUID 0(default_pg) Rank 2] Future for ProcessGroup abort timed out after 600000 ms
+[rank3]:[E604 22:38:36.160978325 ProcessGroupNCCL.cpp:1154] [PG ID 0 PG GUID 0(default_pg) Rank 3] Future for ProcessGroup abort timed out after 600000 ms
+[rank1]:[E604 22:38:36.166805501 ProcessGroupNCCL.cpp:1154] [PG ID 0 PG GUID 0(default_pg) Rank 1] Future for ProcessGroup abort timed out after 600000 ms
+[rank0]:[E604 22:38:36.283484083 ProcessGroupNCCL.cpp:616] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317332, OpType=ALLREDUCE, NumelIn=1769472, NumelOut=1769472, Timeout(ms)=600000) ran for 600011 milliseconds before timing out.
+[rank0]:[E604 22:38:36.283907422 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 0] Exception (either an error or timeout) detected by watchdog at work: 317332, last enqueued NCCL work: 317345, last completed NCCL work: 317331.
+[rank1]:[E604 22:38:56.722285605 ProcessGroupNCCL.cpp:616] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317344, OpType=ALLREDUCE, NumelIn=43943424, NumelOut=43943424, Timeout(ms)=600000) ran for 619560 milliseconds before timing out.
+[rank1]:[E604 22:38:56.722340135 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 1] Exception (either an error or timeout) detected by watchdog at work: 317344, last enqueued NCCL work: 317345, last completed NCCL work: 317343.
+[rank1]:[E604 22:38:56.722354305 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 1] Timeout at NCCL work: 317344, last enqueued NCCL work: 317345, last completed NCCL work: 317343.
+[rank1]:[E604 22:38:56.722358085 ProcessGroupNCCL.cpp:630] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E604 22:38:56.722360545 ProcessGroupNCCL.cpp:636] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E604 22:38:56.723188414 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317344, OpType=ALLREDUCE, NumelIn=43943424, NumelOut=43943424, Timeout(ms)=600000) ran for 619560 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f6b19a99446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f6b1adac772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f6b1adb3bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f6b1adb561d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f6b637425c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f6b76689c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f6b7670ec40 in /lib64/libc.so.6)
+
+[rank0]:[E604 22:38:56.723597644 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 0] Timeout at NCCL work: 317332, last enqueued NCCL work: 317345, last completed NCCL work: 317331.
+[E604 22:38:56.723683804 ProcessGroupNCCL.cpp:630] [Rank 0] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[E604 22:38:56.723747444 ProcessGroupNCCL.cpp:636] [Rank 0] To avoid data inconsistency, we are taking the entire process down.
+[E604 22:38:56.724655753 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317332, OpType=ALLREDUCE, NumelIn=1769472, NumelOut=1769472, Timeout(ms)=600000) ran for 600011 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f9ede474446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f9edf787772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f9edf78ebb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f9edf79061d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f9f2811d5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f9f3b089c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f9f3b10ec40 in /lib64/libc.so.6)
+
+[rank2]:[E604 22:38:56.826231436 ProcessGroupNCCL.cpp:616] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317344, OpType=ALLREDUCE, NumelIn=43943424, NumelOut=43943424, Timeout(ms)=600000) ran for 619670 milliseconds before timing out.
+[rank2]:[E604 22:38:56.826455066 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 2] Exception (either an error or timeout) detected by watchdog at work: 317344, last enqueued NCCL work: 317345, last completed NCCL work: 317343.
+[rank2]:[E604 22:38:56.826542926 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 2] Timeout at NCCL work: 317344, last enqueued NCCL work: 317345, last completed NCCL work: 317343.
+[rank2]:[E604 22:38:56.826600446 ProcessGroupNCCL.cpp:630] [Rank 2] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank2]:[E604 22:38:56.826651566 ProcessGroupNCCL.cpp:636] [Rank 2] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E604 22:38:56.827072396 ProcessGroupNCCL.cpp:616] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317334, OpType=ALLREDUCE, NumelIn=7079424, NumelOut=7079424, Timeout(ms)=600000) ran for 619692 milliseconds before timing out.
+[rank3]:[E604 22:38:56.827186385 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 3] Exception (either an error or timeout) detected by watchdog at work: 317334, last enqueued NCCL work: 317345, last completed NCCL work: 317333.
+[rank3]:[E604 22:38:56.827203515 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 3] Timeout at NCCL work: 317334, last enqueued NCCL work: 317345, last completed NCCL work: 317333.
+[rank3]:[E604 22:38:56.827215745 ProcessGroupNCCL.cpp:630] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E604 22:38:56.827218675 ProcessGroupNCCL.cpp:636] [Rank 3] To avoid data inconsistency, we are taking the entire process down.
+[rank2]:[E604 22:38:56.827530295 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317344, OpType=ALLREDUCE, NumelIn=43943424, NumelOut=43943424, Timeout(ms)=600000) ran for 619670 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f3ddc505446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f3ddd818772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f3ddd81fbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f3ddd82161d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f3e261ae5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f3e39089c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f3e3910ec40 in /lib64/libc.so.6)
+
+[rank3]:[E604 22:38:56.828069255 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=317334, OpType=ALLREDUCE, NumelIn=7079424, NumelOut=7079424, Timeout(ms)=600000) ran for 619692 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f202cd8c446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f202e09f772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f202e0a6bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f202e0a861d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f2076a355c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f2089889c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f208990ec40 in /lib64/libc.so.6)
+
+W0604 22:38:56.634247 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3883925 closing signal SIGTERM
+W0604 22:38:56.646580 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3883927 closing signal SIGTERM
+W0604 22:38:56.646771 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3883928 closing signal SIGTERM
+E0604 22:38:56.874348 3883906 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 1 (pid: 3883926) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-04_22:38:56
+  host      : c55.capella.hpc.tu-dresden.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 3883926)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3883926
+========================================================
+srun: error: c55: task 0: Exited with exit code 1
