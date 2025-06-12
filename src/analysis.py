@@ -1,6 +1,8 @@
 from typing import Sequence
 import torch
 import matplotlib.pyplot as plt
+import os
+
 
 def register_activation_hooks(model, num_layers: int, all_inputs: list, all_outputs: list):
     hooks = []
@@ -14,12 +16,31 @@ def register_activation_hooks(model, num_layers: int, all_inputs: list, all_outp
         hooks.append(layer.register_forward_hook(cache_inputs_outputs_hook))
     return hooks
 
+def register_activation_hooks_gpt2(model, num_layers: int, all_inputs: list, all_outputs: list, hooks_keys: list):
+    hooks = []
+    for i in range(num_layers):
+        names = [
+            #f"transformer.h.{i}.attn.c_attn",
+            #f"transformer.h.{i}.attn.c_proj",
+            f"transformer.h.{i}.mlp.c_fc",
+            f"transformer.h.{i}.mlp.c_proj",
+        ]
+        for name in names:
+            layer = model.get_submodule(name)
+            def cache_inputs_outputs_hook(_, inputs, outputs):
+                if isinstance(inputs, Sequence):
+                    inputs = inputs[0]
+                all_inputs.append(inputs.cpu())
+                all_outputs.append(outputs.cpu())
+            hooks.append(layer.register_forward_hook(cache_inputs_outputs_hook))
+            hooks_keys.append(name)
+    return hooks
+
 def remove_hooks(hooks):
     for hook in hooks:
         hook.remove()
 
-import matplotlib.pyplot as plt
-import os
+
 
 def plot_max_abs_activations(data, title, ylabel, filename="activation_plot.png", save_dir="outputs"):
     os.makedirs(save_dir, exist_ok=True)
@@ -36,7 +57,27 @@ def plot_max_abs_activations(data, title, ylabel, filename="activation_plot.png"
     plt.savefig(filepath, dpi=300)
     plt.close(fig) 
     print(f"[Saved] {filepath}")
+    
 
+def analyze_super_weight_gpt(model, names, layer_number, list_inputs, list_outputs): # be sure of the order of in out
+    results = {}
+    for  i, (ins, outs) in enumerate(zip(list_inputs, list_outputs)): # ins outs to fc and c proj
+        d_in = ins[layer_number].shape[-1]
+        max_id_in = ins[layer_number].abs().flatten().argmax().item()
+        n_in, c_in = divmod(max_id_in, d_in)
+
+        d_out = outs[layer_number].shape[-1]
+        max_id_outs = outs[layer_number].abs().flatten().argmax().item()
+        n_outs, c_outs = divmod(max_id_outs, d_out)
+
+        W = model.get_submodule(f"transformer.h.{layer_number}.{names[i]}").weight
+        superweight = W[c_outs, c_in].item()
+        results[names[i]] = {
+        "coords": (c_outs, c_in),
+        "superweight_value": superweight,
+        "max_weight": W.abs().max().item(),
+        "std": W.std().item() }
+    return results
 
 def analyze_super_weight(model, all_inputs, all_outputs):
     d_in = all_inputs[1].shape[-1]

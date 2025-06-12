@@ -1,0 +1,394 @@
+W0605 19:15:40.385098 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0605 19:15:40.385098 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:40.385098 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0605 19:15:40.385098 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:40.430540 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0605 19:15:40.430540 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:40.430540 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0605 19:15:40.430540 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:42.037397 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0605 19:15:42.037397 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:42.037397 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0605 19:15:42.037397 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:42.080577 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0605 19:15:42.080577 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0605 19:15:42.080577 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0605 19:15:42.080577 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/train_lth_sw.py", line 281, in <module>
+[rank0]:     init_state = dist.broadcast_object_list([init_state], src=0)[0]
+[rank0]: TypeError: 'NoneType' object is not subscriptable
+[rank0]:[W605 19:16:10.568537638 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0605 19:22:32.664154 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1331] The node 'c6.capella.hpc.tu-dresden.de_3834648_0' has failed to send a keep-alive heartbeat to the rendezvous '395348' due to an error of type RendezvousTimeoutError.
+[rank0]:[E605 19:26:10.568817187 ProcessGroupNCCL.cpp:1154] [PG ID 0 PG GUID 0(default_pg) Rank 0] Future for ProcessGroup abort timed out after 600000 ms
+[rank13]:[E605 19:26:10.540439243 ProcessGroupNCCL.cpp:616] [Rank 13] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600007 milliseconds before timing out.
+[rank2]:[E605 19:26:10.678936060 ProcessGroupNCCL.cpp:616] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600004 milliseconds before timing out.
+[rank1]:[E605 19:26:10.682581989 ProcessGroupNCCL.cpp:616] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600008 milliseconds before timing out.
+[rank5]:[E605 19:26:10.602974203 ProcessGroupNCCL.cpp:616] [Rank 5] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600047 milliseconds before timing out.
+[rank8]:[E605 19:26:10.638346856 ProcessGroupNCCL.cpp:616] [Rank 8] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+[rank9]:[E605 19:26:10.638360326 ProcessGroupNCCL.cpp:616] [Rank 9] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+[rank11]:[E605 19:26:10.638523087 ProcessGroupNCCL.cpp:616] [Rank 11] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+[rank10]:[E605 19:26:11.647647653 ProcessGroupNCCL.cpp:616] [Rank 10] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600060 milliseconds before timing out.
+[rank15]:[E605 19:26:11.610088587 ProcessGroupNCCL.cpp:616] [Rank 15] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600076 milliseconds before timing out.
+[rank12]:[E605 19:26:11.610713698 ProcessGroupNCCL.cpp:616] [Rank 12] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600077 milliseconds before timing out.
+[rank14]:[E605 19:26:11.611189778 ProcessGroupNCCL.cpp:616] [Rank 14] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600077 milliseconds before timing out.
+[rank7]:[E605 19:26:11.630948493 ProcessGroupNCCL.cpp:616] [Rank 7] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600075 milliseconds before timing out.
+[rank4]:[E605 19:26:11.631343653 ProcessGroupNCCL.cpp:616] [Rank 4] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600075 milliseconds before timing out.
+[rank6]:[E605 19:26:11.632203234 ProcessGroupNCCL.cpp:616] [Rank 6] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600076 milliseconds before timing out.
+[rank3]:[E605 19:26:11.757169514 ProcessGroupNCCL.cpp:616] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600083 milliseconds before timing out.
+[rank10]:[E605 19:26:13.191406176 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 10] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank8]:[E605 19:26:13.191413296 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 8] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank9]:[E605 19:26:13.191407626 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 9] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank11]:[E605 19:26:13.193767711 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 11] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank8]:[E605 19:26:14.488236893 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 8] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank8]:[E605 19:26:14.488254723 ProcessGroupNCCL.cpp:630] [Rank 8] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank8]:[E605 19:26:14.488259033 ProcessGroupNCCL.cpp:636] [Rank 8] To avoid data inconsistency, we are taking the entire process down.
+[rank11]:[E605 19:26:14.488409263 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 11] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank11]:[E605 19:26:14.488419693 ProcessGroupNCCL.cpp:630] [Rank 11] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank11]:[E605 19:26:14.488424883 ProcessGroupNCCL.cpp:636] [Rank 11] To avoid data inconsistency, we are taking the entire process down.
+[rank9]:[E605 19:26:14.489420255 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 9] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank9]:[E605 19:26:14.489437685 ProcessGroupNCCL.cpp:630] [Rank 9] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank9]:[E605 19:26:14.489442265 ProcessGroupNCCL.cpp:636] [Rank 9] To avoid data inconsistency, we are taking the entire process down.
+[rank10]:[E605 19:26:14.492203890 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 10] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank10]:[E605 19:26:14.492219790 ProcessGroupNCCL.cpp:630] [Rank 10] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank10]:[E605 19:26:14.492225190 ProcessGroupNCCL.cpp:636] [Rank 10] To avoid data inconsistency, we are taking the entire process down.
+[rank7]:[E605 19:26:14.570399043 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 7] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank4]:[E605 19:26:14.570399343 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 4] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank5]:[E605 19:26:14.570433923 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 5] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank6]:[E605 19:26:14.570578903 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 6] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank7]:[E605 19:26:16.820895042 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 7] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank7]:[E605 19:26:16.820918012 ProcessGroupNCCL.cpp:630] [Rank 7] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank7]:[E605 19:26:16.820924542 ProcessGroupNCCL.cpp:636] [Rank 7] To avoid data inconsistency, we are taking the entire process down.
+[rank5]:[E605 19:26:16.822999984 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 5] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank5]:[E605 19:26:16.823011464 ProcessGroupNCCL.cpp:630] [Rank 5] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank5]:[E605 19:26:16.823017854 ProcessGroupNCCL.cpp:636] [Rank 5] To avoid data inconsistency, we are taking the entire process down.
+[rank4]:[E605 19:26:16.824730215 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 4] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank4]:[E605 19:26:16.824749515 ProcessGroupNCCL.cpp:630] [Rank 4] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank4]:[E605 19:26:16.824753975 ProcessGroupNCCL.cpp:636] [Rank 4] To avoid data inconsistency, we are taking the entire process down.
+[rank6]:[E605 19:26:16.826929907 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 6] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank6]:[E605 19:26:16.826941917 ProcessGroupNCCL.cpp:630] [Rank 6] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank6]:[E605 19:26:16.826945437 ProcessGroupNCCL.cpp:636] [Rank 6] To avoid data inconsistency, we are taking the entire process down.
+[rank11]:[E605 19:26:18.849050145 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 11] Process group watchdog thread terminated with exception: [Rank 11] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f49a3d82446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f49a5095772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f49a509cbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f49a509e61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f49eda2b5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f49fce89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f49fcf0ec40 in /lib64/libc.so.6)
+
+[rank8]:[E605 19:26:18.849050375 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 8] Process group watchdog thread terminated with exception: [Rank 8] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f8050226446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f8051539772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f8051540bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f805154261d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f8099ecf5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f80a9489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f80a950ec40 in /lib64/libc.so.6)
+
+[rank9]:[E605 19:26:18.849069355 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 9] Process group watchdog thread terminated with exception: [Rank 9] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600051 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f1df5363446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f1df6676772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f1df667dbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f1df667f61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f1e3f00c5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f1e4e489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f1e4e50ec40 in /lib64/libc.so.6)
+
+[rank10]:[E605 19:26:18.849069335 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 10] Process group watchdog thread terminated with exception: [Rank 10] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600060 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7fb455f16446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7fb457229772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7fb457230bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7fb45723261d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7fb49fbbf5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7fb4af089c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7fb4af10ec40 in /lib64/libc.so.6)
+
+W0605 19:26:18.561027 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1961638 closing signal SIGTERM
+W0605 19:26:19.680179 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1961641 closing signal SIGTERM
+E0605 19:26:19.794226 1961624 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 1 (pid: 1961639) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_lth_sw.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-05_19:26:18
+  host      : c5.capella.hpc.tu-dresden.de
+  rank      : 9 (local_rank: 1)
+  exitcode  : -6 (pid: 1961639)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 1961639
+========================================================
+[rank12]:[E605 19:26:34.698898729 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 12] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank14]:[E605 19:26:34.698895879 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 14] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank15]:[E605 19:26:34.699091329 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 15] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank13]:[E605 19:26:34.701153780 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 13] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank13]:[E605 19:26:35.690240407 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 13] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank13]:[E605 19:26:35.690271307 ProcessGroupNCCL.cpp:630] [Rank 13] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank13]:[E605 19:26:35.690290167 ProcessGroupNCCL.cpp:636] [Rank 13] To avoid data inconsistency, we are taking the entire process down.
+[rank12]:[E605 19:26:35.690949188 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 12] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank12]:[E605 19:26:35.690960768 ProcessGroupNCCL.cpp:630] [Rank 12] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank12]:[E605 19:26:35.690966838 ProcessGroupNCCL.cpp:636] [Rank 12] To avoid data inconsistency, we are taking the entire process down.
+[rank15]:[E605 19:26:35.692767099 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 15] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank15]:[E605 19:26:35.692777649 ProcessGroupNCCL.cpp:630] [Rank 15] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank15]:[E605 19:26:35.692783769 ProcessGroupNCCL.cpp:636] [Rank 15] To avoid data inconsistency, we are taking the entire process down.
+[rank14]:[E605 19:26:35.694407250 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 14] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank14]:[E605 19:26:35.694419060 ProcessGroupNCCL.cpp:630] [Rank 14] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank14]:[E605 19:26:35.694427060 ProcessGroupNCCL.cpp:636] [Rank 14] To avoid data inconsistency, we are taking the entire process down.
+[rank13]:[E605 19:26:41.809256905 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 13] Process group watchdog thread terminated with exception: [Rank 13] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600007 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f345330b446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f345461e772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f3454625bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f345462761d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f349cfb45c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f34ac489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f34ac50ec40 in /lib64/libc.so.6)
+
+[rank15]:[E605 19:26:41.809256925 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 15] Process group watchdog thread terminated with exception: [Rank 15] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600076 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f004b2b3446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f004c5c6772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f004c5cdbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f004c5cf61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f0094f5c5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f00a4489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f00a450ec40 in /lib64/libc.so.6)
+
+[rank14]:[E605 19:26:41.809274745 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 14] Process group watchdog thread terminated with exception: [Rank 14] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600077 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f22422e9446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f22435fc772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f2243603bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f224360561d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f228bf925c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f229b489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f229b50ec40 in /lib64/libc.so.6)
+
+[rank12]:[E605 19:26:41.809274645 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 12] Process group watchdog thread terminated with exception: [Rank 12] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600077 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f259535c446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f259666f772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f2596676bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f259667861d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f25df0055c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f25ee489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f25ee50ec40 in /lib64/libc.so.6)
+
+W0605 19:26:41.641274 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3834667 closing signal SIGTERM
+W0605 19:26:41.642736 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3834668 closing signal SIGTERM
+W0605 19:26:41.646973 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3834669 closing signal SIGTERM
+E0605 19:26:42.163084 3834648 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 0 (pid: 3834666) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+[rank3]:[E605 19:26:52.840343040 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 3] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank1]:[E605 19:26:52.840367379 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 1] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank2]:[E605 19:26:52.840448929 ProcessGroupNCCL.cpp:1785] [PG ID 0 PG GUID 0(default_pg) Rank 2] Exception (either an error or timeout) detected by watchdog at work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank3]:[E605 19:26:53.740675162 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 3] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank3]:[E605 19:26:53.740688502 ProcessGroupNCCL.cpp:630] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E605 19:26:53.740693952 ProcessGroupNCCL.cpp:636] [Rank 3] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E605 19:26:53.741819236 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 1] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank1]:[E605 19:26:53.741830406 ProcessGroupNCCL.cpp:630] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E605 19:26:53.741836156 ProcessGroupNCCL.cpp:636] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank2]:[E605 19:26:53.745505305 ProcessGroupNCCL.cpp:1834] [PG ID 0 PG GUID 0(default_pg) Rank 2] Timeout at NCCL work: 2, last enqueued NCCL work: 2, last completed NCCL work: 1.
+[rank2]:[E605 19:26:53.745524795 ProcessGroupNCCL.cpp:630] [Rank 2] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank2]:[E605 19:26:53.745531815 ProcessGroupNCCL.cpp:636] [Rank 2] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E605 19:27:08.638856334 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600083 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f8f143c2446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f8f156d5772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f8f156dcbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f8f156de61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f8f5e06b5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f8f6d489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f8f6d50ec40 in /lib64/libc.so.6)
+
+[rank1]:[E605 19:27:08.638869604 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600008 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7fdfeaaf0446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7fdfebe03772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7fdfebe0abb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7fdfebe0c61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7fe0347995c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7fe043c89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7fe043d0ec40 in /lib64/libc.so.6)
+
+[rank2]:[E605 19:27:08.638945733 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600004 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f51ea8d0446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f51ebbe3772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f51ebbeabb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f51ebbec61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f52345795c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f5243a89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f5243b0ec40 in /lib64/libc.so.6)
+
+[rank5]:[E605 19:27:29.039710997 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 5] Process group watchdog thread terminated with exception: [Rank 5] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600047 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7fce511c5446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7fce524d8772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7fce524dfbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7fce524e161d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7fce9ae6e5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7fceaa289c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7fceaa30ec40 in /lib64/libc.so.6)
+
+[rank7]:[E605 19:27:29.039751167 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 7] Process group watchdog thread terminated with exception: [Rank 7] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600075 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f6eab902446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f6eacc15772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f6eacc1cbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f6eacc1e61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f6ef55ab5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f6f04a89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f6f04b0ec40 in /lib64/libc.so.6)
+
+[rank4]:[E605 19:27:29.039755117 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 4] Process group watchdog thread terminated with exception: [Rank 4] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600075 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f4c2c972446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f4c2dc85772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f4c2dc8cbb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f4c2dc8e61d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f4c7661b5c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f4c85a89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f4c85b0ec40 in /lib64/libc.so.6)
+
+[rank6]:[E605 19:27:29.040015457 ProcessGroupNCCL.cpp:1595] [PG ID 0 PG GUID 0(default_pg) Rank 6] Process group watchdog thread terminated with exception: [Rank 6] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=BROADCAST, NumelIn=652062305, NumelOut=652062305, Timeout(ms)=600000) ran for 600076 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:618 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f72f8bb8446 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x282 (0x7f72f9ecb772 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x233 (0x7f72f9ed2bb3 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f72f9ed461d in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f73428615c0 in /home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f7351c89c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f7351d0ec40 in /lib64/libc.so.6)
+
+W0605 19:27:30.103806 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2417633 closing signal SIGTERM
+W0605 19:27:30.106339 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2417634 closing signal SIGTERM
+W0605 19:27:30.106758 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2417635 closing signal SIGTERM
+E0605 19:27:30.271227 2417619 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 3 (pid: 2417636) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_lth_sw.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-05_19:27:30
+  host      : c4.capella.hpc.tu-dresden.de
+  rank      : 7 (local_rank: 3)
+  exitcode  : -6 (pid: 2417636)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 2417636
+========================================================
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+W0605 19:28:57.657002 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3524341 closing signal SIGTERM
+E0605 19:28:57.926795 3524328 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 1 (pid: 3524342) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_lth_sw.py FAILED
+--------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-05_19:28:57
+  host      : c3.capella.hpc.tu-dresden.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : -6 (pid: 3524343)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3524343
+[2]:
+  time      : 2025-06-05_19:28:57
+  host      : c3.capella.hpc.tu-dresden.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : -6 (pid: 3524344)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3524344
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-05_19:28:57
+  host      : c3.capella.hpc.tu-dresden.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 3524342)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3524342
+========================================================
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_lth_sw.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-05_19:26:41
+  host      : c6.capella.hpc.tu-dresden.de
+  rank      : 12 (local_rank: 0)
+  exitcode  : -6 (pid: 3834666)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3834666
+========================================================
+srun: error: c3: task 0: Exited with exit code 1
+srun: error: c4: task 1: Exited with exit code 1
+srun: error: c6: task 3: Exited with exit code 1
+srun: error: c5: task 2: Exited with exit code 1
