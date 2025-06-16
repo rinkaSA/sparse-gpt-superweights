@@ -1,29 +1,19 @@
-# Super Weights Analysis
-
-This is a modular Python application that analyzes transformer models to identify "super weights" — highly influential weights in MLP down projection layers — and measures their impact on perplexity.
-
-## Features
-
-- Loads a transformer model ( Qwen2.5-3B)
-- Hooks into MLP `down_proj` layers to log activations
-- Identifies top activation channels and "super weights"
-- Measures perplexity before/after zeroing out super weights
-- Saves plots of max activations as PNGs
+# This repo containes 3 subtasks - Super Weight Analysis, nanoGPT2 124M train, and Lottery Winnig Ticket Hypothesis.
 
 ## Structure
 ```super_weights/
-├── src/
-│   ├── __init__.py
-│   ├── main.py                  # main entry logic
-│   ├── dataset_loader.py      # loads WikiText2 data
-│   ├── model_loader.py          #loads the model, tokenizer
-│   ├── analysis.py              # hooking and sw analysis
-│   └── utils.py                 # perplexity 
-├── logs/                    # slurm job output
-├── output/               # plots produced                 
-├── run_app.py                   # entry: python run_app.py!
-├── job_run.sh            # sbatch this job!
-├── requirements.txt
+├── gpt2/nanoGPT/   -->> Karpaty script adapted for SLURM job. Go there for distributed training. Refer to 2 Readme`s in that folder!
+|    └── /slurm_jobs_scripts/ -> run stuff
+├── src/            -->> Super Weight location scripts are here
+|    └── /LWT        --->> Lottery Winning Hypothesis for GPT2 model with check of preservation of previously found location of Super Weight!
+├── logs/       
+├── output/                          
+├── run_app.py                 
+├── job_run.sh       
+├── requirements.txt  --> works for anything in this repo!
 └── README.md
 ```
+
+
+ REFER TO REEADME`S IN EVERY SUBDIR DEDICATED TO SOME OF THE TASKS! (/gpt2/nanoGPT/ README.md + README_iryna.md + /src/README.md + src/LWH/README.md)
 

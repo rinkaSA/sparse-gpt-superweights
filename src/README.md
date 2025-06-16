@@ -1,6 +1,16 @@
-# Super Weight lookout directory
+# Super Weight fidning directory
 
-Temporarily has Lottery Winning Ticker Hypothesis scrips residing here.
+
+This is a modular Python application that analyzes transformer models to identify "super weights" — highly influential weights in MLP down projection layers — and measures their impact on perplexity.
+
+### Features
+
+- Loads a transformer model ( Qwen2.5-3B)
+- Hooks into MLP `down_proj` layers to log activations
+- Identifies top activation channels and "super weights"
+- Measures perplexity before/after zeroing out super weights
+- Saves plots of max activations as PNGs
+
 
 For finding a SW one should run ```sbatch find_sw.sh```
 This will run ```main.py```  with a configurable parameter of a chosen model. Options for now are GPT2, Qwen/Qwen2.5-3B (Llama 2 should work as well as soon as HF_token is provided).

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Iterative train–prune script for GPT.
+Iterative train-prune script for GPT.
 """
 import sys
 import os
@@ -47,7 +47,7 @@ def parse_args():
     p.add_argument('--bias', action='store_true')
     # optimizer
     p.add_argument('--learning_rate', type=float, default=6e-4)
-    p.add_argument('--max_iters', type=int, default=10)
+    p.add_argument('--max_iters', type=int, default=5000)
     p.add_argument('--weight_decay', type=float, default=1e-1)
     p.add_argument('--beta1', type=float, default=0.9)
     p.add_argument('--beta2', type=float, default=0.95)
@@ -399,7 +399,7 @@ def main():
     raw_model = model.module if hasattr(model, 'module') else model
     init_state = copy.deepcopy(raw_model.state_dict())
 
-    mask_path = os.path.join(args.out_dir, 'mask.pt')
+    mask_path = os.path.join(args.out_dir, 'mask10pr10000.pt')
     #if os.path.exists(mask_path):
     #     mask = load_mask(mask_path, map_location=args.device)
     #else:
@@ -433,7 +433,7 @@ def main():
 
         if round_idx > 1:
             raw_model.load_state_dict(init_state)
-            raw_model.train()   # re-enable training mode after eval()
+            raw_model.train()  
             optimizer = raw_model.configure_optimizers(
                 args.weight_decay, args.learning_rate, (args.beta1, args.beta2), device_type
             )
@@ -444,7 +444,7 @@ def main():
         train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device)
 
         # prune & report
-        mask = prune_weights(raw_model, mask, prune_percent=20, debug=True)
+        mask = prune_weights(raw_model, mask, prune_percent=10, debug=True)
         val, nonzero = check_c_proj_entry(model, SW_LAYER, SW_C_OUT, SW_C_IN)
         status = "non-zero" if nonzero else "ZEROED OUT"
         if args.master:
