@@ -8,9 +8,9 @@ import torch
 import pickle
 import argparse
 from contextlib import nullcontext
-root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.append(root)
-from model import GPTConfig, GPT
+#root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+#sys.path.append(root)
+from gpt2.nanoGPT.model import GPTConfig, GPT
 from torch.nn.parallel import DistributedDataParallel
 from torch.distributed import init_process_group, destroy_process_group
 import numpy as np
@@ -18,11 +18,12 @@ import math
 import time
 import copy
 import torch.distributed as dist
+import plotly.graph_objects as go
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train GPT with optional DDP")
     # I/O
-    p.add_argument('--out_dir', type=str, default='out')
+    p.add_argument('--out_dir', type=str, default='plots_cproj_lwh_train_10_10000k')
     p.add_argument('--eval_interval', type=int, default=2000)
     p.add_argument('--log_interval', type=int, default=1)
     p.add_argument('--eval_iters', type=int, default=200)
@@ -35,7 +36,7 @@ def parse_args():
     p.add_argument('--wandb_project', type=str, default='owt')
     p.add_argument('--wandb_run_name', type=str, default=None)
     # data
-    p.add_argument('--dataset', type=str, default='data/openwebtext')
+    p.add_argument('--dataset', type=str, default='gpt2/nanoGPT/data/openwebtext')
     p.add_argument('--gradient_accumulation_steps', type=int, default=20)
     p.add_argument('--batch_size', type=int, default=12)
     p.add_argument('--block_size', type=int, default=1024)
@@ -47,7 +48,7 @@ def parse_args():
     p.add_argument('--bias', action='store_true')
     # optimizer
     p.add_argument('--learning_rate', type=float, default=6e-4)
-    p.add_argument('--max_iters', type=int, default=5000)
+    p.add_argument('--max_iters', type=int, default=10)
     p.add_argument('--weight_decay', type=float, default=1e-1)
     p.add_argument('--beta1', type=float, default=0.9)
     p.add_argument('--beta2', type=float, default=0.95)
@@ -177,6 +178,15 @@ def build_model(args, device):
             model_args[k] = getattr(model.config, k)
     else:
         model = GPT(GPTConfig(**model_args))
+        # XAVIER initialization for weights
+        for name, param in model.named_parameters():
+            if 'weight' in name:
+                if len(param.shape) >= 2:  # For weight matrices
+                    torch.nn.init.xavier_uniform_(param.data)
+                else:  # For vectors (biases
+                    torch.nn.init.zeros_(param.data)
+            elif 'bias' in name:
+                torch.nn.init.zeros_(param.data)
     # crop block size if smaller
     if args.block_size < model.config.block_size:
         model.crop_block_size(args.block_size)
@@ -209,6 +219,38 @@ def is_master():
     return (not dist.is_available()
             or not dist.is_initialized()
             or dist.get_rank() == 0)
+
+def plot_c_proj_box(model, round_idx, iter_num, args_out_dir):
+    """
+    Creates and displays a Plotly box plot of the transformer.h.2.mlp.c_proj weights
+    at a given round and training iteration.
+    """
+    real = model.module if hasattr(model, 'module') else model
+    
+    layer = real.get_submodule("transformer.h.2.mlp.c_proj")
+
+    W_matrix = layer.weight
+    superweight = W_matrix[SW_C_OUT, SW_C_IN].item()
+
+    W = layer.weight.detach().cpu().numpy().flatten()
+    
+    fig = go.Figure(go.Box(
+        y=W,
+        boxpoints="outliers", 
+    ))
+    fig.add_trace(go.Scatter(
+        x=[0],           
+        y=[superweight],
+        mode="markers",
+        marker=dict(color="red", size=10),
+        name="Superweight"
+    ))
+    fig.update_layout(
+        title=f"Round {round_idx} - Step {iter_num}: transformer.h.2.mlp.c_proj weights",
+        yaxis_title="Weight Value",
+        xaxis={'visible': False}
+    )
+    fig.write_html(f"{args_out_dir}/c_proj_box_round_{round_idx}_iter_{iter_num}.html")
 
 def prune_weights(model, mask, prune_percent, debug=False):
     """
@@ -303,7 +345,7 @@ def save_mask(mask, path):
 def load_mask(path, map_location=None):
     return torch.load(path, map_location=map_location)
 
-def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device):
+def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, round_idx, out_dir):
     """
     Run exactly args.max_iters training iterations on `model`.
     Returns nothing (model / optimizer / scaler are mutated in place).
@@ -337,6 +379,8 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device):
                   best_val_loss=best_val,
                 )
                 torch.save(ck, os.path.join(args.out_dir, 'ckpt.pt'))
+        if (iter_num % 2000 == 0 or iter_num +1 ==args.max_iters) and args.master:
+            plot_c_proj_box(model, round_idx, iter_num, out_dir)
 
         # 3) forward/backward with grad-accum
         optimizer.zero_grad(set_to_none=True)
@@ -369,7 +413,7 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device):
 SW_LAYER = 2
 SW_C_OUT  = 447
 SW_C_IN   = 666
-
+PRUNE_PERCENT = 10
 
 def main():
     args = parse_args()
@@ -399,7 +443,7 @@ def main():
     raw_model = model.module if hasattr(model, 'module') else model
     init_state = copy.deepcopy(raw_model.state_dict())
 
-    mask_path = os.path.join(args.out_dir, 'mask10pr10000.pt')
+    mask_path = os.path.join(args.out_dir, 'mask.pt')
     #if os.path.exists(mask_path):
     #     mask = load_mask(mask_path, map_location=args.device)
     #else:
@@ -441,10 +485,10 @@ def main():
 
         # now apply the cumulative mask and train
         apply_mask(raw_model, mask)
-        train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device)
+        train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
 
         # prune & report
-        mask = prune_weights(raw_model, mask, prune_percent=10, debug=True)
+        mask = prune_weights(raw_model, mask, prune_percent=PRUNE_PERCENT, debug=True)
         val, nonzero = check_c_proj_entry(model, SW_LAYER, SW_C_OUT, SW_C_IN)
         status = "non-zero" if nonzero else "ZEROED OUT"
         if args.master:

@@ -6,8 +6,8 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
 #SBATCH --time=24:00:00
-#SBATCH --output=lth_hf_out_%j.out
-#SBATCH --error=lth_hf_err_%j.err
+#SBATCH --output=lth_out_%j.log
+#SBATCH --error=lth_err_%j.log
 
 FIRST_HOST=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n1)
 MASTER_ADDR=$(srun -N1 -n1 -w $FIRST_HOST hostname -I | awk '{print $1}')
@@ -26,13 +26,13 @@ export NCCL_SOCKET_IFNAME=ib0
 
 WORLD_SIZE=$((SLURM_NNODES * 4))
 
-cd /data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT
-
+cd /data/horse/ws/irve354e-energy_llm_ner/super_weights
+export PYTHONPATH=$(pwd)
 srun torchrun \
     --nnodes=$SLURM_NNODES \
     --nproc-per-node=4 \
     --rdzv-id=$SLURM_JOB_ID \
     --rdzv-backend=c10d \
     --rdzv-endpoint="${MASTER_ADDR}:${MASTER_PORT}" \
-    slurm_job_scripts/func_train.py \
+    src/LWT/func_train.py \
 
