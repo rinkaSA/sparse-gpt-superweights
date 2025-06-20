@@ -19,12 +19,15 @@ import time
 import copy
 import torch.distributed as dist
 import plotly.graph_objects as go
+import mlflow
+import mlflow.pytorch
+import pandas as pd
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train GPT with optional DDP")
     # I/O
-    p.add_argument('--out_dir', type=str, default='plots_cproj_lwh_train_10_10000k')
-    p.add_argument('--eval_interval', type=int, default=2000)
+    p.add_argument('--out_dir', type=str, default='tmp')
+    p.add_argument('--eval_interval', type=int, default=20) #was 2000
     p.add_argument('--log_interval', type=int, default=1)
     p.add_argument('--eval_iters', type=int, default=200)
     p.add_argument('--eval_only', action='store_true')
@@ -37,7 +40,7 @@ def parse_args():
     p.add_argument('--wandb_run_name', type=str, default=None)
     # data
     p.add_argument('--dataset', type=str, default='gpt2/nanoGPT/data/openwebtext')
-    p.add_argument('--gradient_accumulation_steps', type=int, default=20)
+    p.add_argument('--gradient_accumulation_steps', type=int, default=5*4) #CHANGE THE LEFT VALUE BASED ON NUMBER OF GPUs
     p.add_argument('--batch_size', type=int, default=12)
     p.add_argument('--block_size', type=int, default=1024)
     # model
@@ -48,7 +51,7 @@ def parse_args():
     p.add_argument('--bias', action='store_true')
     # optimizer
     p.add_argument('--learning_rate', type=float, default=6e-4)
-    p.add_argument('--max_iters', type=int, default=10)
+    p.add_argument('--max_iters', type=int, default=100)
     p.add_argument('--weight_decay', type=float, default=1e-1)
     p.add_argument('--beta1', type=float, default=0.9)
     p.add_argument('--beta2', type=float, default=0.95)
@@ -151,7 +154,7 @@ def get_lr(it, args):
     coeff = 0.5 * (1 + math.cos(math.pi * decay_ratio))
     return args.min_lr + coeff * (args.learning_rate - args.min_lr)
 
-def build_model(args, device):
+def build_model(args, device, init_type='xavier'):
     # set up model args
     model_args = dict(
         n_layer=args.n_layer, n_head=args.n_head,
@@ -179,14 +182,16 @@ def build_model(args, device):
     else:
         model = GPT(GPTConfig(**model_args))
         # XAVIER initialization for weights
-        for name, param in model.named_parameters():
-            if 'weight' in name:
-                if len(param.shape) >= 2:  # For weight matrices
-                    torch.nn.init.xavier_uniform_(param.data)
-                else:  # For vectors (biases
+        if init_type == 'xavier':
+            mlflow.log_param("init_type", "xavier")
+            for name, param in model.named_parameters():
+                if 'weight' in name:
+                    if len(param.shape) >= 2:  # For weight matrices
+                        torch.nn.init.xavier_uniform_(param.data)
+                    else:  # For vectors (biases
+                        torch.nn.init.zeros_(param.data)
+                elif 'bias' in name:
                     torch.nn.init.zeros_(param.data)
-            elif 'bias' in name:
-                torch.nn.init.zeros_(param.data)
     # crop block size if smaller
     if args.block_size < model.config.block_size:
         model.crop_block_size(args.block_size)
@@ -250,7 +255,11 @@ def plot_c_proj_box(model, round_idx, iter_num, args_out_dir):
         yaxis_title="Weight Value",
         xaxis={'visible': False}
     )
-    fig.write_html(f"{args_out_dir}/c_proj_box_round_{round_idx}_iter_{iter_num}.html")
+    html_path = f"{args_out_dir}/c_proj_box_round_{round_idx}_iter_{iter_num}.html"
+    fig.write_html(html_path)
+    mlflow.log_artifact(html_path, artifact_path=f"c_proj_boxplots/round_{round_idx}")
+
+
 
 def prune_weights(model, mask, prune_percent, debug=False):
     """
@@ -261,11 +270,11 @@ def prune_weights(model, mask, prune_percent, debug=False):
       - global stats: total unmasked, k, threshold, sample values
     Returns an updated mask dict.
     """
-    # If DDP-wrapped, work on the real module
     real_mod = model.module if hasattr(model, 'module') else model
 
     # DEBUG: compare parameter names ↔ mask keys
-    if debug and is_master():
+    '''
+        if debug and is_master(): # can be taken out, was helpful when dealing with "module." prefix issues
         param_names = [n for n,_ in real_mod.named_parameters()]
         mask_keys   = list(mask.keys())
         missing     = set(param_names) - set(mask_keys)
@@ -273,6 +282,7 @@ def prune_weights(model, mask, prune_percent, debug=False):
         print(f"[prune][debug] model has {len(param_names)} params, mask has {len(mask_keys)} entries")
         print(f"[prune][debug] params missing from mask ({len(missing)}): {sorted(list(missing))[:5]}…")
         print(f"[prune][debug] mask keys not in model ({len(extra)}): {sorted(list(extra))[:5]}…\n")
+    '''
 
     # 1) collect all still-unmasked absolute values
     all_vals = []
@@ -318,6 +328,8 @@ def prune_weights(model, mask, prune_percent, debug=False):
             print(f"[prune][debug] threshold = {thresh:.6e}")
             print(f"[prune][debug] sample smallest: {smallest}\n")
 
+
+    layer_stats = []
     # 4) apply threshold to rebuild masks
     for name, p in real_mod.named_parameters():
         if name not in mask:
@@ -325,17 +337,26 @@ def prune_weights(model, mask, prune_percent, debug=False):
         m_old = mask[name].bool()
         m_new = (p.data.abs() > thresh) & m_old
         kept  = int(m_new.sum().item())
+        total_nm = m_old.numel()
+        survival = 100.0 * kept / total_nm
         if debug:
             if is_master():
                 print(f"[prune][debug] {name}: kept {kept}/{int(m_old.sum().item())}")
         mask[name] = m_new.to(mask[name].dtype)
+        layer_stats.append({
+            "layer": name,
+            "kept":kept,
+            "masked":total_nm - kept,
+            "total": total_nm,
+            "survival": survival,
+        })
 
     if debug:
         total_after = sum(int(m.sum().item()) for m in mask.values())
         if is_master():
             print(f"[prune][debug] remaining unmasked after prune: {total_after}/{total}\n")
 
-    return mask
+    return mask, thresh, layer_stats
 
 
 def save_mask(mask, path):
@@ -359,17 +380,32 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
     t0 = time.time()
     local_iter = 0
     running_mfu = -1.0
-
+    if is_master:
+        records = {
+            'step':        [],
+            'train_loss':  [],
+            'val_loss':    [],
+            'val_ppl':     [],  # fill NaN when not eval step
+            'time_ms':     [],
+            'mfu':         [],
+        }
     while iter_num < args.max_iters:
         # 1) set LR
         lr = get_lr(iter_num, args)
         for pg in optimizer.param_groups:
             pg['lr'] = lr
 
+        val_loss = np.nan
+        val_ppl = np.nan
         # 2) eval + checkpoint
         if iter_num % args.eval_interval == 0 and args.master:
             losses = estimate_loss(model, get_batch_fn, ctx, args.eval_iters)
-            print(f"[round] step {iter_num}: train {losses['train']:.4f}, val {losses['val']:.4f}", flush=True)
+
+            val_loss = losses['val'].item()
+            val_ppl = math.exp(val_loss) # perplexity
+
+            print(f"[round] step {iter_num}: train {losses['train']:.4f}, val {losses['val']:.4f}, ppl {val_ppl:.4f}", flush=True)
+
             if losses['val'] < best_val or args.always_save_checkpoint:
                 best_val = losses['val']
                 ck = dict(
@@ -378,12 +414,17 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
                   iter_num=iter_num,
                   best_val_loss=best_val,
                 )
-                torch.save(ck, os.path.join(args.out_dir, 'ckpt.pt'))
-        if (iter_num % 2000 == 0 or iter_num +1 ==args.max_iters) and args.master:
+
+                #if iter_num + 1 == args.max_iters:
+                # back to saving on every eval step
+                torch.save(ck, os.path.join(args.out_dir, f'ckpt_round_{round_idx}_step_{iter_num}.pt'))
+
+        if (iter_num % args.eval_interval == 0 or iter_num +1 ==args.max_iters) and args.master:
             plot_c_proj_box(model, round_idx, iter_num, out_dir)
 
         # 3) forward/backward with grad-accum
         optimizer.zero_grad(set_to_none=True)
+
         for micro in range(args.gradient_accumulation_steps):
             if args.ddp:
                 model.require_backward_grad_sync = (micro == args.gradient_accumulation_steps - 1)
@@ -392,22 +433,43 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
                 loss = loss / args.gradient_accumulation_steps
             X, Y = get_batch_fn('train')
             scaler.scale(loss).backward()
+
         if args.grad_clip > 0:
             scaler.unscale_(optimizer)
             torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip)
+
         scaler.step(optimizer); scaler.update()
 
         # 4) logging
         dt = time.time() - t0; t0 = time.time()
         if iter_num % args.log_interval == 0 and args.master:
             lossf = loss.item() * args.gradient_accumulation_steps
+
+            # just experimenting for fun
+            mlflow.log_metric("train_loss", loss.item(), step=iter_num)
+            mlflow.log_metric("learning_rate", lr, step=iter_num)
+
             if local_iter >= 5:
                 mfu = raw.estimate_mfu(args.batch_size * args.gradient_accumulation_steps, dt)
                 running_mfu = mfu if running_mfu < 0 else 0.9*running_mfu + 0.1*mfu
             print(f"[round] iter {iter_num}: loss {lossf:.4f}, time {dt*1000:.1f}ms, mfu {running_mfu*100:.1f}%", flush=True)
+            records['step'].append(iter_num)
+            records['train_loss'].append(round(lossf,2))
+            records['val_loss'].append(round(val_loss,2)) # nan except on eval steps
+            records['val_ppl'].append(round(val_ppl,2))   # nan except on eval steps
+            records['time_ms'].append(round(dt * 1000, 1))
+            records['mfu'].append(round(running_mfu * 100, 1))
 
         iter_num += 1
         local_iter += 1
+
+
+    if is_master:
+        df = pd.DataFrame(records)
+        csv_path = os.path.join(out_dir, f"losses_ppl_round_{round_idx}.csv")
+        df.to_csv(csv_path, index=False)
+        mlflow.log_artifact(csv_path, artifact_path="losses_ppl/l_round_{round_idx}")
+        print(f"[round] metrics saved to {csv_path}", flush=True)
 
 
 SW_LAYER = 2
@@ -417,8 +479,21 @@ PRUNE_PERCENT = 10
 
 def main():
     args = parse_args()
+    mlflow.set_experiment("gpt2-LWH-SW")  # choose your experiment name
+    mlflow.start_run(run_name="LWH-SW-test") 
+    mlflow.log_params(vars(args))
+
+    mlflow.log_param("SW_LAYER", SW_LAYER)
+    mlflow.log_param("SW_C_OUT", SW_C_OUT)
+    mlflow.log_param("SW_C_IN", SW_C_IN)
+    mlflow.log_param("PRUNE_PERCENT", PRUNE_PERCENT)
+
+
     args.ddp, args.rank, args.local_rank, args.world_size, args.device, args.master = setup_distributed(args)
     torch.manual_seed(1337 + (args.rank if args.ddp else 0))
+
+    mlflow.log_param('seed', 1337 + (args.rank if args.ddp else 0))
+    
     if args.master:
         os.makedirs(args.out_dir, exist_ok=True)
 
@@ -429,7 +504,7 @@ def main():
     ctx = torch.amp.autocast(device_type=device_type, dtype=ptd) if device_type!='cpu' else nullcontext()
 
     model, _ = build_model(args,args.device)
-    scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype=='float16'))
+    scaler = torch.amp.GradScaler('cuda',enabled=(args.dtype=='float16'))
     optimizer = model.configure_optimizers(args.weight_decay, args.learning_rate,
                                            (args.beta1, args.beta2), device_type)
     if args.init_from == 'resume':
@@ -442,6 +517,8 @@ def main():
 
     raw_model = model.module if hasattr(model, 'module') else model
     init_state = copy.deepcopy(raw_model.state_dict())
+
+    mlflow.pytorch.log_model(raw_model, "initial_model")
 
     mask_path = os.path.join(args.out_dir, 'mask.pt')
     #if os.path.exists(mask_path):
@@ -465,8 +542,10 @@ def main():
         canonical_mask[new_k] = v.to(device_type)
     mask = canonical_mask
     initial_unmasked = sum(int(m.sum().item()) for m in mask.values())
+
+
     if args.master:
-            print(f"[debug] initial canoical mask {initial_unmasked}")
+            print(f"[debug] initial canonical mask {initial_unmasked}")
     for round_idx in range(1, 6):
         if args.master:
             print(f"\n=== ROUND {round_idx}/5 ===", flush=True)
@@ -481,25 +560,36 @@ def main():
             optimizer = raw_model.configure_optimizers(
                 args.weight_decay, args.learning_rate, (args.beta1, args.beta2), device_type
             )
-            scaler    = torch.cuda.amp.GradScaler(enabled=(args.dtype=='float16'))
+            scaler    = torch.amp.GradScaler('cuda', enabled=(args.dtype=='float16'))
 
         # now apply the cumulative mask and train
         apply_mask(raw_model, mask)
         train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
 
         # prune & report
-        mask = prune_weights(raw_model, mask, prune_percent=PRUNE_PERCENT, debug=True)
+        mask, threshold, stats = prune_weights(raw_model, mask, prune_percent=PRUNE_PERCENT, debug=True)
+        
         val, nonzero = check_c_proj_entry(model, SW_LAYER, SW_C_OUT, SW_C_IN)
+
+
         status = "non-zero" if nonzero else "ZEROED OUT"
         if args.master:
-            print(f"[monitor] … → {status}", flush=True)
+            print(f"[monitor] SW is → {status}", flush=True)
 
         total = sum(m.numel() for m in mask.values())
         remain = sum(int(m.sum().item()) for m in mask.values())
         if args.master:
             print(f"[sparsity] {remain}/{total} non-zero → {(100*remain/total):.2f}%", flush=True)
+            mlflow.log_metric("sparsity", 100*remain/total, step=round_idx)
+            mlflow.log_metric("SW_value", val, step=round_idx)
+            mlflow.log_metric("prune_threshold", threshold, step=round_idx)
+            df = pd.DataFrame(stats)
+            csv_path = os.path.join(args.out_dir, f"prune_stats_round_{round_idx}.csv")
+            df.to_csv(csv_path, index=False)
+            mlflow.log_artifact(csv_path, artifact_path=f"prune_stats/round_{round_idx}")
+            mask_path = os.path.join(args.out_dir, f'mask_round_{round_idx}_sp_{round(100*remain/total, 1)}.pt')
+            save_mask(mask, mask_path)
 
-        save_mask(mask, mask_path)
 
     if args.ddp:
         destroy_process_group()
