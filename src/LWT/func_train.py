@@ -22,6 +22,9 @@ import plotly.graph_objects as go
 import mlflow
 import mlflow.pytorch
 import pandas as pd
+from src.LWT.visualizer import plot_round_metrics_plotly
+
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train GPT with optional DDP")
@@ -68,7 +71,6 @@ def parse_args():
                    choices=['float32','bfloat16','float16'])
     p.add_argument('--compile', action='store_true')
     return p.parse_args()
-
 
 
 def check_c_proj_entry(model, layer_idx, c_out, c_in):
@@ -463,13 +465,13 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
         iter_num += 1
         local_iter += 1
 
-
     if is_master:
         df = pd.DataFrame(records)
         csv_path = os.path.join(out_dir, f"losses_ppl_round_{round_idx}.csv")
         df.to_csv(csv_path, index=False)
         mlflow.log_artifact(csv_path, artifact_path="losses_ppl/l_round_{round_idx}")
         print(f"[round] metrics saved to {csv_path}", flush=True)
+    return records
 
 
 SW_LAYER = 2
@@ -479,6 +481,7 @@ PRUNE_PERCENT = 10
 
 def main():
     args = parse_args()
+    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
     mlflow.set_experiment("gpt2-LWH-SW")  # choose your experiment name
     mlflow.start_run(run_name="LWH-SW-test") 
     mlflow.log_params(vars(args))
@@ -520,7 +523,7 @@ def main():
 
     mlflow.pytorch.log_model(raw_model, "initial_model")
 
-    mask_path = os.path.join(args.out_dir, 'mask.pt')
+    #mask_path = os.path.join(args.out_dir, 'mask.pt')
     #if os.path.exists(mask_path):
     #     mask = load_mask(mask_path, map_location=args.device)
     #else:
@@ -542,10 +545,13 @@ def main():
         canonical_mask[new_k] = v.to(device_type)
     mask = canonical_mask
     initial_unmasked = sum(int(m.sum().item()) for m in mask.values())
-
-
     if args.master:
             print(f"[debug] initial canonical mask {initial_unmasked}")
+
+
+    all_round_metrics = {}
+    sw_preserved_map =  {}
+    sparsity_map = {}
     for round_idx in range(1, 6):
         if args.master:
             print(f"\n=== ROUND {round_idx}/5 ===", flush=True)
@@ -564,23 +570,30 @@ def main():
 
         # now apply the cumulative mask and train
         apply_mask(raw_model, mask)
-        train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
+        records = train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
 
         # prune & report
         mask, threshold, stats = prune_weights(raw_model, mask, prune_percent=PRUNE_PERCENT, debug=True)
-        
-        val, nonzero = check_c_proj_entry(model, SW_LAYER, SW_C_OUT, SW_C_IN)
 
+        val, nonzero = check_c_proj_entry(model, SW_LAYER, SW_C_OUT, SW_C_IN)
 
         status = "non-zero" if nonzero else "ZEROED OUT"
         if args.master:
             print(f"[monitor] SW is → {status}", flush=True)
 
+        all_round_metrics[round_idx] = {
+        'step':       records['step'],
+        'train_loss': records['train_loss'],
+        'val_loss':   records['val_loss'],
+        'ppl':        records['ppl']}
+
+        sw_preserved_map[round_idx] = nonzero
         total = sum(m.numel() for m in mask.values())
         remain = sum(int(m.sum().item()) for m in mask.values())
         if args.master:
             print(f"[sparsity] {remain}/{total} non-zero → {(100*remain/total):.2f}%", flush=True)
             mlflow.log_metric("sparsity", 100*remain/total, step=round_idx)
+            sparsity_map[round_idx] = round(100*remain/total, 2)
             mlflow.log_metric("SW_value", val, step=round_idx)
             mlflow.log_metric("prune_threshold", threshold, step=round_idx)
             df = pd.DataFrame(stats)
@@ -590,9 +603,14 @@ def main():
             mask_path = os.path.join(args.out_dir, f'mask_round_{round_idx}_sp_{round(100*remain/total, 1)}.pt')
             save_mask(mask, mask_path)
 
+    fig = plot_round_metrics_plotly(all_round_metrics, sw_preserved_map, sparsity_map)
+    fig_path = os.path.join(args.out_dir, 'all_rounds_metrics_plotly.html')
+    fig.write_html(fig_path)
+    mlflow.log_artifact(fig_path, artifact_path="all_rounds_metrics_plotly")
 
     if args.ddp:
         destroy_process_group()
+    mlflow.end_run()
 
 if __name__ == '__main__':
     main()

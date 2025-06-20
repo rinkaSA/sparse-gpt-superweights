@@ -28,6 +28,9 @@ WORLD_SIZE=$((SLURM_NNODES * 4))
 
 cd /data/horse/ws/irve354e-energy_llm_ner/super_weights
 export PYTHONPATH=$(pwd)
+
+export $(grep -v '^#' .env | xargs)
+
 srun torchrun \
     --nnodes=$SLURM_NNODES \
     --nproc-per-node=4 \
