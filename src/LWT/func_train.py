@@ -25,14 +25,15 @@ import pandas as pd
 from src.LWT.visualizer import plot_round_metrics_plotly
 
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
+OUTPUT_DIR = 'A2_seed2'
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train GPT with optional DDP")
     # I/O
-    p.add_argument('--out_dir', type=str, default='tmp')
-    p.add_argument('--eval_interval', type=int, default=20) #was 2000
+    p.add_argument('--out_dir', type=str, default=OUTPUT_DIR)
+    p.add_argument('--eval_interval', type=int, default=1000) #was 2000
     p.add_argument('--log_interval', type=int, default=1)
-    p.add_argument('--eval_iters', type=int, default=200)
+    p.add_argument('--eval_iters', type=int, default=100) # was 200
     p.add_argument('--eval_only', action='store_true')
     p.add_argument('--always_save_checkpoint', action='store_true')
     p.add_argument('--init_from', type=str, default='scratch',
@@ -54,7 +55,7 @@ def parse_args():
     p.add_argument('--bias', action='store_true')
     # optimizer
     p.add_argument('--learning_rate', type=float, default=6e-4)
-    p.add_argument('--max_iters', type=int, default=100)
+    p.add_argument('--max_iters', type=int, default=3000)
     p.add_argument('--weight_decay', type=float, default=1e-1)
     p.add_argument('--beta1', type=float, default=0.9)
     p.add_argument('--beta2', type=float, default=0.95)
@@ -381,7 +382,7 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
     X, Y = get_batch_fn('train')
     t0 = time.time()
     local_iter = 0
-    running_mfu = -1.0
+    running_mfu = -1.0 
     if is_master:
         records = {
             'step':        [],
@@ -400,7 +401,7 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
         val_loss = np.nan
         val_ppl = np.nan
         # 2) eval + checkpoint
-        if iter_num % args.eval_interval == 0 and args.master:
+        if (iter_num % args.eval_interval == 0 or iter_num +1 ==args.max_iters)  and args.master:
             losses = estimate_loss(model, get_batch_fn, ctx, args.eval_iters)
 
             val_loss = losses['val'].item()
@@ -448,8 +449,9 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
             lossf = loss.item() * args.gradient_accumulation_steps
 
             # just experimenting for fun
-            mlflow.log_metric("train_loss", loss.item(), step=iter_num)
-            mlflow.log_metric("learning_rate", lr, step=iter_num)
+            if is_master:
+                mlflow.log_metric("train_loss", loss.item(), step=iter_num)
+                mlflow.log_metric("learning_rate", lr, step=iter_num)
 
             if local_iter >= 5:
                 mfu = raw.estimate_mfu(args.batch_size * args.gradient_accumulation_steps, dt)
@@ -477,25 +479,28 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
 SW_LAYER = 2
 SW_C_OUT  = 447
 SW_C_IN   = 666
-PRUNE_PERCENT = 10
+PRUNE_PERCENT = 20
 
 def main():
     args = parse_args()
-    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-    mlflow.set_experiment("gpt2-LWH-SW")  # choose your experiment name
-    mlflow.start_run(run_name="LWH-SW-test") 
-    mlflow.log_params(vars(args))
-
-    mlflow.log_param("SW_LAYER", SW_LAYER)
-    mlflow.log_param("SW_C_OUT", SW_C_OUT)
-    mlflow.log_param("SW_C_IN", SW_C_IN)
-    mlflow.log_param("PRUNE_PERCENT", PRUNE_PERCENT)
-
 
     args.ddp, args.rank, args.local_rank, args.world_size, args.device, args.master = setup_distributed(args)
-    torch.manual_seed(1337 + (args.rank if args.ddp else 0))
+    
+    SEED = 13 + (args.rank if args.ddp else 0) # 1337 + 4, 1224 +4 , 13 + 4
+    torch.manual_seed(SEED) 
 
-    mlflow.log_param('seed', 1337 + (args.rank if args.ddp else 0))
+
+    if args.master:
+        mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+        mlflow.set_experiment("gpt2-LWH-SW") 
+        mlflow.start_run(run_name=OUTPUT_DIR) 
+        mlflow.log_params(vars(args))
+
+        mlflow.log_param("SW_LAYER", SW_LAYER)
+        mlflow.log_param("SW_C_OUT", SW_C_OUT)
+        mlflow.log_param("SW_C_IN", SW_C_IN)
+        mlflow.log_param("PRUNE_PERCENT", PRUNE_PERCENT)
+        mlflow.log_param('seed', SEED)
     
     if args.master:
         os.makedirs(args.out_dir, exist_ok=True)
@@ -506,7 +511,7 @@ def main():
     ptd = dict(float32=torch.float32, bfloat16=torch.bfloat16, float16=torch.float16)[args.dtype]
     ctx = torch.amp.autocast(device_type=device_type, dtype=ptd) if device_type!='cpu' else nullcontext()
 
-    model, _ = build_model(args,args.device)
+    model, _ = build_model(args,args.device, 'baseline')
     scaler = torch.amp.GradScaler('cuda',enabled=(args.dtype=='float16'))
     optimizer = model.configure_optimizers(args.weight_decay, args.learning_rate,
                                            (args.beta1, args.beta2), device_type)
@@ -521,7 +526,7 @@ def main():
     raw_model = model.module if hasattr(model, 'module') else model
     init_state = copy.deepcopy(raw_model.state_dict())
 
-    mlflow.pytorch.log_model(raw_model, "initial_model")
+    # mlflow.pytorch.log_model(raw_model, "initial_model")
 
     #mask_path = os.path.join(args.out_dir, 'mask.pt')
     #if os.path.exists(mask_path):
@@ -581,21 +586,28 @@ def main():
         if args.master:
             print(f"[monitor] SW is → {status}", flush=True)
 
-        all_round_metrics[round_idx] = {
-        'step':       records['step'],
-        'train_loss': records['train_loss'],
-        'val_loss':   records['val_loss'],
-        'ppl':        records['ppl']}
-
-        sw_preserved_map[round_idx] = nonzero
         total = sum(m.numel() for m in mask.values())
         remain = sum(int(m.sum().item()) for m in mask.values())
+
         if args.master:
             print(f"[sparsity] {remain}/{total} non-zero → {(100*remain/total):.2f}%", flush=True)
             mlflow.log_metric("sparsity", 100*remain/total, step=round_idx)
+
             sparsity_map[round_idx] = round(100*remain/total, 2)
+            all_round_metrics[round_idx] = {
+            'step':       records['step'],
+            'train_loss': records['train_loss'],
+            'val_loss':   records['val_loss'],
+            'ppl':        records['val_ppl']}
+            sw_preserved_map[round_idx] = nonzero
+
+            print(all_round_metrics[round_idx])
+            print(sw_preserved_map[round_idx])
+            print(sparsity_map[round_idx])
+
             mlflow.log_metric("SW_value", val, step=round_idx)
             mlflow.log_metric("prune_threshold", threshold, step=round_idx)
+
             df = pd.DataFrame(stats)
             csv_path = os.path.join(args.out_dir, f"prune_stats_round_{round_idx}.csv")
             df.to_csv(csv_path, index=False)
@@ -603,14 +615,27 @@ def main():
             mask_path = os.path.join(args.out_dir, f'mask_round_{round_idx}_sp_{round(100*remain/total, 1)}.pt')
             save_mask(mask, mask_path)
 
-    fig = plot_round_metrics_plotly(all_round_metrics, sw_preserved_map, sparsity_map)
-    fig_path = os.path.join(args.out_dir, 'all_rounds_metrics_plotly.html')
-    fig.write_html(fig_path)
-    mlflow.log_artifact(fig_path, artifact_path="all_rounds_metrics_plotly")
+    if args.master:
+        print("for out all_round_metrics:")
+        for rnd, data in all_round_metrics.items():
+            print(f"  Round {rnd}: {data}")
+        print("for out sw_preserved flags:")
+        for rnd, flag in sw_preserved_map.items():
+            print(f"  Round {rnd}: {flag}")
+        print("out sparsity_map:")
+        for rnd, sp in sparsity_map.items():
+            print(f"  Round {rnd}: {sp}")
+        print("-" * 40)
+
+        fig = plot_round_metrics_plotly(all_round_metrics, sw_preserved_map, sparsity_map)
+        fig_path = os.path.join(args.out_dir, 'all_rounds_metrics_plotly.html')
+        fig.write_html(fig_path)
+        mlflow.log_artifact(fig_path, artifact_path="all_rounds_metrics_plotly")
+        mlflow.end_run()
 
     if args.ddp:
         destroy_process_group()
-    mlflow.end_run()
+
 
 if __name__ == '__main__':
     main()
