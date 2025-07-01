@@ -25,15 +25,15 @@ import pandas as pd
 from src.LWT.visualizer import plot_round_metrics_plotly
 
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
-OUTPUT_DIR = 'A2_seed2'
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train GPT with optional DDP")
     # I/O
     p.add_argument('--out_dir', type=str, default=OUTPUT_DIR)
-    p.add_argument('--eval_interval', type=int, default=1000) #was 2000
+    p.add_argument('--eval_interval', type=int, default=5000) #was 2000
     p.add_argument('--log_interval', type=int, default=1)
-    p.add_argument('--eval_iters', type=int, default=100) # was 200
+    p.add_argument('--eval_iters', type=int, default=500) # was 200
     p.add_argument('--eval_only', action='store_true')
     p.add_argument('--always_save_checkpoint', action='store_true')
     p.add_argument('--init_from', type=str, default='scratch',
@@ -55,7 +55,7 @@ def parse_args():
     p.add_argument('--bias', action='store_true')
     # optimizer
     p.add_argument('--learning_rate', type=float, default=6e-4)
-    p.add_argument('--max_iters', type=int, default=3000)
+    p.add_argument('--max_iters', type=int, default=50000)
     p.add_argument('--weight_decay', type=float, default=1e-1)
     p.add_argument('--beta1', type=float, default=0.9)
     p.add_argument('--beta2', type=float, default=0.95)
@@ -450,7 +450,7 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
 
             # just experimenting for fun
             if is_master:
-                mlflow.log_metric("train_loss", loss.item(), step=iter_num)
+                mlflow.log_metric(f"train_loss_{round_idx}", loss.item(), step=iter_num)
                 mlflow.log_metric("learning_rate", lr, step=iter_num)
 
             if local_iter >= 5:
@@ -467,11 +467,11 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
         iter_num += 1
         local_iter += 1
 
-    if is_master:
+    if args.master:
         df = pd.DataFrame(records)
         csv_path = os.path.join(out_dir, f"losses_ppl_round_{round_idx}.csv")
         df.to_csv(csv_path, index=False)
-        mlflow.log_artifact(csv_path, artifact_path="losses_ppl/l_round_{round_idx}")
+        mlflow.log_artifact(csv_path, artifact_path="losses_ppl ")
         print(f"[round] metrics saved to {csv_path}", flush=True)
     return records
 
@@ -479,28 +479,18 @@ def train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, device, r
 SW_LAYER = 2
 SW_C_OUT  = 447
 SW_C_IN   = 666
-PRUNE_PERCENT = 20
+INIT_TYPE = 'baseline'
+PRUNE_PERCENT = 10
+OUTPUT_DIR = 'B1_seed0_new'
 
 def main():
     args = parse_args()
 
     args.ddp, args.rank, args.local_rank, args.world_size, args.device, args.master = setup_distributed(args)
     
-    SEED = 13 + (args.rank if args.ddp else 0) # 1337 + 4, 1224 +4 , 13 + 4
+    SEED = 13 + (args.rank if args.ddp else 0) # 1337 + 4, 500 + 4 , 13 + 4
     torch.manual_seed(SEED) 
 
-
-    if args.master:
-        mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-        mlflow.set_experiment("gpt2-LWH-SW") 
-        mlflow.start_run(run_name=OUTPUT_DIR) 
-        mlflow.log_params(vars(args))
-
-        mlflow.log_param("SW_LAYER", SW_LAYER)
-        mlflow.log_param("SW_C_OUT", SW_C_OUT)
-        mlflow.log_param("SW_C_IN", SW_C_IN)
-        mlflow.log_param("PRUNE_PERCENT", PRUNE_PERCENT)
-        mlflow.log_param('seed', SEED)
     
     if args.master:
         os.makedirs(args.out_dir, exist_ok=True)
@@ -511,7 +501,7 @@ def main():
     ptd = dict(float32=torch.float32, bfloat16=torch.bfloat16, float16=torch.float16)[args.dtype]
     ctx = torch.amp.autocast(device_type=device_type, dtype=ptd) if device_type!='cpu' else nullcontext()
 
-    model, _ = build_model(args,args.device, 'baseline')
+    model, _ = build_model(args,args.device, init_type=INIT_TYPE)
     scaler = torch.amp.GradScaler('cuda',enabled=(args.dtype=='float16'))
     optimizer = model.configure_optimizers(args.weight_decay, args.learning_rate,
                                            (args.beta1, args.beta2), device_type)
@@ -520,6 +510,7 @@ def main():
         optimizer.load_state_dict(ck['optimizer'])
     if args.compile:
         model = torch.compile(model)
+        print(f"[debug] model compiled with torch.compile, dtype={args.dtype}, device={device_type}")
     if args.ddp:
         model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.local_rank])
 
@@ -553,6 +544,18 @@ def main():
     if args.master:
             print(f"[debug] initial canonical mask {initial_unmasked}")
 
+    if args.master:
+        mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+        mlflow.set_experiment("gpt2-LWH-SW") 
+        mlflow.start_run(run_name=OUTPUT_DIR) 
+        mlflow.log_params(vars(args))
+
+        mlflow.log_param("SW_LAYER", SW_LAYER)
+        mlflow.log_param("SW_C_OUT", SW_C_OUT)
+        mlflow.log_param("SW_C_IN", SW_C_IN)
+        mlflow.log_param("PRUNE_PERCENT", PRUNE_PERCENT)
+        mlflow.log_param('seed', SEED)
+        mlflow.log_param('init_type', INIT_TYPE)
 
     all_round_metrics = {}
     sw_preserved_map =  {}
