@@ -102,13 +102,14 @@ LR schedule: e.g. 1 k warmup, cosine decay
 # Interpretation of some results
 
 [Previous results, will be rerun with more seeds, deprecated]
-[- Trainig lth_hf_out_876819.out - 10000  steps and 20% prune level. Reached 32.77 % sparsity level. SW is not pruned!
+[
+- Trainig lth_hf_out_876819.out - 10000  steps and 20% prune level. Reached 32.77 % sparsity level. SW is not pruned!
 
 - Training lth_hf_out_876823.out - 10000 steps and 10% prune level. Reached 59.05% sparsity level. SW is pruned... How?
 Pruning 20 % per round makes the network sparser faster, which tends to amplify the surviving weights more during training. Pruning 10 % per round keeps more connections longer, so that particular weight may see less gradient signal and end up smaller relative to its peers.
 ]
 
-A1 and A2 are the experiment with small amount of training and baseline initialization. THe only difference is the pruning level.
+A1 and A2 are the experiment with small amount of training and baseline initialization. The only difference is the pruning level.
 
 A1 for 2 seeds:
 ![A1_seed0](../../plots/A1_seed0_new.png)
@@ -129,9 +130,15 @@ No Xavier, just baseline, experiments showed us pruning everywhere except B1.
 Gives first understanding the amount of convergence, steps, is not a priority. Pruning happens or not randomly.
 Still, 50k run with 10% is represented by J1 experiment (in progress)
 
-![J1](../../plots/J1_3rounds.png)
+J1
+![J1](../../plots/J1_3+2.png)
 
-Introducing the Xavier init the view changes completely - 3k or 10k, 10 or 20 % of prune does not chnage the fact of SW survival (plots are coming)
+Introducing the Xavier init the view changes completely - 3k or 10k, 10 or 20 % of prune does not change the fact of SW survival (plots are coming)
+
+C2
+![C2](../../plots/C2_seed2.png)
+
+
 
 ### What is the difference between baseline init and Xavier?
 
