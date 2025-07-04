@@ -1,6 +1,7 @@
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import numpy as np
+import pandas as pd
 
 def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
     """
@@ -49,6 +50,7 @@ def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
         f"Round {r} (sparsity: {sparsity_map.get(r, 0):.1f}%)"
         for r in rounds
     ]
+    print(1)
 
     fig = make_subplots(
         rows=n_rounds, cols=1,
@@ -58,6 +60,7 @@ def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
     )
 
     for idx, rnd in enumerate(rounds, start=1):
+        print(2)
         data  = metrics_per_round[rnd]
         steps = np.array(data['step'])
 
@@ -93,9 +96,9 @@ def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
             ),
             row=idx, col=1, secondary_y=False
         )
-
+        print(3)
         # Perplexity (dashed blue) on secondary axis
-        x_p, y_p = mask(steps, data['ppl'])
+        x_p, y_p = mask(steps, data['val_ppl'])
         fig.add_trace(
             go.Scatter(
                 x=x_p, y=y_p, mode='lines',
@@ -105,7 +108,7 @@ def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
             ),
             row=idx, col=1, secondary_y=True
         )
-
+        print(4)
         # Final train‐loss marker
         last_step  = steps[-1]
         last_train = data['train_loss'][-1]
@@ -137,3 +140,5 @@ def plot_round_metrics_plotly(metrics_per_round, sw_preserved, sparsity_map):
         margin=dict(t=100)
     )
     return fig
+
+

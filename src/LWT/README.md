@@ -109,33 +109,45 @@ LR schedule: e.g. 1 k warmup, cosine decay
 Pruning 20 % per round makes the network sparser faster, which tends to amplify the surviving weights more during training. Pruning 10 % per round keeps more connections longer, so that particular weight may see less gradient signal and end up smaller relative to its peers.
 ]
 
-A1 and A2 are the experiment with small amount of training and baseline initialization. The only difference is the pruning level.
+**A1** and **A2** are the experiment with small amount of training and baseline initialization. The only difference is the pruning level.
 
-A1 for 2 seeds:
+**A1** for 2 seeds:
+
 ![A1_seed0](../../plots/A1_seed0_new.png)
 ![A1_seed1](../../plots/A1_seed1.png)
 
-A2 for 1 seed:
+**A2** for 1 seed:
+
 ![alt text](../../plots/A2_seed2.png)
 
 
 Experiment of group B introduce 10k training (1 epoch)
 
-B1
+**B1**
+
 ![B1_seed0](../../plots/B1_seed0.png)
 
-B2 (later, but shows no prune of SW)
+**B2** (later, but shows no prune of SW)
 
 No Xavier, just baseline, experiments showed us pruning everywhere except B1. 
 Gives first understanding the amount of convergence, steps, is not a priority. Pruning happens or not randomly.
-Still, 50k run with 10% is represented by J1 experiment (in progress)
+Still, 50k run with 10% is represented by J1 experiment.
 
-J1
+That shows us that amount of training is not sufficient condition for SW to be preserved in case of GPT2 standard initialization.
+
+**J1**
+
 ![J1](../../plots/J1_3+2.png)
 
-Introducing the Xavier init the view changes completely - 3k or 10k, 10 or 20 % of prune does not change the fact of SW survival (plots are coming)
+**Introducing the Xavier init** the view changes completely - 3k or 10k, 10 or 20 % of prune does not change the fact of SW survival (plots are coming)
 
-C2
+**C1**
+
+![C1](../../plots/C1_seed2.png)
+
+
+**C2**
+
 ![C2](../../plots/C2_seed2.png)
 
 
