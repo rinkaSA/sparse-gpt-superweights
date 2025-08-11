@@ -1,7 +1,7 @@
 # Super Weight Location Search Directory
 
 
-This repository analyzes transformer models to identify "super weights" — highly influential weights in MLP down projection layers — and measures their impact on perplexity.
+This repository analyzes transformer models to identify "super weights" — highly influential weights in MLP down projection layers — and measures their impact on perplexity. The paper suggests that adding some pruning to this particular weight in already fully trained model can soar the perplexity significantly - basically killing the models ability to generate.
 
 ### Reference paper
 
@@ -41,3 +41,27 @@ https://arxiv.org/abs/2411.07191
 
 GPT2 model is using the architecture defined by our config from scrape ([nanogpt2](../gpt2/nanoGPT)), but for SW finding we apply pretrained weights which we pull from HF. The weights are applied on our user-defined architecture,  with tricks to adapt the layer names (credit to A Karpaty). The linking file that utilizes the GPT2 repo is ```load_gpt_pretrained.py```
 
+### Results of the study
+
+As suggested in the paper, the Super Weight has to be found in the early Trasformer block (0-2), specifically in the MLP part, Down-Projection Layer.
+
+During the run, forward pass with hooks of the activations of the Down-Projection layer, we collect the greatest by absolute magnitude values of the in/out activations to mlp.down_proj in each block and plot it. For originally suggested model, Qwen2.5-3B, the results are as follows:
+
+![Qwen-in](plot_outputs/Qwen_input_down_proj_plot.png)
+![Qwen-out](plot_outputs/Qwen_output_down_proj_plot.png)
+
+It is clearly seen that the block number 2, mlp.h.2, contains the greatest value. 
+
+Based on the coordinates of the maximum in/ out activations coordinates ((n_in, c_in),(n_out, c_out)) of that block number 2 we can determine the location of the SW in mlp.down_proj as W[c_outs, c_in].
+
+The main target in this repo is to use nanoGPT2 for model architecture definition
+(as it is smaller and trainable from scratch in adequate amount of time) locate the SW in it for further study of whether they are part of different research approaches to the most important regions of the model.
+
+The SW is in the 2 block. Check out the output of the slurm job ```super_weights/super_weights/slurm_out/checkmodel_392717.out```
+
+
+![gpt2_in](plot_outputs/gpt2_proj_in.png)
+
+![gpt_out](plot_outputs/gpt2_proj_out.png)
+
+The location is (447, 666), 'superweight_value': 15.069.
