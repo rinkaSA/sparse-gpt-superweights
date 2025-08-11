@@ -129,100 +129,96 @@ def plot_max_abs_activations(data, title, ylabel, filename="activation_plot.png"
     print(f"[Saved] {filepath}")
     
 
-def analyze_super_weight_gpt(model, names, layer_number, list_inputs, list_outputs):
+def analyze_super_weight_unified(model, model_name, target_layer, all_inputs, all_outputs, component_names=None):
     """
-    Analyze super weights in GPT-2 MLP layers.
+    Unified super weight analysis function for both GPT and Qwen models.
     
     Identifies the coordinates and values of potential super weights by finding
-    the maximum activations in both feed-forward and projection components.
+    the maximum activations and extracting corresponding weight values.
     
     Args:
-        model: The GPT-2 model
-        names: List of layer component names ['mlp.c_fc', 'mlp.c_proj']
-        layer_number: Target layer index for analysis
-        list_inputs: List containing input activations [fc_ins, proj_ins]
-        list_outputs: List containing output activations [fc_outs, proj_outs]
+        model: The transformer model (GPT-2 or Qwen)
+        model_name: Model type ("gpt2" or "Qwen/Qwen2.5-3B")
+        target_layer: Target layer index for analysis
+        all_inputs: Input activations (for Qwen: list per layer, for GPT: list per component)
+        all_outputs: Output activations (for Qwen: list per layer, for GPT: list per component)
+        component_names: For GPT models, list of component names like ['mlp.c_fc', 'mlp.c_proj']
     
     Returns:
-        dict: Analysis results for each component containing:
-            - coords: (output_channel, input_channel) coordinates
-            - superweight_value: The weight value at those coordinates
-            - max_weight: Maximum absolute weight in the layer
-            - std: Standard deviation of weights in the layer
+        dict: Analysis results. For GPT: nested dict by component name.
+              For Qwen: single dict with layer info.
+              Each result contains:
+                - coords: (output_channel, input_channel) coordinates
+                - superweight_value: The weight value at those coordinates  
+                - max_weight: Maximum absolute weight in the layer
+                - std: Standard deviation of weights in the layer
+                - layer: Layer index for proper weight zeroing
     """
-    results = {}
-    
-    # Analyze each MLP component (c_fc and c_proj)
-    for i, (ins, outs) in enumerate(zip(list_inputs, list_outputs)):
+    if model_name == "gpt2":
+        # GPT-2 analysis - analyze multiple components
+        if component_names is None:
+            component_names = ['mlp.c_fc', 'mlp.c_proj']
+            
+        results = {}
+        
+        # Analyze each MLP component (c_fc and c_proj)
+        for i, component_name in enumerate(component_names):
+            ins = all_inputs[i]
+            outs = all_outputs[i]
+            
+            # Find maximum input activation coordinates
+            d_in = ins[target_layer].shape[-1]
+            max_id_in = ins[target_layer].abs().flatten().argmax().item()
+            n_in, c_in = divmod(max_id_in, d_in)  # Convert to (token, channel)
+
+            # Find maximum output activation coordinates  
+            d_out = outs[target_layer].shape[-1]
+            max_id_outs = outs[target_layer].abs().flatten().argmax().item()
+            n_outs, c_outs = divmod(max_id_outs, d_out)  # Convert to (token, channel)
+
+            # Extract the super weight from model parameters
+            W = model.get_submodule(f"transformer.h.{target_layer}.{component_name}").weight
+            superweight = W[c_outs, c_in].item()
+            
+            # Store analysis results
+            results[component_name] = {
+                "coords": (c_outs, c_in),
+                "superweight_value": superweight,
+                "max_weight": W.abs().max().item(),
+                "std": W.std().item(),
+                "layer": target_layer
+            }
+        return results
+        
+    else:
+        # Qwen/other model analysis - single component (down_proj)
+        
         # Find maximum input activation coordinates
-        d_in = ins[layer_number].shape[-1]
-        max_id_in = ins[layer_number].abs().flatten().argmax().item()
+        d_in = all_inputs[target_layer].shape[-1]
+        max_id_in = all_inputs[target_layer].abs().flatten().argmax().item()
         n_in, c_in = divmod(max_id_in, d_in)  # Convert to (token, channel)
 
-        # Find maximum output activation coordinates  
-        d_out = outs[layer_number].shape[-1]
-        max_id_outs = outs[layer_number].abs().flatten().argmax().item()
-        n_outs, c_outs = divmod(max_id_outs, d_out)  # Convert to (token, channel)
+        # Find maximum output activation coordinates
+        d_out = all_outputs[target_layer].shape[-1]
+        max_id_out = all_outputs[target_layer].abs().flatten().argmax().item()
+        n_out, c_out = divmod(max_id_out, d_out)  # Convert to (token, channel)
 
         # Extract the super weight from model parameters
-        W = model.get_submodule(f"transformer.h.{layer_number}.{names[i]}").weight
-        superweight = W[c_outs, c_in].item()
+        W = model.get_submodule(f"model.layers.{target_layer}.mlp.down_proj").weight
+        superweight = W[c_out, c_in].item()
         
-        # Store analysis results
-        results[names[i]] = {
-            "coords": (c_outs, c_in),
+        return {
+            "coords": (c_out, c_in),
             "superweight_value": superweight,
             "max_weight": W.abs().max().item(),
-            "std": W.std().item()
+            "std": W.std().item(),
+            "layer": target_layer
         }
-    return results
 
-def analyze_super_weight(model, all_inputs, all_outputs):
-    """
-    Analyze super weight in Qwen model's down projection layer.
-    
-    Identifies the super weight by finding maximum activations in layer 2's
-    down projection and extracting the corresponding weight value.
-    
-    Args:
-        model: The Qwen transformer model
-        all_inputs: List of down projection input activations for all layers
-        all_outputs: List of down projection output activations for all layers
-    
-    Returns:
-        dict: Analysis results containing:
-            - coords: (output_channel, input_channel) coordinates of super weight
-            - superweight_value: The weight value at those coordinates
-            - max_weight: Maximum absolute weight in the layer
-            - std: Standard deviation of weights in the layer
-    """
-    # Analyze layer 2 (hardcoded based on empirical findings)
-    target_layer = 1  # Index 1 corresponds to layer 2
-    
-    # Find maximum input activation coordinates
-    d_in = all_inputs[target_layer].shape[-1]
-    max_id_in = all_inputs[target_layer].abs().flatten().argmax().item()
-    n_in, c_in = divmod(max_id_in, d_in)  # Convert to (token, channel)
 
-    # Find maximum output activation coordinates
-    d_out = all_outputs[target_layer].shape[-1]
-    max_id_out = all_outputs[target_layer].abs().flatten().argmax().item()
-    n_out, c_out = divmod(max_id_out, d_out)  # Convert to (token, channel)
+def analyze_super_weight_gpt(model, names, layer_number, list_inputs, list_outputs):
+    return analyze_super_weight_unified(model, "gpt2", layer_number, list_inputs, list_outputs, names)
 
-    # Extract the super weight from model parameters (layer 2 = index 2)
-    W = model.get_submodule(f"model.layers.2.mlp.down_proj").weight
-    superweight = W[c_out, c_in].item()
-    
-    return {
-        "coords": (c_out, c_in),
-        "superweight_value": superweight,
-        "max_weight": W.abs().max().item(),
-        "std": W.std().item()
-    }
-    
-    return {
-        "coords": (c_out, c_in),
-        "superweight_value": superweight,
-        "max_weight": W.abs().max().item(),
-        "std": W.std().item()
-    }
+
+def analyze_super_weight(model, all_inputs, all_outputs, target_layer=2):
+    return analyze_super_weight_unified(model, "Qwen/Qwen2.5-3B", target_layer, all_inputs, all_outputs)
