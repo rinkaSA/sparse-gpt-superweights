@@ -1,0 +1,73 @@
+Initializing from OpenAI GPT-2 weights: gpt2
+Cache directory: /data/horse/ws/irve354e-energy_llm_ner/super_weights/cache/huggingface/transformers
+Pre-downloading model to: /data/horse/ws/irve354e-energy_llm_ner/super_weights/cache/huggingface/transformers
+loading weights from pretrained gpt: gpt2
+forcing vocab_size=50257, block_size=1024, bias=True
+overriding dropout rate to 0.0
+number of parameters: 123.65M
+----------
+Layer MLP C PROJ IN 0 Top Activations:
+token_id:0, channel:1612: 1.12e+01
+token_id:599, channel:1567: 5.83e+00
+token_id:3, channel:104: 5.65e+00
+----------
+Layer MLP C PROJ IN 1 Top Activations:
+token_id:0, channel:1120: 1.78e+01
+token_id:0, channel:2401: 1.21e+01
+token_id:681, channel:1429: 5.59e+00
+----------
+Layer MLP C PROJ IN 2 Top Activations:
+token_id:0, channel:666: 6.29e+01
+token_id:0, channel:1825: 5.87e+01
+token_id:0, channel:3034: 1.84e+01
+----------
+Layer MLP C PROJ IN 3 Top Activations:
+token_id:0, channel:1751: 1.07e+01
+token_id:376, channel:563: 4.97e+00
+token_id:289, channel:563: 4.44e+00
+----------
+Layer MLP C PROJ IN 4 Top Activations:
+token_id:0, channel:923: 6.69e+00
+token_id:533, channel:2227: 4.51e+00
+token_id:679, channel:1250: 4.42e+00
+----------
+Layer MLP C PROJ IN 5 Top Activations:
+token_id:692, channel:1405: 4.00e+00
+token_id:121, channel:2972: 3.77e+00
+token_id:279, channel:3007: 3.70e+00
+----------
+Layer MLP C PROJ IN 6 Top Activations:
+token_id:416, channel:203: 4.60e+00
+token_id:569, channel:2690: 4.51e+00
+token_id:376, channel:161: 4.23e+00
+----------
+Layer MLP C PROJ IN 7 Top Activations:
+token_id:527, channel:438: 4.65e+00
+token_id:440, channel:2367: 4.48e+00
+token_id:670, channel:2891: 4.44e+00
+----------
+Layer MLP C PROJ IN 8 Top Activations:
+token_id:1, channel:1253: 6.35e+00
+token_id:3, channel:1253: 6.13e+00
+token_id:2, channel:1253: 6.02e+00
+----------
+Layer MLP C PROJ IN 9 Top Activations:
+token_id:21, channel:374: 6.48e+00
+token_id:740, channel:374: 6.29e+00
+token_id:7, channel:840: 6.28e+00
+----------
+Layer MLP C PROJ IN 10 Top Activations:
+token_id:376, channel:2931: 1.50e+01
+token_id:289, channel:2931: 1.49e+01
+token_id:751, channel:2931: 1.15e+01
+----------
+Layer MLP C PROJ IN 11 Top Activations:
+token_id:7, channel:2378: 2.59e+01
+token_id:93, channel:2378: 2.05e+01
+token_id:666, channel:2378: 1.97e+01
+ SW LAYER: 2
+[Saved] outputs/fc_in_gpt2.png
+[Saved] outputs/fc_out_gpt2.png
+[Saved] outputs/proj_in_gpt2.png
+[Saved] outputs/proj_out_gpt2.png
+{'mlp.c_fc': {'coords': (666, 138), 'superweight_value': 2.9768102169036865, 'max_weight': 10.555802345275879, 'std': 0.13352690637111664}, 'mlp.c_proj': {'coords': (447, 666), 'superweight_value': 15.068066596984863, 'max_weight': 15.068066596984863, 'std': 0.09308750927448273}}
