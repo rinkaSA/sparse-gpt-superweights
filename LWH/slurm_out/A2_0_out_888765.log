@@ -1,0 +1,2318 @@
+number of parameters: 123.59M
+number of parameters: 123.59M
+number of parameters: 123.59M
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+number of parameters: 123.59M
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: True
+using fused AdamW: True
+using fused AdamW: True
+i8016:1110398:1110398 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110398:1110398 [0] NCCL INFO Bootstrap : Using ib0.0001:172.24.196.143<0>
+i8016:1110398:1110398 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+i8016:1110398:1110398 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+i8016:1110398:1110398 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+i8016:1110398:1110398 [0] NCCL INFO cudaDriverVersion 12050
+NCCL version 2.21.5+cuda12.4
+i8016:1110399:1110399 [1] NCCL INFO cudaDriverVersion 12050
+i8016:1110399:1110399 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110399:1110399 [1] NCCL INFO Bootstrap : Using ib0.0001:172.24.196.143<0>
+i8016:1110399:1110399 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+i8016:1110399:1110399 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+i8016:1110399:1110399 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+i8016:1110400:1110400 [2] NCCL INFO cudaDriverVersion 12050
+i8016:1110400:1110400 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110400:1110400 [2] NCCL INFO Bootstrap : Using ib0.0001:172.24.196.143<0>
+i8016:1110400:1110400 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+i8016:1110400:1110400 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+i8016:1110400:1110400 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+i8016:1110401:1110401 [3] NCCL INFO cudaDriverVersion 12050
+i8016:1110401:1110401 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110401:1110401 [3] NCCL INFO Bootstrap : Using ib0.0001:172.24.196.143<0>
+i8016:1110401:1110401 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+i8016:1110401:1110401 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+i8016:1110401:1110401 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+i8016:1110398:1110458 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+i8016:1110399:1110459 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+i8016:1110400:1110460 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+i8016:1110401:1110461 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+i8016:1110398:1110458 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110400:1110460 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110401:1110461 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110399:1110459 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+i8016:1110400:1110460 [2] NCCL INFO NCCL_IB_HCA set to mlx5
+i8016:1110401:1110461 [3] NCCL INFO NCCL_IB_HCA set to mlx5
+i8016:1110399:1110459 [1] NCCL INFO NCCL_IB_HCA set to mlx5
+i8016:1110398:1110458 [0] NCCL INFO NCCL_IB_HCA set to mlx5
+i8016:1110401:1110461 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0.0001:172.24.196.143<0>
+i8016:1110401:1110461 [3] NCCL INFO Using non-device net plugin version 0
+i8016:1110401:1110461 [3] NCCL INFO Using network IB
+i8016:1110398:1110458 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0.0001:172.24.196.143<0>
+i8016:1110398:1110458 [0] NCCL INFO Using non-device net plugin version 0
+i8016:1110398:1110458 [0] NCCL INFO Using network IB
+i8016:1110400:1110460 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0.0001:172.24.196.143<0>
+i8016:1110400:1110460 [2] NCCL INFO Using non-device net plugin version 0
+i8016:1110400:1110460 [2] NCCL INFO Using network IB
+i8016:1110399:1110459 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0.0001:172.24.196.143<0>
+i8016:1110399:1110459 [1] NCCL INFO Using non-device net plugin version 0
+i8016:1110399:1110459 [1] NCCL INFO Using network IB
+i8016:1110401:1110461 [3] NCCL INFO ncclCommInitRank comm 0xb8e58e0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0x139ccf45c765af2f - Init START
+i8016:1110398:1110458 [0] NCCL INFO ncclCommInitRank comm 0xb4bee20 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId b000 commId 0x139ccf45c765af2f - Init START
+i8016:1110400:1110460 [2] NCCL INFO ncclCommInitRank comm 0xc654580 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 40000 commId 0x139ccf45c765af2f - Init START
+i8016:1110399:1110459 [1] NCCL INFO ncclCommInitRank comm 0xae6fde0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 11000 commId 0x139ccf45c765af2f - Init START
+i8016:1110399:1110459 [1] NCCL INFO NVLS multicast support is not available on dev 1
+i8016:1110401:1110461 [3] NCCL INFO Setting affinity for GPU 3 to 8000,00000000
+i8016:1110401:1110461 [3] NCCL INFO NVLS multicast support is not available on dev 3
+i8016:1110398:1110458 [0] NCCL INFO NVLS multicast support is not available on dev 0
+i8016:1110400:1110460 [2] NCCL INFO NVLS multicast support is not available on dev 2
+i8016:1110400:1110460 [2] NCCL INFO comm 0xc654580 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+i8016:1110399:1110459 [1] NCCL INFO comm 0xae6fde0 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+i8016:1110398:1110458 [0] NCCL INFO comm 0xb4bee20 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+i8016:1110398:1110458 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 01/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 02/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 03/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 04/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 05/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+i8016:1110400:1110460 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+i8016:1110398:1110458 [0] NCCL INFO Channel 07/24 :    0   1   2   3
+i8016:1110400:1110460 [2] NCCL INFO P2P Chunksize set to 524288
+i8016:1110398:1110458 [0] NCCL INFO Channel 08/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 09/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 10/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 11/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 13/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 14/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 15/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 16/24 :    0   1   2   3
+i8016:1110399:1110459 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+i8016:1110398:1110458 [0] NCCL INFO Channel 17/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+i8016:1110399:1110459 [1] NCCL INFO P2P Chunksize set to 524288
+i8016:1110398:1110458 [0] NCCL INFO Channel 19/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 20/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 21/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 22/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Channel 23/24 :    0   1   2   3
+i8016:1110398:1110458 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+i8016:1110398:1110458 [0] NCCL INFO P2P Chunksize set to 524288
+i8016:1110401:1110461 [3] NCCL INFO comm 0xb8e58e0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+i8016:1110401:1110461 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] -1/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] -1/-1/-1->3->2 [11] -1/-1/-1->3->2 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->2 [17] -1/-1/-1->3->2 [18] -1/-1/-1->3->2 [19] -1/-1/-1->3->2 [20] -1/-1/-1->3->2 [21] -1/-1/-1->3->2 [22] -1/-1/-1->3->2 [23] -1/-1/-1->3->2
+i8016:1110401:1110461 [3] NCCL INFO P2P Chunksize set to 524288
+i8016:1110400:1110460 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 13/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 16/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 19/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Connected all rings
+i8016:1110401:1110461 [3] NCCL INFO Connected all rings
+i8016:1110401:1110461 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Connected all rings
+i8016:1110399:1110459 [1] NCCL INFO Connected all rings
+i8016:1110399:1110459 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 16/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 17/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 18/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 19/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 20/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Channel 23/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110400:1110460 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 13/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 14/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 15/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110398:1110458 [0] NCCL INFO Connected all trees
+i8016:1110398:1110458 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+i8016:1110398:1110458 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+i8016:1110401:1110461 [3] NCCL INFO Channel 16/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 17/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 18/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 19/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 20/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 21/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110401:1110461 [3] NCCL INFO Channel 23/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+i8016:1110399:1110459 [1] NCCL INFO Connected all trees
+i8016:1110399:1110459 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+i8016:1110399:1110459 [1] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+i8016:1110401:1110461 [3] NCCL INFO Connected all trees
+i8016:1110401:1110461 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+i8016:1110401:1110461 [3] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+i8016:1110400:1110460 [2] NCCL INFO Connected all trees
+i8016:1110400:1110460 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+i8016:1110400:1110460 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+i8016:1110398:1110458 [0] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+i8016:1110398:1110458 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+i8016:1110398:1110458 [0] NCCL INFO ncclCommInitRank comm 0xb4bee20 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId b000 commId 0x139ccf45c765af2f - Init COMPLETE
+i8016:1110399:1110459 [1] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+i8016:1110399:1110459 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+i8016:1110399:1110459 [1] NCCL INFO ncclCommInitRank comm 0xae6fde0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 11000 commId 0x139ccf45c765af2f - Init COMPLETE
+i8016:1110400:1110460 [2] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+i8016:1110401:1110461 [3] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+i8016:1110400:1110460 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+i8016:1110401:1110461 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+i8016:1110401:1110461 [3] NCCL INFO ncclCommInitRank comm 0xb8e58e0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0x139ccf45c765af2f - Init COMPLETE
+i8016:1110400:1110460 [2] NCCL INFO ncclCommInitRank comm 0xc654580 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 40000 commId 0x139ccf45c765af2f - Init COMPLETE
+[debug] initial mask 124373760
+[debug] initial canonical mask 124373760
+
+=== ROUND 1/5 ===
+[debug] Round 1 starting: 124373760/124373760 (100.00%) unmasked
+[round] step 0: train 10.9331, val 10.9324, ppl 55961.6905
+[round] iter 0: loss 10.9297, time 18726.6ms, mfu -100.0%
+[round] iter 1: loss 10.0337, time 3583.7ms, mfu -100.0%
+[round] iter 2: loss 9.3390, time 1109.5ms, mfu -100.0%
+[round] iter 3: loss 8.9343, time 1133.6ms, mfu -100.0%
+[round] iter 4: loss 8.5735, time 1053.8ms, mfu -100.0%
+[round] iter 5: loss 8.2436, time 1037.4ms, mfu 16.2%
+[round] iter 6: loss 7.9229, time 1236.2ms, mfu 16.0%
+[round] iter 7: loss 7.7639, time 1108.2ms, mfu 15.9%
+[round] iter 8: loss 7.8472, time 1102.8ms, mfu 15.8%
+[round] iter 9: loss 7.7417, time 1074.4ms, mfu 15.8%
+[round] iter 10: loss 7.5541, time 1299.1ms, mfu 15.5%
+[round] iter 11: loss 7.5652, time 1026.4ms, mfu 15.6%
+[round] iter 12: loss 7.6444, time 1040.0ms, mfu 15.7%
+[round] iter 13: loss 7.7699, time 1139.7ms, mfu 15.6%
+[round] iter 14: loss 7.2817, time 1027.0ms, mfu 15.7%
+[round] iter 15: loss 7.3504, time 1034.0ms, mfu 15.7%
+[round] iter 16: loss 7.4517, time 1082.5ms, mfu 15.7%
+[round] iter 17: loss 7.4028, time 1160.8ms, mfu 15.6%
+[round] iter 18: loss 7.3700, time 1084.3ms, mfu 15.6%
+[round] iter 19: loss 7.2855, time 1310.9ms, mfu 15.3%
+[round] iter 20: loss 7.2543, time 1068.6ms, mfu 15.3%
+[round] iter 21: loss 7.4835, time 1319.7ms, mfu 15.1%
+[round] iter 22: loss 7.3867, time 1057.4ms, mfu 15.2%
+[round] iter 23: loss 7.3477, time 1048.0ms, mfu 15.3%
+[round] iter 24: loss 7.2938, time 1116.3ms, mfu 15.2%
+[round] iter 25: loss 7.5016, time 1061.2ms, mfu 15.3%
+[round] iter 26: loss 7.2362, time 1031.7ms, mfu 15.4%
+[round] iter 27: loss 7.2802, time 1151.5ms, mfu 15.3%
+[round] iter 28: loss 7.4537, time 1054.8ms, mfu 15.4%
+[round] iter 29: loss 7.2929, time 1064.1ms, mfu 15.4%
+[round] iter 30: loss 7.1767, time 1285.7ms, mfu 15.2%
+[round] iter 31: loss 7.1027, time 1028.3ms, mfu 15.3%
+[round] iter 32: loss 7.3020, time 1030.4ms, mfu 15.4%
+[round] iter 33: loss 7.6964, time 1024.5ms, mfu 15.5%
+[round] iter 34: loss 7.1586, time 1181.4ms, mfu 15.4%
+[round] iter 35: loss 6.9411, time 1072.2ms, mfu 15.4%
+[round] iter 36: loss 7.1654, time 1027.3ms, mfu 15.5%
+[round] iter 37: loss 7.0359, time 1041.0ms, mfu 15.6%
+[round] iter 38: loss 7.0967, time 1030.7ms, mfu 15.7%
+[round] iter 39: loss 7.0490, time 1035.1ms, mfu 15.7%
+[round] iter 40: loss 7.0352, time 1035.7ms, mfu 15.8%
+[round] iter 41: loss 6.8972, time 1028.0ms, mfu 15.8%
+[round] iter 42: loss 7.1822, time 1050.4ms, mfu 15.9%
+[round] iter 43: loss 6.9226, time 1045.4ms, mfu 15.9%
+[round] iter 44: loss 7.1317, time 1027.5ms, mfu 15.9%
+[round] iter 45: loss 6.8779, time 1034.9ms, mfu 16.0%
+[round] iter 46: loss 7.1421, time 1144.5ms, mfu 15.8%
+[round] iter 47: loss 6.9460, time 1024.2ms, mfu 15.9%
+[round] iter 48: loss 6.9450, time 1649.1ms, mfu 15.3%
+[round] iter 49: loss 6.8520, time 951.8ms, mfu 15.6%
+[round] iter 50: loss 7.2672, time 1029.6ms, mfu 15.6%
+[round] iter 51: loss 6.7593, time 1050.2ms, mfu 15.7%
+[round] iter 52: loss 6.7599, time 1092.9ms, mfu 15.7%
+[round] iter 53: loss 6.9143, time 1022.7ms, mfu 15.7%
+[round] iter 54: loss 6.9215, time 1054.2ms, mfu 15.8%
+[round] iter 55: loss 6.7420, time 1025.1ms, mfu 15.8%
+[round] iter 56: loss 6.8416, time 1280.6ms, mfu 15.6%
+[round] iter 57: loss 6.9365, time 1045.0ms, mfu 15.6%
+[round] iter 58: loss 6.9094, time 1240.2ms, mfu 15.4%
+[round] iter 59: loss 6.7518, time 1045.2ms, mfu 15.5%
+[round] iter 60: loss 6.9411, time 1050.1ms, mfu 15.5%
+[round] iter 61: loss 6.6603, time 1205.0ms, mfu 15.4%
+[round] iter 62: loss 6.8915, time 1048.2ms, mfu 15.4%
+[round] iter 63: loss 6.7303, time 1160.1ms, mfu 15.4%
+[round] iter 64: loss 6.5815, time 1015.9ms, mfu 15.5%
+[round] iter 65: loss 6.7980, time 1100.3ms, mfu 15.5%
+[round] iter 66: loss 6.5742, time 1022.8ms, mfu 15.6%
+[round] iter 67: loss 6.6967, time 1236.3ms, mfu 15.4%
+[round] iter 68: loss 6.5291, time 1111.7ms, mfu 15.3%
+[round] iter 69: loss 6.7035, time 1124.7ms, mfu 15.3%
+[round] iter 70: loss 6.6758, time 1078.7ms, mfu 15.3%
+[round] iter 71: loss 6.8765, time 1040.3ms, mfu 15.4%
+[round] iter 72: loss 6.5241, time 1032.4ms, mfu 15.5%
+[round] iter 73: loss 6.7291, time 1206.7ms, mfu 15.3%
+[round] iter 74: loss 6.5910, time 1006.2ms, mfu 15.5%
+[round] iter 75: loss 6.5107, time 1071.0ms, mfu 15.5%
+[round] iter 76: loss 6.5744, time 1126.6ms, mfu 15.5%
+[round] iter 77: loss 6.6514, time 1087.4ms, mfu 15.5%
+[round] iter 78: loss 6.5105, time 1070.4ms, mfu 15.5%
+[round] iter 79: loss 6.6521, time 1080.0ms, mfu 15.5%
+[round] iter 80: loss 6.5043, time 1436.6ms, mfu 15.1%
+[round] iter 81: loss 6.5282, time 1013.7ms, mfu 15.3%
+[round] iter 82: loss 6.6178, time 1043.2ms, mfu 15.4%
+[round] iter 83: loss 6.6298, time 1040.2ms, mfu 15.4%
+[round] iter 84: loss 6.6938, time 1015.2ms, mfu 15.5%
+[round] iter 85: loss 6.5330, time 3423.7ms, mfu 14.5%
+[round] iter 86: loss 6.3827, time 1034.7ms, mfu 14.7%
+[round] iter 87: loss 6.1928, time 3374.0ms, mfu 13.7%
+[round] iter 88: loss 6.5427, time 1044.3ms, mfu 13.9%
+[round] iter 89: loss 6.4636, time 3362.1ms, mfu 13.0%
+[round] iter 90: loss 6.3619, time 1030.2ms, mfu 13.4%
+[round] iter 91: loss 6.3198, time 1034.6ms, mfu 13.7%
+[round] iter 92: loss 6.3909, time 1239.4ms, mfu 13.7%
+[round] iter 93: loss 6.5232, time 1073.3ms, mfu 13.9%
+[round] iter 94: loss 6.6058, time 1030.0ms, mfu 14.1%
+[round] iter 95: loss 6.4540, time 3351.2ms, mfu 13.2%
+[round] iter 96: loss 6.5862, time 1007.7ms, mfu 13.5%
+[round] iter 97: loss 6.4218, time 3085.6ms, mfu 12.7%
+[round] iter 98: loss 6.4408, time 1084.6ms, mfu 13.0%
+[round] iter 99: loss 6.4955, time 3512.7ms, mfu 12.2%
+[round] iter 100: loss 6.3245, time 1068.5ms, mfu 12.6%
+[round] iter 101: loss 6.6416, time 1037.2ms, mfu 12.9%
+[round] iter 102: loss 6.3209, time 1103.5ms, mfu 13.2%
+[round] iter 103: loss 6.5884, time 1023.3ms, mfu 13.5%
+[round] iter 104: loss 6.1758, time 1111.5ms, mfu 13.6%
+[round] iter 105: loss 6.2444, time 1216.6ms, mfu 13.7%
+[round] iter 106: loss 6.4835, time 1069.8ms, mfu 13.9%
+[round] iter 107: loss 6.4889, time 1248.4ms, mfu 13.8%
+[round] iter 108: loss 6.3435, time 1024.0ms, mfu 14.1%
+[round] iter 109: loss 6.4867, time 1033.4ms, mfu 14.3%
+[round] iter 110: loss 6.4977, time 1074.3ms, mfu 14.4%
+[round] iter 111: loss 6.0980, time 1027.0ms, mfu 14.6%
+[round] iter 112: loss 6.3861, time 1136.0ms, mfu 14.7%
+[round] iter 113: loss 6.3024, time 2082.2ms, mfu 14.0%
+[round] iter 114: loss 6.0492, time 991.9ms, mfu 14.3%
+[round] iter 115: loss 6.4366, time 1054.9ms, mfu 14.5%
+[round] iter 116: loss 6.5102, time 1074.8ms, mfu 14.6%
+[round] iter 117: loss 6.2642, time 1018.9ms, mfu 14.8%
+[round] iter 118: loss 6.3312, time 1133.5ms, mfu 14.8%
+[round] iter 119: loss 6.3297, time 1052.0ms, mfu 14.9%
+[round] iter 120: loss 6.3133, time 1133.9ms, mfu 14.9%
+[round] iter 121: loss 6.5335, time 1039.6ms, mfu 15.0%
+[round] iter 122: loss 6.3525, time 1022.0ms, mfu 15.2%
+[round] iter 123: loss 6.2245, time 1027.9ms, mfu 15.3%
+[round] iter 124: loss 6.3784, time 1016.0ms, mfu 15.4%
+[round] iter 125: loss 6.2129, time 1026.3ms, mfu 15.5%
+[round] iter 126: loss 6.2422, time 1016.1ms, mfu 15.6%
+[round] iter 127: loss 6.0887, time 1044.7ms, mfu 15.7%
+[round] iter 128: loss 6.3265, time 1057.5ms, mfu 15.7%
+[round] iter 129: loss 6.3448, time 1004.3ms, mfu 15.8%
+[round] iter 130: loss 6.3198, time 1021.7ms, mfu 15.9%
+[round] iter 131: loss 6.1824, time 1033.1ms, mfu 15.9%
+[round] iter 132: loss 6.2547, time 1089.4ms, mfu 15.9%
+[round] iter 133: loss 6.0765, time 1012.9ms, mfu 15.9%
+[round] iter 134: loss 6.2045, time 1084.6ms, mfu 15.9%
+[round] iter 135: loss 6.3497, time 1203.4ms, mfu 15.7%
+[round] iter 136: loss 6.3658, time 1027.9ms, mfu 15.8%
+[round] iter 137: loss 6.1990, time 1094.3ms, mfu 15.7%
+[round] iter 138: loss 6.2384, time 1017.4ms, mfu 15.8%
+[round] iter 139: loss 6.1478, time 1228.9ms, mfu 15.6%
+[round] iter 140: loss 6.2378, time 2387.2ms, mfu 14.7%
+[round] iter 141: loss 6.1818, time 1020.2ms, mfu 14.9%
+[round] iter 142: loss 6.1485, time 1076.7ms, mfu 15.0%
+[round] iter 143: loss 6.0878, time 2085.0ms, mfu 14.3%
+[round] iter 144: loss 6.1453, time 1081.5ms, mfu 14.4%
+[round] iter 145: loss 6.2757, time 1039.1ms, mfu 14.6%
+[round] iter 146: loss 6.3844, time 1000.1ms, mfu 14.8%
+[round] iter 147: loss 6.1687, time 1045.8ms, mfu 15.0%
+[round] iter 148: loss 5.9413, time 1028.7ms, mfu 15.1%
+[round] iter 149: loss 6.1949, time 1083.6ms, mfu 15.1%
+[round] iter 150: loss 6.0847, time 1081.6ms, mfu 15.2%
+[round] iter 151: loss 6.3946, time 2828.6ms, mfu 14.3%
+[round] iter 152: loss 6.2839, time 1239.4ms, mfu 14.2%
+[round] iter 153: loss 5.9571, time 1121.0ms, mfu 14.3%
+[round] iter 154: loss 6.2873, time 1275.6ms, mfu 14.2%
+[round] iter 155: loss 6.1812, time 1060.8ms, mfu 14.3%
+[round] iter 156: loss 6.0174, time 1055.8ms, mfu 14.5%
+[round] iter 157: loss 6.0885, time 1096.8ms, mfu 14.6%
+[round] iter 158: loss 6.0622, time 1180.1ms, mfu 14.5%
+[round] iter 159: loss 6.3125, time 1119.0ms, mfu 14.6%
+[round] iter 160: loss 6.1795, time 1070.1ms, mfu 14.7%
+[round] iter 161: loss 6.0562, time 1063.5ms, mfu 14.8%
+[round] iter 162: loss 6.1789, time 1173.0ms, mfu 14.8%
+[round] iter 163: loss 6.1267, time 1045.8ms, mfu 14.9%
+[round] iter 164: loss 6.1558, time 1007.5ms, mfu 15.1%
+[round] iter 165: loss 6.2306, time 1023.9ms, mfu 15.2%
+[round] iter 166: loss 6.3522, time 1023.5ms, mfu 15.3%
+[round] iter 167: loss 6.1329, time 1094.9ms, mfu 15.3%
+[round] iter 168: loss 6.1652, time 1084.5ms, mfu 15.4%
+[round] iter 169: loss 6.2790, time 1447.4ms, mfu 15.0%
+[round] iter 170: loss 6.1277, time 1144.3ms, mfu 15.0%
+[round] iter 171: loss 6.2198, time 1097.7ms, mfu 15.0%
+[round] iter 172: loss 6.4686, time 1170.3ms, mfu 14.9%
+[round] iter 173: loss 6.2270, time 1026.5ms, mfu 15.1%
+[round] iter 174: loss 5.9869, time 1053.3ms, mfu 15.2%
+[round] iter 175: loss 6.1347, time 1016.9ms, mfu 15.3%
+[round] iter 176: loss 6.2361, time 1015.5ms, mfu 15.4%
+[round] iter 177: loss 5.9983, time 1025.5ms, mfu 15.5%
+[round] iter 178: loss 6.1209, time 1030.0ms, mfu 15.6%
+[round] iter 179: loss 5.9997, time 1030.7ms, mfu 15.7%
+[round] iter 180: loss 6.0299, time 1034.1ms, mfu 15.7%
+[round] iter 181: loss 6.1665, time 1096.5ms, mfu 15.7%
+[round] iter 182: loss 6.0967, time 1085.1ms, mfu 15.7%
+[round] iter 183: loss 6.3339, time 1031.9ms, mfu 15.8%
+[round] iter 184: loss 6.0000, time 1020.4ms, mfu 15.8%
+[round] iter 185: loss 6.0453, time 1045.5ms, mfu 15.9%
+[round] iter 186: loss 6.0690, time 1164.6ms, mfu 15.7%
+[round] iter 187: loss 6.1086, time 961.4ms, mfu 15.9%
+[round] iter 188: loss 6.0688, time 1017.9ms, mfu 16.0%
+[round] iter 189: loss 6.4616, time 1024.2ms, mfu 16.0%
+[round] iter 190: loss 6.0110, time 1021.1ms, mfu 16.1%
+[round] iter 191: loss 5.9639, time 1112.5ms, mfu 16.0%
+[round] iter 192: loss 6.0795, time 1006.4ms, mfu 16.0%
+[round] iter 193: loss 6.0844, time 1016.4ms, mfu 16.1%
+[round] iter 194: loss 6.1906, time 1089.3ms, mfu 16.0%
+[round] iter 195: loss 6.3057, time 1025.6ms, mfu 16.1%
+[round] iter 196: loss 6.1979, time 1011.3ms, mfu 16.1%
+[round] iter 197: loss 5.9444, time 1094.1ms, mfu 16.0%
+[round] iter 198: loss 6.0436, time 1043.5ms, mfu 16.1%
+[round] iter 199: loss 5.9739, time 1314.0ms, mfu 15.7%
+[round] iter 200: loss 6.2641, time 1048.4ms, mfu 15.8%
+[round] iter 201: loss 5.9153, time 1054.0ms, mfu 15.8%
+[round] iter 202: loss 6.1044, time 1031.3ms, mfu 15.8%
+[round] iter 203: loss 6.0138, time 1087.3ms, mfu 15.8%
+[round] iter 204: loss 5.9139, time 1078.1ms, mfu 15.8%
+[round] iter 205: loss 6.1308, time 1023.0ms, mfu 15.9%
+[round] iter 206: loss 6.0709, time 999.1ms, mfu 16.0%
+[round] iter 207: loss 6.2055, time 1000.4ms, mfu 16.0%
+[round] iter 208: loss 6.1208, time 1066.4ms, mfu 16.0%
+[round] iter 209: loss 6.0153, time 1053.0ms, mfu 16.0%
+[round] iter 210: loss 5.9296, time 1023.6ms, mfu 16.1%
+[round] iter 211: loss 6.0877, time 1031.2ms, mfu 16.1%
+[round] iter 212: loss 5.9519, time 1208.6ms, mfu 15.9%
+[round] iter 213: loss 6.0782, time 1078.2ms, mfu 15.8%
+[round] iter 214: loss 5.9251, time 2738.7ms, mfu 14.9%
+[round] iter 215: loss 5.9219, time 1017.5ms, mfu 15.0%
+[round] iter 216: loss 6.0767, time 1050.9ms, mfu 15.1%
+[round] iter 217: loss 5.7831, time 1023.6ms, mfu 15.3%
+[round] iter 218: loss 6.2979, time 1056.3ms, mfu 15.3%
+[round] iter 219: loss 6.0081, time 1013.5ms, mfu 15.5%
+[round] iter 220: loss 5.8457, time 1043.5ms, mfu 15.5%
+[round] iter 221: loss 5.9938, time 1037.0ms, mfu 15.6%
+[round] iter 222: loss 6.1196, time 1039.6ms, mfu 15.7%
+[round] iter 223: loss 6.0776, time 1044.7ms, mfu 15.7%
+[round] iter 224: loss 5.9807, time 1065.2ms, mfu 15.7%
+[round] iter 225: loss 5.9160, time 1160.5ms, mfu 15.6%
+[round] iter 226: loss 6.0261, time 1139.2ms, mfu 15.5%
+[round] iter 227: loss 6.1184, time 1043.2ms, mfu 15.6%
+[round] iter 228: loss 5.9267, time 1026.1ms, mfu 15.7%
+[round] iter 229: loss 6.0489, time 1126.8ms, mfu 15.6%
+[round] iter 230: loss 5.8005, time 1063.4ms, mfu 15.6%
+[round] iter 231: loss 6.2277, time 1007.4ms, mfu 15.7%
+[round] iter 232: loss 6.0423, time 1011.9ms, mfu 15.8%
+[round] iter 233: loss 6.0936, time 1033.3ms, mfu 15.9%
+[round] iter 234: loss 6.1666, time 1004.5ms, mfu 15.9%
+[round] iter 235: loss 6.0283, time 3045.3ms, mfu 14.9%
+[round] iter 236: loss 5.7159, time 1245.3ms, mfu 14.8%
+[round] iter 237: loss 5.8427, time 1041.4ms, mfu 14.9%
+[round] iter 238: loss 6.0061, time 1943.3ms, mfu 14.3%
+[round] iter 239: loss 6.0729, time 1974.8ms, mfu 13.7%
+[round] iter 240: loss 6.1820, time 1894.6ms, mfu 13.2%
+[round] iter 241: loss 5.8837, time 1720.3ms, mfu 12.9%
+[round] iter 242: loss 5.9587, time 1676.3ms, mfu 12.6%
+[round] iter 243: loss 5.9887, time 2104.7ms, mfu 12.1%
+[round] iter 244: loss 5.8339, time 1708.6ms, mfu 11.9%
+[round] iter 245: loss 5.8628, time 1750.8ms, mfu 11.7%
+[round] iter 246: loss 6.0998, time 1595.3ms, mfu 11.6%
+[round] iter 247: loss 5.9095, time 1873.5ms, mfu 11.3%
+[round] iter 248: loss 5.7973, time 1923.8ms, mfu 11.1%
+[round] iter 249: loss 5.8315, time 1875.0ms, mfu 10.8%
+[round] iter 250: loss 5.8403, time 1947.0ms, mfu 10.6%
+[round] iter 251: loss 5.9896, time 1854.4ms, mfu 10.5%
+[round] iter 252: loss 6.1967, time 1750.6ms, mfu 10.4%
+[round] iter 253: loss 5.8837, time 1838.0ms, mfu 10.3%
+[round] iter 254: loss 5.9188, time 1910.4ms, mfu 10.1%
+[round] iter 255: loss 6.0187, time 1618.3ms, mfu 10.1%
+[round] iter 256: loss 6.1120, time 1835.5ms, mfu 10.0%
+[round] iter 257: loss 6.1023, time 1790.4ms, mfu 10.0%
+[round] iter 258: loss 5.8779, time 1679.7ms, mfu 10.0%
+[round] iter 259: loss 5.8794, time 2205.5ms, mfu 9.8%
+[round] iter 260: loss 5.9783, time 2051.0ms, mfu 9.6%
+[round] iter 261: loss 5.8066, time 1845.5ms, mfu 9.5%
+[round] iter 262: loss 5.8499, time 1890.9ms, mfu 9.5%
+[round] iter 263: loss 5.9701, time 1806.8ms, mfu 9.5%
+[round] iter 264: loss 6.1570, time 1572.5ms, mfu 9.6%
+[round] iter 265: loss 5.8821, time 1803.7ms, mfu 9.6%
+[round] iter 266: loss 5.8638, time 1831.9ms, mfu 9.5%
+[round] iter 267: loss 5.7341, time 1680.0ms, mfu 9.6%
+[round] iter 268: loss 6.0119, time 1831.7ms, mfu 9.5%
+[round] iter 269: loss 5.7855, time 1953.3ms, mfu 9.4%
+[round] iter 270: loss 5.6825, time 1970.4ms, mfu 9.4%
+[round] iter 271: loss 5.8505, time 2007.4ms, mfu 9.3%
+[round] iter 272: loss 5.9466, time 2184.6ms, mfu 9.1%
+[round] iter 273: loss 6.0533, time 1664.9ms, mfu 9.2%
+[round] iter 274: loss 6.2044, time 2040.0ms, mfu 9.1%
+[round] iter 275: loss 5.8634, time 1872.3ms, mfu 9.1%
+[round] iter 276: loss 5.8240, time 2168.7ms, mfu 9.0%
+[round] iter 277: loss 5.6853, time 1885.1ms, mfu 9.0%
+[round] iter 278: loss 5.9433, time 1855.9ms, mfu 9.0%
+[round] iter 279: loss 5.8160, time 1812.1ms, mfu 9.0%
+[round] iter 280: loss 5.9359, time 1876.9ms, mfu 9.0%
+[round] iter 281: loss 5.8185, time 1858.4ms, mfu 9.0%
+[round] iter 282: loss 5.8948, time 1855.5ms, mfu 9.0%
+[round] iter 283: loss 5.9168, time 1937.3ms, mfu 9.0%
+[round] iter 284: loss 5.7077, time 1875.4ms, mfu 9.0%
+[round] iter 285: loss 5.7967, time 1969.1ms, mfu 8.9%
+[round] iter 286: loss 5.9466, time 1900.3ms, mfu 8.9%
+[round] iter 287: loss 5.7731, time 1826.0ms, mfu 9.0%
+[round] iter 288: loss 6.1148, time 2036.1ms, mfu 8.9%
+[round] iter 289: loss 5.9801, time 1932.5ms, mfu 8.9%
+[round] iter 290: loss 5.8031, time 1777.9ms, mfu 8.9%
+[round] iter 291: loss 5.7723, time 1898.7ms, mfu 8.9%
+[round] iter 292: loss 6.0658, time 1664.1ms, mfu 9.0%
+[round] iter 293: loss 5.7310, time 1827.2ms, mfu 9.1%
+[round] iter 294: loss 6.0563, time 1779.5ms, mfu 9.1%
+[round] iter 295: loss 5.9087, time 1764.1ms, mfu 9.1%
+[round] iter 296: loss 5.8138, time 1985.0ms, mfu 9.1%
+[round] iter 297: loss 5.7044, time 1902.8ms, mfu 9.1%
+[round] iter 298: loss 5.7150, time 1831.3ms, mfu 9.1%
+[round] iter 299: loss 6.0074, time 1829.1ms, mfu 9.1%
+[round] iter 300: loss 5.7539, time 2213.2ms, mfu 8.9%
+[round] iter 301: loss 5.8562, time 2002.9ms, mfu 8.9%
+[round] iter 302: loss 5.7685, time 2001.6ms, mfu 8.8%
+[round] iter 303: loss 5.7284, time 1795.6ms, mfu 8.9%
+[round] iter 304: loss 5.7451, time 1693.9ms, mfu 9.0%
+[round] iter 305: loss 5.6591, time 2020.4ms, mfu 8.9%
+[round] iter 306: loss 5.9902, time 1679.4ms, mfu 9.0%
+[round] iter 307: loss 5.5006, time 1718.1ms, mfu 9.1%
+[round] iter 308: loss 5.9114, time 1755.5ms, mfu 9.2%
+[round] iter 309: loss 5.6470, time 2135.4ms, mfu 9.0%
+[round] iter 310: loss 5.7863, time 1747.9ms, mfu 9.1%
+[round] iter 311: loss 5.7372, time 1853.5ms, mfu 9.1%
+[round] iter 312: loss 6.1015, time 2452.9ms, mfu 8.9%
+[round] iter 313: loss 6.0770, time 1915.1ms, mfu 8.9%
+[round] iter 314: loss 5.7662, time 1833.8ms, mfu 8.9%
+[round] iter 315: loss 5.5358, time 1763.6ms, mfu 9.0%
+[round] iter 316: loss 5.6401, time 1906.9ms, mfu 8.9%
+[round] iter 317: loss 5.9542, time 1880.7ms, mfu 8.9%
+[round] iter 318: loss 5.6735, time 1721.4ms, mfu 9.0%
+[round] iter 319: loss 5.6997, time 1901.0ms, mfu 9.0%
+[round] iter 320: loss 5.7150, time 2338.0ms, mfu 8.8%
+[round] iter 321: loss 5.6973, time 1987.6ms, mfu 8.8%
+[round] iter 322: loss 5.6960, time 1731.3ms, mfu 8.9%
+[round] iter 323: loss 5.7917, time 1911.3ms, mfu 8.9%
+[round] iter 324: loss 5.5447, time 1738.8ms, mfu 9.0%
+[round] iter 325: loss 5.8325, time 2006.0ms, mfu 8.9%
+[round] iter 326: loss 5.7238, time 2146.8ms, mfu 8.8%
+[round] iter 327: loss 5.8758, time 1660.2ms, mfu 8.9%
+[round] iter 328: loss 5.6905, time 1802.0ms, mfu 9.0%
+[round] iter 329: loss 5.8561, time 1782.0ms, mfu 9.0%
+[round] iter 330: loss 5.5407, time 1721.6ms, mfu 9.1%
+[round] iter 331: loss 6.0133, time 1851.0ms, mfu 9.1%
+[round] iter 332: loss 5.7520, time 1762.2ms, mfu 9.1%
+[round] iter 333: loss 5.7250, time 1840.5ms, mfu 9.1%
+[round] iter 334: loss 5.7616, time 1764.7ms, mfu 9.2%
+[round] iter 335: loss 5.6353, time 1964.8ms, mfu 9.1%
+[round] iter 336: loss 5.7844, time 1858.0ms, mfu 9.1%
+[round] iter 337: loss 5.6110, time 1988.1ms, mfu 9.0%
+[round] iter 338: loss 5.8237, time 1849.9ms, mfu 9.1%
+[round] iter 339: loss 5.5458, time 1808.9ms, mfu 9.1%
+[round] iter 340: loss 5.8094, time 1748.6ms, mfu 9.1%
+[round] iter 341: loss 5.7866, time 1967.2ms, mfu 9.1%
+[round] iter 342: loss 5.8026, time 2059.3ms, mfu 9.0%
+[round] iter 343: loss 5.6545, time 1686.3ms, mfu 9.1%
+[round] iter 344: loss 5.8655, time 1687.8ms, mfu 9.2%
+[round] iter 345: loss 5.5224, time 1853.7ms, mfu 9.2%
+[round] iter 346: loss 5.6671, time 1784.0ms, mfu 9.2%
+[round] iter 347: loss 5.8623, time 1867.9ms, mfu 9.2%
+[round] iter 348: loss 5.8796, time 1752.3ms, mfu 9.2%
+[round] iter 349: loss 5.6337, time 1819.7ms, mfu 9.2%
+[round] iter 350: loss 5.7991, time 2027.3ms, mfu 9.1%
+[round] iter 351: loss 5.6259, time 1708.8ms, mfu 9.2%
+[round] iter 352: loss 5.9476, time 2075.3ms, mfu 9.1%
+[round] iter 353: loss 5.7374, time 1714.9ms, mfu 9.2%
+[round] iter 354: loss 5.5917, time 1840.7ms, mfu 9.2%
+[round] iter 355: loss 5.8413, time 1931.9ms, mfu 9.1%
+[round] iter 356: loss 5.8046, time 1757.4ms, mfu 9.2%
+[round] iter 357: loss 5.7427, time 1882.6ms, mfu 9.1%
+[round] iter 358: loss 5.7281, time 2084.1ms, mfu 9.0%
+[round] iter 359: loss 5.6934, time 1959.7ms, mfu 9.0%
+[round] iter 360: loss 5.6901, time 1856.2ms, mfu 9.0%
+[round] iter 361: loss 5.6793, time 1788.9ms, mfu 9.0%
+[round] iter 362: loss 5.7653, time 1638.4ms, mfu 9.2%
+[round] iter 363: loss 5.6548, time 1931.5ms, mfu 9.1%
+[round] iter 364: loss 5.6657, time 1976.3ms, mfu 9.1%
+[round] iter 365: loss 5.7029, time 1707.8ms, mfu 9.1%
+[round] iter 366: loss 5.6822, time 1987.4ms, mfu 9.1%
+[round] iter 367: loss 5.7211, time 1881.7ms, mfu 9.1%
+[round] iter 368: loss 5.6554, time 1682.2ms, mfu 9.2%
+[round] iter 369: loss 5.9374, time 2132.1ms, mfu 9.0%
+[round] iter 370: loss 5.6344, time 1710.5ms, mfu 9.1%
+[round] iter 371: loss 5.5870, time 1799.9ms, mfu 9.1%
+[round] iter 372: loss 5.8463, time 2545.1ms, mfu 8.9%
+[round] iter 373: loss 5.6423, time 1845.1ms, mfu 8.9%
+[round] iter 374: loss 5.8596, time 2076.9ms, mfu 8.8%
+[round] iter 375: loss 5.5586, time 1769.2ms, mfu 8.9%
+[round] iter 376: loss 5.6266, time 1846.7ms, mfu 8.9%
+[round] iter 377: loss 5.4743, time 2134.8ms, mfu 8.8%
+[round] iter 378: loss 5.6930, time 1839.1ms, mfu 8.8%
+[round] iter 379: loss 5.6176, time 1733.6ms, mfu 8.9%
+[round] iter 380: loss 5.5380, time 1739.6ms, mfu 9.0%
+[round] iter 381: loss 5.6796, time 1828.7ms, mfu 9.0%
+[round] iter 382: loss 5.7174, time 1793.1ms, mfu 9.1%
+[round] iter 383: loss 5.7240, time 2134.5ms, mfu 8.9%
+[round] iter 384: loss 5.6517, time 1714.0ms, mfu 9.0%
+[round] iter 385: loss 5.7535, time 1747.5ms, mfu 9.1%
+[round] iter 386: loss 5.5611, time 1792.5ms, mfu 9.1%
+[round] iter 387: loss 5.7507, time 1704.1ms, mfu 9.2%
+[round] iter 388: loss 5.6750, time 1974.7ms, mfu 9.1%
+[round] iter 389: loss 5.6380, time 1831.0ms, mfu 9.1%
+[round] iter 390: loss 5.7509, time 1820.3ms, mfu 9.1%
+[round] iter 391: loss 5.9335, time 1924.7ms, mfu 9.1%
+[round] iter 392: loss 5.8676, time 1971.7ms, mfu 9.1%
+[round] iter 393: loss 5.5777, time 1834.1ms, mfu 9.1%
+[round] iter 394: loss 5.8917, time 1693.7ms, mfu 9.2%
+[round] iter 395: loss 5.6819, time 1820.6ms, mfu 9.2%
+[round] iter 396: loss 5.6638, time 1997.6ms, mfu 9.1%
+[round] iter 397: loss 5.7667, time 1965.9ms, mfu 9.0%
+[round] iter 398: loss 5.8138, time 1822.2ms, mfu 9.1%
+[round] iter 399: loss 5.8084, time 2074.2ms, mfu 9.0%
+[round] iter 400: loss 5.5552, time 1736.0ms, mfu 9.0%
+[round] iter 401: loss 5.6437, time 1905.8ms, mfu 9.0%
+[round] iter 402: loss 5.5882, time 1907.5ms, mfu 9.0%
+[round] iter 403: loss 5.9641, time 2020.1ms, mfu 8.9%
+[round] iter 404: loss 5.7592, time 1869.7ms, mfu 8.9%
+[round] iter 405: loss 5.5180, time 1875.8ms, mfu 8.9%
+[round] iter 406: loss 5.5246, time 1800.3ms, mfu 9.0%
+[round] iter 407: loss 5.8175, time 1687.6ms, mfu 9.1%
+[round] iter 408: loss 5.5210, time 1851.9ms, mfu 9.1%
+[round] iter 409: loss 5.5924, time 1951.8ms, mfu 9.0%
+[round] iter 410: loss 5.5574, time 1684.8ms, mfu 9.1%
+[round] iter 411: loss 5.5061, time 1745.4ms, mfu 9.2%
+[round] iter 412: loss 5.4637, time 2105.3ms, mfu 9.1%
+[round] iter 413: loss 5.5202, time 1917.0ms, mfu 9.0%
+[round] iter 414: loss 5.4414, time 1946.9ms, mfu 9.0%
+[round] iter 415: loss 5.4634, time 1919.8ms, mfu 9.0%
+[round] iter 416: loss 5.8598, time 1972.4ms, mfu 8.9%
+[round] iter 417: loss 5.6327, time 1688.4ms, mfu 9.0%
+[round] iter 418: loss 5.6818, time 1765.9ms, mfu 9.1%
+[round] iter 419: loss 5.7239, time 2021.4ms, mfu 9.0%
+[round] iter 420: loss 5.7330, time 1885.4ms, mfu 9.0%
+[round] iter 421: loss 5.5304, time 2085.5ms, mfu 8.9%
+[round] iter 422: loss 5.8278, time 2223.8ms, mfu 8.8%
+[round] iter 423: loss 5.4876, time 2409.6ms, mfu 8.6%
+[round] iter 424: loss 5.5983, time 2008.6ms, mfu 8.6%
+[round] iter 425: loss 5.4874, time 1991.5ms, mfu 8.6%
+[round] iter 426: loss 5.6021, time 2280.7ms, mfu 8.4%
+[round] iter 427: loss 5.4664, time 1496.4ms, mfu 8.7%
+[round] iter 428: loss 5.6184, time 2018.3ms, mfu 8.7%
+[round] iter 429: loss 5.6416, time 1925.9ms, mfu 8.7%
+[round] iter 430: loss 5.4569, time 1719.0ms, mfu 8.8%
+[round] iter 431: loss 5.6368, time 2070.8ms, mfu 8.7%
+[round] iter 432: loss 5.6045, time 2103.4ms, mfu 8.7%
+[round] iter 433: loss 5.5944, time 1692.0ms, mfu 8.8%
+[round] iter 434: loss 5.5507, time 1971.4ms, mfu 8.8%
+[round] iter 435: loss 5.7623, time 2354.5ms, mfu 8.6%
+[round] iter 436: loss 5.3507, time 1521.9ms, mfu 8.8%
+[round] iter 437: loss 5.4639, time 2087.1ms, mfu 8.8%
+[round] iter 438: loss 5.6417, time 1670.9ms, mfu 8.9%
+[round] iter 439: loss 5.5107, time 1819.8ms, mfu 8.9%
+[round] iter 440: loss 5.7413, time 1899.1ms, mfu 8.9%
+[round] iter 441: loss 5.3621, time 1882.4ms, mfu 8.9%
+[round] iter 442: loss 5.4421, time 1528.5ms, mfu 9.1%
+[round] iter 443: loss 5.6027, time 1831.0ms, mfu 9.1%
+[round] iter 444: loss 5.6283, time 1787.7ms, mfu 9.2%
+[round] iter 445: loss 5.4892, time 2017.4ms, mfu 9.1%
+[round] iter 446: loss 5.8220, time 2295.4ms, mfu 8.9%
+[round] iter 447: loss 5.4385, time 1712.9ms, mfu 9.0%
+[round] iter 448: loss 5.5539, time 2095.6ms, mfu 8.9%
+[round] iter 449: loss 5.5651, time 1680.7ms, mfu 9.0%
+[round] iter 450: loss 5.3696, time 1831.6ms, mfu 9.0%
+[round] iter 451: loss 5.5807, time 1831.4ms, mfu 9.1%
+[round] iter 452: loss 5.5491, time 1865.9ms, mfu 9.0%
+[round] iter 453: loss 5.5094, time 2081.9ms, mfu 9.0%
+[round] iter 454: loss 5.7280, time 1933.2ms, mfu 8.9%
+[round] iter 455: loss 5.3063, time 1837.2ms, mfu 9.0%
+[round] iter 456: loss 5.4223, time 1538.9ms, mfu 9.1%
+[round] iter 457: loss 5.5179, time 3743.0ms, mfu 8.7%
+[round] iter 458: loss 5.3519, time 2104.6ms, mfu 8.6%
+[round] iter 459: loss 5.6177, time 1800.5ms, mfu 8.7%
+[round] iter 460: loss 5.2898, time 1859.4ms, mfu 8.7%
+[round] iter 461: loss 5.5794, time 2248.1ms, mfu 8.6%
+[round] iter 462: loss 5.6874, time 2025.5ms, mfu 8.6%
+[round] iter 463: loss 5.6128, time 1893.7ms, mfu 8.6%
+[round] iter 464: loss 5.3278, time 1751.8ms, mfu 8.7%
+[round] iter 465: loss 5.4598, time 1948.4ms, mfu 8.7%
+[round] iter 466: loss 5.4796, time 1835.7ms, mfu 8.7%
+[round] iter 467: loss 5.6752, time 1769.5ms, mfu 8.8%
+[round] iter 468: loss 5.5432, time 1735.4ms, mfu 8.9%
+[round] iter 469: loss 5.4676, time 1857.8ms, mfu 8.9%
+[round] iter 470: loss 5.5046, time 1858.1ms, mfu 8.9%
+[round] iter 471: loss 5.5429, time 1885.1ms, mfu 8.9%
+[round] iter 472: loss 5.4081, time 1944.5ms, mfu 8.9%
+[round] iter 473: loss 5.4520, time 1738.5ms, mfu 9.0%
+[round] iter 474: loss 5.4915, time 1839.8ms, mfu 9.0%
+[round] iter 475: loss 5.4635, time 2128.7ms, mfu 8.9%
+[round] iter 476: loss 5.3790, time 2069.8ms, mfu 8.8%
+[round] iter 477: loss 5.3735, time 1894.5ms, mfu 8.8%
+[round] iter 478: loss 5.3964, time 2256.1ms, mfu 8.7%
+[round] iter 479: loss 5.4849, time 1693.6ms, mfu 8.8%
+[round] iter 480: loss 5.5707, time 1742.0ms, mfu 8.9%
+[round] iter 481: loss 5.7434, time 1914.6ms, mfu 8.9%
+[round] iter 482: loss 5.4140, time 1885.7ms, mfu 8.9%
+[round] iter 483: loss 5.4657, time 1956.2ms, mfu 8.9%
+[round] iter 484: loss 5.5066, time 1776.4ms, mfu 8.9%
+[round] iter 485: loss 5.5017, time 2019.3ms, mfu 8.9%
+[round] iter 486: loss 5.4593, time 1873.9ms, mfu 8.9%
+[round] iter 487: loss 5.3466, time 1945.8ms, mfu 8.9%
+[round] iter 488: loss 5.4182, time 4233.9ms, mfu 8.4%
+[round] iter 489: loss 5.7482, time 1282.8ms, mfu 8.8%
+[round] iter 490: loss 5.4861, time 1069.7ms, mfu 9.5%
+[round] iter 491: loss 5.5087, time 1546.7ms, mfu 9.7%
+[round] iter 492: loss 5.5644, time 2093.1ms, mfu 9.5%
+[round] iter 493: loss 5.4887, time 1749.1ms, mfu 9.5%
+[round] iter 494: loss 5.4748, time 2050.3ms, mfu 9.4%
+[round] iter 495: loss 5.3427, time 1818.5ms, mfu 9.4%
+[round] iter 496: loss 5.4848, time 2170.0ms, mfu 9.2%
+[round] iter 497: loss 5.3906, time 1752.8ms, mfu 9.2%
+[round] iter 498: loss 5.4294, time 1875.2ms, mfu 9.2%
+[round] iter 499: loss 5.5231, time 1955.1ms, mfu 9.2%
+[round] iter 500: loss 5.4377, time 1565.6ms, mfu 9.3%
+[round] iter 501: loss 5.4562, time 2320.0ms, mfu 9.1%
+[round] iter 502: loss 5.3969, time 2077.7ms, mfu 9.0%
+[round] iter 503: loss 5.3678, time 1740.9ms, mfu 9.1%
+[round] iter 504: loss 5.6779, time 1987.1ms, mfu 9.0%
+[round] iter 505: loss 5.3473, time 1812.4ms, mfu 9.0%
+[round] iter 506: loss 5.3886, time 1935.1ms, mfu 9.0%
+[round] iter 507: loss 5.4660, time 1970.3ms, mfu 9.0%
+[round] iter 508: loss 5.5183, time 2159.1ms, mfu 8.8%
+[round] iter 509: loss 5.3935, time 2015.2ms, mfu 8.8%
+[round] iter 510: loss 5.3099, time 1847.9ms, mfu 8.8%
+[round] iter 511: loss 5.3028, time 1907.1ms, mfu 8.8%
+[round] iter 512: loss 5.5902, time 1796.4ms, mfu 8.9%
+[round] iter 513: loss 5.4138, time 2076.4ms, mfu 8.8%
+[round] iter 514: loss 5.5384, time 1723.2ms, mfu 8.9%
+[round] iter 515: loss 5.2170, time 1899.8ms, mfu 8.9%
+[round] iter 516: loss 5.5497, time 1868.9ms, mfu 8.9%
+[round] iter 517: loss 5.3876, time 1955.2ms, mfu 8.9%
+[round] iter 518: loss 5.4814, time 2186.3ms, mfu 8.8%
+[round] iter 519: loss 5.2605, time 1739.5ms, mfu 8.9%
+[round] iter 520: loss 5.4899, time 1945.3ms, mfu 8.8%
+[round] iter 521: loss 5.3474, time 1815.7ms, mfu 8.9%
+[round] iter 522: loss 5.4753, time 1766.2ms, mfu 8.9%
+[round] iter 523: loss 5.5709, time 1763.7ms, mfu 9.0%
+[round] iter 524: loss 5.4745, time 2057.2ms, mfu 8.9%
+[round] iter 525: loss 5.3059, time 1819.9ms, mfu 9.0%
+[round] iter 526: loss 5.2759, time 1831.0ms, mfu 9.0%
+[round] iter 527: loss 5.4447, time 1827.4ms, mfu 9.0%
+[round] iter 528: loss 5.1707, time 1542.6ms, mfu 9.2%
+[round] iter 529: loss 5.3468, time 1911.5ms, mfu 9.2%
+[round] iter 530: loss 5.3181, time 1882.7ms, mfu 9.1%
+[round] iter 531: loss 5.2721, time 1718.6ms, mfu 9.2%
+[round] iter 532: loss 5.1388, time 2336.2ms, mfu 9.0%
+[round] iter 533: loss 5.3508, time 1657.0ms, mfu 9.1%
+[round] iter 534: loss 5.3649, time 1851.2ms, mfu 9.1%
+[round] iter 535: loss 5.2562, time 1778.0ms, mfu 9.1%
+[round] iter 536: loss 5.1815, time 1947.8ms, mfu 9.1%
+[round] iter 537: loss 5.1887, time 1582.0ms, mfu 9.3%
+[round] iter 538: loss 5.2779, time 2149.2ms, mfu 9.1%
+[round] iter 539: loss 5.3471, time 1974.1ms, mfu 9.1%
+[round] iter 540: loss 5.2687, time 1516.0ms, mfu 9.3%
+[round] iter 541: loss 5.1526, time 2241.9ms, mfu 9.1%
+[round] iter 542: loss 5.2366, time 1483.4ms, mfu 9.3%
+[round] iter 543: loss 5.2980, time 1816.3ms, mfu 9.3%
+[round] iter 544: loss 5.2364, time 2000.0ms, mfu 9.2%
+[round] iter 545: loss 5.3544, time 1859.2ms, mfu 9.2%
+[round] iter 546: loss 5.3228, time 2035.6ms, mfu 9.1%
+[round] iter 547: loss 5.3902, time 1776.8ms, mfu 9.1%
+[round] iter 548: loss 5.3514, time 1912.9ms, mfu 9.1%
+[round] iter 549: loss 5.2148, time 1702.2ms, mfu 9.2%
+[round] iter 550: loss 5.3084, time 1931.9ms, mfu 9.1%
+[round] iter 551: loss 5.2493, time 2190.2ms, mfu 9.0%
+[round] iter 552: loss 5.6112, time 1863.3ms, mfu 9.0%
+[round] iter 553: loss 5.4847, time 1705.2ms, mfu 9.1%
+[round] iter 554: loss 5.2370, time 1704.9ms, mfu 9.2%
+[round] iter 555: loss 5.4377, time 2420.1ms, mfu 8.9%
+[round] iter 556: loss 5.3492, time 1131.4ms, mfu 9.5%
+[round] iter 557: loss 5.3151, time 1635.8ms, mfu 9.6%
+[round] iter 558: loss 5.3794, time 1703.0ms, mfu 9.6%
+[round] iter 559: loss 5.3588, time 1979.7ms, mfu 9.5%
+[round] iter 560: loss 5.5342, time 1778.3ms, mfu 9.5%
+[round] iter 561: loss 5.3434, time 1737.7ms, mfu 9.5%
+[round] iter 562: loss 5.3560, time 1713.1ms, mfu 9.6%
+[round] iter 563: loss 5.4594, time 2085.6ms, mfu 9.4%
+[round] iter 564: loss 5.3407, time 2113.0ms, mfu 9.3%
+[round] iter 565: loss 5.3117, time 2024.1ms, mfu 9.2%
+[round] iter 566: loss 5.2050, time 1821.8ms, mfu 9.2%
+[round] iter 567: loss 5.3423, time 2315.3ms, mfu 9.0%
+[round] iter 568: loss 5.1984, time 1913.3ms, mfu 9.0%
+[round] iter 569: loss 5.1238, time 1598.5ms, mfu 9.1%
+[round] iter 570: loss 5.4735, time 1827.9ms, mfu 9.1%
+[round] iter 571: loss 5.2913, time 1965.6ms, mfu 9.1%
+[round] iter 572: loss 5.3974, time 1951.6ms, mfu 9.0%
+[round] iter 573: loss 5.1806, time 1795.8ms, mfu 9.1%
+[round] iter 574: loss 5.2821, time 1973.2ms, mfu 9.0%
+[round] iter 575: loss 5.2570, time 1767.4ms, mfu 9.1%
+[round] iter 576: loss 5.4743, time 3112.0ms, mfu 8.7%
+[round] iter 577: loss 5.2982, time 1197.1ms, mfu 9.2%
+[round] iter 578: loss 5.3508, time 1135.5ms, mfu 9.8%
+[round] iter 579: loss 5.2994, time 2304.7ms, mfu 9.5%
+[round] iter 580: loss 5.1790, time 1923.3ms, mfu 9.5%
+[round] iter 581: loss 5.2728, time 1847.3ms, mfu 9.4%
+[round] iter 582: loss 5.2829, time 1724.5ms, mfu 9.5%
+[round] iter 583: loss 5.3774, time 1967.3ms, mfu 9.4%
+[round] iter 584: loss 5.1448, time 1917.1ms, mfu 9.3%
+[round] iter 585: loss 5.2973, time 1608.1ms, mfu 9.4%
+[round] iter 586: loss 5.1250, time 1809.2ms, mfu 9.4%
+[round] iter 587: loss 5.2242, time 1734.7ms, mfu 9.4%
+[round] iter 588: loss 5.4458, time 1782.7ms, mfu 9.4%
+[round] iter 589: loss 5.2834, time 2430.1ms, mfu 9.2%
+[round] iter 590: loss 5.3752, time 1176.2ms, mfu 9.7%
+[round] iter 591: loss 5.2363, time 1703.4ms, mfu 9.7%
+[round] iter 592: loss 5.5189, time 1721.2ms, mfu 9.7%
+[round] iter 593: loss 5.2396, time 1774.3ms, mfu 9.7%
+[round] iter 594: loss 5.3897, time 1813.2ms, mfu 9.7%
+[round] iter 595: loss 5.1567, time 1941.5ms, mfu 9.6%
+[round] iter 596: loss 5.3669, time 1883.5ms, mfu 9.5%
+[round] iter 597: loss 5.3720, time 1712.4ms, mfu 9.5%
+[round] iter 598: loss 5.2556, time 1876.1ms, mfu 9.5%
+[round] iter 599: loss 5.1385, time 1878.0ms, mfu 9.4%
+[round] iter 600: loss 5.3508, time 1913.0ms, mfu 9.4%
+[round] iter 601: loss 5.2844, time 1972.3ms, mfu 9.3%
+[round] iter 602: loss 5.3780, time 1846.9ms, mfu 9.3%
+[round] iter 603: loss 5.2604, time 1935.4ms, mfu 9.2%
+[round] iter 604: loss 5.0848, time 1673.5ms, mfu 9.3%
+[round] iter 605: loss 5.2263, time 2011.4ms, mfu 9.2%
+[round] iter 606: loss 5.3164, time 1971.9ms, mfu 9.1%
+[round] iter 607: loss 5.3537, time 1817.9ms, mfu 9.1%
+[round] iter 608: loss 5.4846, time 1952.2ms, mfu 9.1%
+[round] iter 609: loss 5.0930, time 2021.9ms, mfu 9.0%
+[round] iter 610: loss 5.2687, time 1740.0ms, mfu 9.1%
+[round] iter 611: loss 5.2240, time 1741.1ms, mfu 9.1%
+[round] iter 612: loss 5.3507, time 1757.2ms, mfu 9.2%
+[round] iter 613: loss 5.3503, time 2046.3ms, mfu 9.1%
+[round] iter 614: loss 5.0870, time 1873.3ms, mfu 9.1%
+[round] iter 615: loss 5.1056, time 2268.4ms, mfu 8.9%
+[round] iter 616: loss 5.2009, time 1786.8ms, mfu 9.0%
+[round] iter 617: loss 5.1962, time 2039.3ms, mfu 8.9%
+[round] iter 618: loss 5.2341, time 2126.9ms, mfu 8.8%
+[round] iter 619: loss 5.2958, time 1753.0ms, mfu 8.9%
+[round] iter 620: loss 5.2284, time 2325.1ms, mfu 8.7%
+[round] iter 621: loss 5.3867, time 1766.8ms, mfu 8.8%
+[round] iter 622: loss 5.3624, time 1733.8ms, mfu 8.9%
+[round] iter 623: loss 5.2000, time 2036.1ms, mfu 8.8%
+[round] iter 624: loss 5.4169, time 1571.3ms, mfu 9.0%
+[round] iter 625: loss 5.1396, time 1802.8ms, mfu 9.0%
+[round] iter 626: loss 5.2196, time 1791.3ms, mfu 9.1%
+[round] iter 627: loss 5.0879, time 2013.2ms, mfu 9.0%
+[round] iter 628: loss 5.1238, time 1625.5ms, mfu 9.1%
+[round] iter 629: loss 5.2881, time 2052.5ms, mfu 9.0%
+[round] iter 630: loss 5.2159, time 2288.5ms, mfu 8.9%
+[round] iter 631: loss 5.2553, time 1831.4ms, mfu 8.9%
+[round] iter 632: loss 5.0438, time 2237.2ms, mfu 8.8%
+[round] iter 633: loss 5.0769, time 1804.4ms, mfu 8.8%
+[round] iter 634: loss 5.4631, time 1838.1ms, mfu 8.9%
+[round] iter 635: loss 5.3469, time 2175.9ms, mfu 8.7%
+[round] iter 636: loss 5.3269, time 1766.1ms, mfu 8.8%
+[round] iter 637: loss 5.1782, time 1835.1ms, mfu 8.9%
+[round] iter 638: loss 5.3373, time 1694.9ms, mfu 9.0%
+[round] iter 639: loss 5.1271, time 1946.2ms, mfu 8.9%
+[round] iter 640: loss 5.1449, time 1977.2ms, mfu 8.9%
+[round] iter 641: loss 5.0689, time 2035.8ms, mfu 8.8%
+[round] iter 642: loss 5.1735, time 1833.6ms, mfu 8.9%
+[round] iter 643: loss 5.3641, time 1960.4ms, mfu 8.8%
+[round] iter 644: loss 5.3262, time 1768.1ms, mfu 8.9%
+[round] iter 645: loss 5.0326, time 1841.5ms, mfu 8.9%
+[round] iter 646: loss 5.1742, time 1759.2ms, mfu 9.0%
+[round] iter 647: loss 5.1824, time 1664.4ms, mfu 9.1%
+[round] iter 648: loss 5.3071, time 1823.0ms, mfu 9.1%
+[round] iter 649: loss 5.0473, time 2090.7ms, mfu 9.0%
+[round] iter 650: loss 5.0166, time 1720.0ms, mfu 9.1%
+[round] iter 651: loss 5.1645, time 2072.0ms, mfu 9.0%
+[round] iter 652: loss 5.3230, time 1918.1ms, mfu 9.0%
+[round] iter 653: loss 5.1654, time 1975.5ms, mfu 8.9%
+[round] iter 654: loss 5.2111, time 2007.0ms, mfu 8.9%
+[round] iter 655: loss 5.0784, time 1804.7ms, mfu 8.9%
+[round] iter 656: loss 5.2000, time 1965.3ms, mfu 8.9%
+[round] iter 657: loss 4.9650, time 1834.4ms, mfu 8.9%
+[round] iter 658: loss 5.1900, time 2410.7ms, mfu 8.7%
+[round] iter 659: loss 5.0052, time 1789.4ms, mfu 8.8%
+[round] iter 660: loss 5.2647, time 1741.6ms, mfu 8.9%
+[round] iter 661: loss 5.3103, time 2105.3ms, mfu 8.8%
+[round] iter 662: loss 5.1553, time 1824.5ms, mfu 8.8%
+[round] iter 663: loss 5.2992, time 1880.9ms, mfu 8.8%
+[round] iter 664: loss 5.4425, time 1851.5ms, mfu 8.9%
+[round] iter 665: loss 5.1715, time 1848.8ms, mfu 8.9%
+[round] iter 666: loss 5.0476, time 1733.8ms, mfu 9.0%
+[round] iter 667: loss 5.0988, time 1891.8ms, mfu 9.0%
+[round] iter 668: loss 5.3476, time 2103.7ms, mfu 8.9%
+[round] iter 669: loss 5.2718, time 2005.2ms, mfu 8.8%
+[round] iter 670: loss 4.9854, time 1857.1ms, mfu 8.8%
+[round] iter 671: loss 5.0334, time 2034.0ms, mfu 8.8%
+[round] iter 672: loss 5.0211, time 2315.6ms, mfu 8.6%
+[round] iter 673: loss 4.8783, time 1753.2ms, mfu 8.7%
+[round] iter 674: loss 5.1720, time 1784.9ms, mfu 8.8%
+[round] iter 675: loss 5.0127, time 1579.2ms, mfu 9.0%
+[round] iter 676: loss 5.1605, time 2388.3ms, mfu 8.8%
+[round] iter 677: loss 5.0548, time 2221.4ms, mfu 8.7%
+[round] iter 678: loss 5.1767, time 1985.0ms, mfu 8.7%
+[round] iter 679: loss 4.9511, time 1735.9ms, mfu 8.8%
+[round] iter 680: loss 5.0140, time 1903.0ms, mfu 8.8%
+[round] iter 681: loss 5.0691, time 1845.9ms, mfu 8.8%
+[round] iter 682: loss 5.1378, time 1727.2ms, mfu 8.9%
+[round] iter 683: loss 5.2631, time 1999.5ms, mfu 8.8%
+[round] iter 684: loss 5.2562, time 1917.9ms, mfu 8.8%
+[round] iter 685: loss 5.1257, time 1698.2ms, mfu 8.9%
+[round] iter 686: loss 5.2035, time 1918.9ms, mfu 8.9%
+[round] iter 687: loss 5.0562, time 1840.8ms, mfu 9.0%
+[round] iter 688: loss 5.2558, time 1640.8ms, mfu 9.1%
+[round] iter 689: loss 5.0604, time 1771.1ms, mfu 9.1%
+[round] iter 690: loss 5.3187, time 1719.9ms, mfu 9.2%
+[round] iter 691: loss 5.0208, time 2112.8ms, mfu 9.1%
+[round] iter 692: loss 5.0869, time 2078.7ms, mfu 9.0%
+[round] iter 693: loss 5.1474, time 1830.7ms, mfu 9.0%
+[round] iter 694: loss 5.1196, time 1783.8ms, mfu 9.0%
+[round] iter 695: loss 5.2854, time 1896.2ms, mfu 9.0%
+[round] iter 696: loss 4.9058, time 1828.2ms, mfu 9.0%
+[round] iter 697: loss 5.2490, time 2113.4ms, mfu 8.9%
+[round] iter 698: loss 5.0898, time 2026.3ms, mfu 8.9%
+[round] iter 699: loss 5.0132, time 2082.6ms, mfu 8.8%
+[round] iter 700: loss 5.0756, time 2285.2ms, mfu 8.6%
+[round] iter 701: loss 4.9990, time 1734.3ms, mfu 8.8%
+[round] iter 702: loss 5.0692, time 1894.9ms, mfu 8.8%
+[round] iter 703: loss 5.2827, time 1708.1ms, mfu 8.9%
+[round] iter 704: loss 4.9714, time 1863.8ms, mfu 8.9%
+[round] iter 705: loss 5.0641, time 1966.6ms, mfu 8.9%
+[round] iter 706: loss 4.9442, time 1573.2ms, mfu 9.0%
+[round] iter 707: loss 5.0493, time 1914.6ms, mfu 9.0%
+[round] iter 708: loss 5.0769, time 1706.9ms, mfu 9.1%
+[round] iter 709: loss 5.1418, time 1650.8ms, mfu 9.2%
+[round] iter 710: loss 5.1330, time 1594.6ms, mfu 9.3%
+[round] iter 711: loss 5.0981, time 1793.7ms, mfu 9.3%
+[round] iter 712: loss 5.1205, time 1833.1ms, mfu 9.3%
+[round] iter 713: loss 5.1632, time 1790.6ms, mfu 9.3%
+[round] iter 714: loss 5.0999, time 1983.7ms, mfu 9.3%
+[round] iter 715: loss 4.8061, time 1722.2ms, mfu 9.3%
+[round] iter 716: loss 5.0315, time 2100.1ms, mfu 9.2%
+[round] iter 717: loss 4.9737, time 1912.4ms, mfu 9.1%
+[round] iter 718: loss 5.0071, time 1794.5ms, mfu 9.2%
+[round] iter 719: loss 4.9388, time 1748.1ms, mfu 9.2%
+[round] iter 720: loss 5.0200, time 1718.7ms, mfu 9.3%
+[round] iter 721: loss 5.0945, time 1804.8ms, mfu 9.3%
+[round] iter 722: loss 5.1565, time 1635.4ms, mfu 9.4%
+[round] iter 723: loss 4.9497, time 1725.8ms, mfu 9.4%
+[round] iter 724: loss 5.1462, time 1922.2ms, mfu 9.3%
+[round] iter 725: loss 5.0405, time 1781.6ms, mfu 9.4%
+[round] iter 726: loss 5.2265, time 1910.1ms, mfu 9.3%
+[round] iter 727: loss 5.0749, time 2065.2ms, mfu 9.2%
+[round] iter 728: loss 4.7942, time 2201.8ms, mfu 9.0%
+[round] iter 729: loss 4.9392, time 2033.3ms, mfu 9.0%
+[round] iter 730: loss 4.9098, time 1865.8ms, mfu 9.0%
+[round] iter 731: loss 5.1952, time 2085.9ms, mfu 8.9%
+[round] iter 732: loss 5.1792, time 1905.2ms, mfu 8.9%
+[round] iter 733: loss 4.9447, time 1755.1ms, mfu 8.9%
+[round] iter 734: loss 5.1807, time 1982.7ms, mfu 8.9%
+[round] iter 735: loss 4.9743, time 1793.2ms, mfu 8.9%
+[round] iter 736: loss 5.2631, time 1651.3ms, mfu 9.1%
+[round] iter 737: loss 5.0798, time 2267.6ms, mfu 8.9%
+[round] iter 738: loss 4.9199, time 1478.2ms, mfu 9.2%
+[round] iter 739: loss 4.9988, time 1899.5ms, mfu 9.1%
+[round] iter 740: loss 5.0122, time 1702.5ms, mfu 9.2%
+[round] iter 741: loss 4.9611, time 1789.2ms, mfu 9.2%
+[round] iter 742: loss 5.1598, time 1918.2ms, mfu 9.2%
+[round] iter 743: loss 5.1115, time 1884.6ms, mfu 9.2%
+[round] iter 744: loss 4.9097, time 1942.5ms, mfu 9.1%
+[round] iter 745: loss 5.0417, time 2176.6ms, mfu 9.0%
+[round] iter 746: loss 4.9322, time 1846.5ms, mfu 9.0%
+[round] iter 747: loss 4.9603, time 1640.9ms, mfu 9.1%
+[round] iter 748: loss 5.0651, time 1965.4ms, mfu 9.1%
+[round] iter 749: loss 4.8699, time 1971.6ms, mfu 9.0%
+[round] iter 750: loss 4.8892, time 2005.9ms, mfu 8.9%
+[round] iter 751: loss 4.9643, time 1878.7ms, mfu 8.9%
+[round] iter 752: loss 4.9452, time 1970.8ms, mfu 8.9%
+[round] iter 753: loss 5.0740, time 1819.6ms, mfu 8.9%
+[round] iter 754: loss 4.9358, time 1932.8ms, mfu 8.9%
+[round] iter 755: loss 4.8468, time 1977.1ms, mfu 8.9%
+[round] iter 756: loss 5.0809, time 1737.4ms, mfu 9.0%
+[round] iter 757: loss 5.0342, time 2762.2ms, mfu 8.7%
+[round] iter 758: loss 4.9845, time 1175.7ms, mfu 9.2%
+[round] iter 759: loss 5.2086, time 2018.7ms, mfu 9.1%
+[round] iter 760: loss 5.0526, time 2083.1ms, mfu 9.0%
+[round] iter 761: loss 4.8665, time 2234.1ms, mfu 8.9%
+[round] iter 762: loss 4.9002, time 1766.7ms, mfu 9.0%
+[round] iter 763: loss 5.0406, time 1807.2ms, mfu 9.0%
+[round] iter 764: loss 4.8201, time 1886.7ms, mfu 9.0%
+[round] iter 765: loss 4.9389, time 1986.6ms, mfu 8.9%
+[round] iter 766: loss 4.9610, time 1945.9ms, mfu 8.9%
+[round] iter 767: loss 5.0692, time 1870.3ms, mfu 8.9%
+[round] iter 768: loss 5.1179, time 1769.7ms, mfu 9.0%
+[round] iter 769: loss 5.1725, time 1819.9ms, mfu 9.0%
+[round] iter 770: loss 5.0261, time 1987.7ms, mfu 8.9%
+[round] iter 771: loss 5.0341, time 1659.5ms, mfu 9.1%
+[round] iter 772: loss 5.0072, time 1711.1ms, mfu 9.1%
+[round] iter 773: loss 5.0159, time 1761.0ms, mfu 9.2%
+[round] iter 774: loss 5.0825, time 2155.6ms, mfu 9.0%
+[round] iter 775: loss 4.8835, time 1951.1ms, mfu 9.0%
+[round] iter 776: loss 4.9208, time 1677.0ms, mfu 9.1%
+[round] iter 777: loss 5.1935, time 1786.3ms, mfu 9.1%
+[round] iter 778: loss 4.8832, time 1854.2ms, mfu 9.1%
+[round] iter 779: loss 4.8532, time 1813.1ms, mfu 9.1%
+[round] iter 780: loss 4.8511, time 2122.8ms, mfu 9.0%
+[round] iter 781: loss 5.0632, time 1994.1ms, mfu 9.0%
+[round] iter 782: loss 5.0164, time 1561.5ms, mfu 9.1%
+[round] iter 783: loss 4.9628, time 1655.9ms, mfu 9.3%
+[round] iter 784: loss 4.8202, time 1727.7ms, mfu 9.3%
+[round] iter 785: loss 5.0169, time 2254.2ms, mfu 9.1%
+[round] iter 786: loss 4.8322, time 1875.4ms, mfu 9.1%
+[round] iter 787: loss 5.1632, time 2037.6ms, mfu 9.0%
+[round] iter 788: loss 4.8181, time 1427.0ms, mfu 9.3%
+[round] iter 789: loss 5.0948, time 1835.1ms, mfu 9.3%
+[round] iter 790: loss 4.8620, time 1873.3ms, mfu 9.3%
+[round] iter 791: loss 4.8684, time 2082.1ms, mfu 9.1%
+[round] iter 792: loss 4.9803, time 1696.1ms, mfu 9.2%
+[round] iter 793: loss 4.9577, time 1990.1ms, mfu 9.1%
+[round] iter 794: loss 5.0594, time 1768.6ms, mfu 9.2%
+[round] iter 795: loss 5.0436, time 1695.8ms, mfu 9.3%
+[round] iter 796: loss 4.8233, time 1702.7ms, mfu 9.3%
+[round] iter 797: loss 4.8690, time 1600.1ms, mfu 9.4%
+[round] iter 798: loss 5.0078, time 1954.9ms, mfu 9.4%
+[round] iter 799: loss 5.0439, time 2017.6ms, mfu 9.3%
+[round] iter 800: loss 4.9762, time 2031.6ms, mfu 9.2%
+[round] iter 801: loss 5.1065, time 2024.7ms, mfu 9.1%
+[round] iter 802: loss 4.8175, time 1718.6ms, mfu 9.1%
+[round] iter 803: loss 4.8715, time 1708.1ms, mfu 9.2%
+[round] iter 804: loss 4.9918, time 1767.9ms, mfu 9.2%
+[round] iter 805: loss 4.6937, time 1810.3ms, mfu 9.3%
+[round] iter 806: loss 5.0243, time 1960.5ms, mfu 9.2%
+[round] iter 807: loss 5.1196, time 1775.8ms, mfu 9.2%
+[round] iter 808: loss 5.0190, time 1875.6ms, mfu 9.2%
+[round] iter 809: loss 4.7576, time 1802.4ms, mfu 9.2%
+[round] iter 810: loss 4.9635, time 2105.1ms, mfu 9.1%
+[round] iter 811: loss 4.7744, time 1712.4ms, mfu 9.2%
+[round] iter 812: loss 4.7508, time 1635.5ms, mfu 9.3%
+[round] iter 813: loss 5.1486, time 1804.9ms, mfu 9.3%
+[round] iter 814: loss 4.6789, time 1720.2ms, mfu 9.3%
+[round] iter 815: loss 5.0784, time 1761.8ms, mfu 9.4%
+[round] iter 816: loss 4.9414, time 2099.7ms, mfu 9.2%
+[round] iter 817: loss 4.9509, time 1836.4ms, mfu 9.2%
+[round] iter 818: loss 4.8219, time 1658.3ms, mfu 9.3%
+[round] iter 819: loss 4.8803, time 1738.7ms, mfu 9.3%
+[round] iter 820: loss 4.8499, time 1707.0ms, mfu 9.4%
+[round] iter 821: loss 5.0403, time 1618.8ms, mfu 9.5%
+[round] iter 822: loss 4.9535, time 1756.1ms, mfu 9.5%
+[round] iter 823: loss 4.9843, time 1851.4ms, mfu 9.5%
+[round] iter 824: loss 4.9649, time 1795.1ms, mfu 9.5%
+[round] iter 825: loss 5.1362, time 1814.9ms, mfu 9.4%
+[round] iter 826: loss 4.7916, time 1950.8ms, mfu 9.4%
+[round] iter 827: loss 4.9754, time 1863.7ms, mfu 9.3%
+[round] iter 828: loss 5.0395, time 2075.0ms, mfu 9.2%
+[round] iter 829: loss 4.7124, time 1631.5ms, mfu 9.3%
+[round] iter 830: loss 5.1558, time 1721.2ms, mfu 9.4%
+[round] iter 831: loss 4.8701, time 1754.4ms, mfu 9.4%
+[round] iter 832: loss 5.0195, time 1745.2ms, mfu 9.4%
+[round] iter 833: loss 4.8931, time 1862.4ms, mfu 9.4%
+[round] iter 834: loss 4.6888, time 1881.3ms, mfu 9.3%
+[round] iter 835: loss 4.8445, time 1725.1ms, mfu 9.4%
+[round] iter 836: loss 4.6624, time 1565.4ms, mfu 9.5%
+[round] iter 837: loss 4.8897, time 1802.0ms, mfu 9.5%
+[round] iter 838: loss 4.8824, time 1729.0ms, mfu 9.5%
+[round] iter 839: loss 4.8970, time 2714.1ms, mfu 9.2%
+[round] iter 840: loss 5.0580, time 1250.2ms, mfu 9.6%
+[round] iter 841: loss 4.8477, time 1556.6ms, mfu 9.7%
+[round] iter 842: loss 4.7050, time 1666.7ms, mfu 9.8%
+[round] iter 843: loss 4.9989, time 1803.6ms, mfu 9.7%
+[round] iter 844: loss 4.7474, time 1937.8ms, mfu 9.6%
+[round] iter 845: loss 4.8854, time 1877.5ms, mfu 9.6%
+[round] iter 846: loss 4.7484, time 1833.0ms, mfu 9.5%
+[round] iter 847: loss 4.9640, time 1818.1ms, mfu 9.5%
+[round] iter 848: loss 4.8040, time 1966.9ms, mfu 9.4%
+[round] iter 849: loss 4.8483, time 1725.3ms, mfu 9.4%
+[round] iter 850: loss 4.8090, time 2184.0ms, mfu 9.3%
+[round] iter 851: loss 5.0144, time 1716.1ms, mfu 9.3%
+[round] iter 852: loss 4.8283, time 1846.4ms, mfu 9.3%
+[round] iter 853: loss 4.8714, time 1777.8ms, mfu 9.3%
+[round] iter 854: loss 4.8134, time 2052.7ms, mfu 9.2%
+[round] iter 855: loss 4.9724, time 1977.2ms, mfu 9.1%
+[round] iter 856: loss 5.1787, time 1784.3ms, mfu 9.2%
+[round] iter 857: loss 4.8864, time 1977.2ms, mfu 9.1%
+[round] iter 858: loss 4.8159, time 1907.0ms, mfu 9.1%
+[round] iter 859: loss 5.0100, time 2198.9ms, mfu 8.9%
+[round] iter 860: loss 4.7368, time 1775.2ms, mfu 9.0%
+[round] iter 861: loss 5.0434, time 1718.0ms, mfu 9.1%
+[round] iter 862: loss 4.8537, time 1816.2ms, mfu 9.1%
+[round] iter 863: loss 4.8329, time 1874.4ms, mfu 9.1%
+[round] iter 864: loss 4.9097, time 1995.4ms, mfu 9.0%
+[round] iter 865: loss 4.7952, time 1827.3ms, mfu 9.0%
+[round] iter 866: loss 5.0022, time 2289.7ms, mfu 8.9%
+[round] iter 867: loss 4.9962, time 1795.5ms, mfu 8.9%
+[round] iter 868: loss 4.9038, time 1824.6ms, mfu 8.9%
+[round] iter 869: loss 4.9003, time 1808.3ms, mfu 9.0%
+[round] iter 870: loss 4.8676, time 1799.6ms, mfu 9.0%
+[round] iter 871: loss 4.7298, time 1867.3ms, mfu 9.0%
+[round] iter 872: loss 4.8821, time 1788.5ms, mfu 9.1%
+[round] iter 873: loss 4.8666, time 1710.2ms, mfu 9.1%
+[round] iter 874: loss 4.9859, time 1754.5ms, mfu 9.2%
+[round] iter 875: loss 4.7149, time 1869.7ms, mfu 9.2%
+[round] iter 876: loss 4.7448, time 1834.1ms, mfu 9.2%
+[round] iter 877: loss 4.7879, time 2173.5ms, mfu 9.0%
+[round] iter 878: loss 4.9670, time 1581.1ms, mfu 9.2%
+[round] iter 879: loss 4.6709, time 2278.0ms, mfu 9.0%
+[round] iter 880: loss 4.8183, time 1650.1ms, mfu 9.1%
+[round] iter 881: loss 4.8136, time 2023.0ms, mfu 9.0%
+[round] iter 882: loss 4.7466, time 1842.7ms, mfu 9.1%
+[round] iter 883: loss 4.7731, time 1860.4ms, mfu 9.1%
+[round] iter 884: loss 4.7652, time 2128.9ms, mfu 8.9%
+[round] iter 885: loss 4.8517, time 2144.5ms, mfu 8.8%
+[round] iter 886: loss 4.7362, time 1330.5ms, mfu 9.2%
+[round] iter 887: loss 4.8264, time 1992.3ms, mfu 9.1%
+[round] iter 888: loss 4.7493, time 2166.5ms, mfu 9.0%
+[round] iter 889: loss 4.6681, time 1579.7ms, mfu 9.2%
+[round] iter 890: loss 4.9127, time 1826.7ms, mfu 9.2%
+[round] iter 891: loss 4.6887, time 1796.1ms, mfu 9.2%
+[round] iter 892: loss 4.8360, time 1865.3ms, mfu 9.2%
+[round] iter 893: loss 4.6733, time 4887.5ms, mfu 8.6%
+[round] iter 894: loss 4.9049, time 2026.2ms, mfu 8.6%
+[round] iter 895: loss 4.6034, time 2144.2ms, mfu 8.5%
+[round] iter 896: loss 5.1318, time 2175.3ms, mfu 8.4%
+[round] iter 897: loss 4.7420, time 1601.1ms, mfu 8.6%
+[round] iter 898: loss 4.8388, time 1791.0ms, mfu 8.7%
+[round] iter 899: loss 4.8467, time 1696.1ms, mfu 8.8%
+[round] iter 900: loss 4.7204, time 1910.7ms, mfu 8.8%
+[round] iter 901: loss 4.9760, time 1772.7ms, mfu 8.9%
+[round] iter 902: loss 4.8493, time 1614.6ms, mfu 9.0%
+[round] iter 903: loss 5.0143, time 1762.1ms, mfu 9.1%
+[round] iter 904: loss 4.8225, time 1968.0ms, mfu 9.0%
+[round] iter 905: loss 5.0714, time 1772.7ms, mfu 9.1%
+[round] iter 906: loss 5.1985, time 1774.2ms, mfu 9.1%
+[round] iter 907: loss 4.7973, time 1862.9ms, mfu 9.1%
+[round] iter 908: loss 4.8358, time 1856.8ms, mfu 9.1%
+[round] iter 909: loss 4.8439, time 1726.4ms, mfu 9.2%
+[round] iter 910: loss 4.7430, time 1637.2ms, mfu 9.3%
+[round] iter 911: loss 4.9180, time 2063.7ms, mfu 9.2%
+[round] iter 912: loss 4.8482, time 1559.9ms, mfu 9.3%
+[round] iter 913: loss 4.7116, time 1832.4ms, mfu 9.3%
+[round] iter 914: loss 4.7037, time 1948.5ms, mfu 9.3%
+[round] iter 915: loss 4.6278, time 1834.1ms, mfu 9.2%
+[round] iter 916: loss 4.9152, time 1610.9ms, mfu 9.4%
+[round] iter 917: loss 4.6961, time 1791.5ms, mfu 9.4%
+[round] iter 918: loss 4.8799, time 1867.2ms, mfu 9.3%
+[round] iter 919: loss 4.5974, time 1785.8ms, mfu 9.3%
+[round] iter 920: loss 4.9127, time 1708.0ms, mfu 9.4%
+[round] iter 921: loss 4.7465, time 1848.3ms, mfu 9.4%
+[round] iter 922: loss 4.6699, time 5268.3ms, mfu 8.7%
+[round] iter 923: loss 4.6241, time 1892.7ms, mfu 8.8%
+[round] iter 924: loss 4.6982, time 1963.3ms, mfu 8.7%
+[round] iter 925: loss 4.6571, time 1710.8ms, mfu 8.9%
+[round] iter 926: loss 4.8044, time 1949.8ms, mfu 8.8%
+[round] iter 927: loss 4.8335, time 1799.5ms, mfu 8.9%
+[round] iter 928: loss 4.6728, time 1752.1ms, mfu 9.0%
+[round] iter 929: loss 4.6018, time 1955.6ms, mfu 8.9%
+[round] iter 930: loss 4.7926, time 1840.1ms, mfu 8.9%
+[round] iter 931: loss 4.8304, time 1742.2ms, mfu 9.0%
+[round] iter 932: loss 4.7681, time 1794.6ms, mfu 9.1%
+[round] iter 933: loss 4.7589, time 1984.5ms, mfu 9.0%
+[round] iter 934: loss 4.8548, time 1908.4ms, mfu 9.0%
+[round] iter 935: loss 4.5504, time 1918.9ms, mfu 9.0%
+[round] iter 936: loss 4.8314, time 1673.7ms, mfu 9.1%
+[round] iter 937: loss 4.8397, time 1634.7ms, mfu 9.2%
+[round] iter 938: loss 4.6417, time 1880.7ms, mfu 9.2%
+[round] iter 939: loss 4.7542, time 1886.5ms, mfu 9.1%
+[round] iter 940: loss 4.6453, time 1779.5ms, mfu 9.2%
+[round] iter 941: loss 4.6724, time 2160.3ms, mfu 9.0%
+[round] iter 942: loss 4.6833, time 1783.4ms, mfu 9.1%
+[round] iter 943: loss 4.5911, time 1848.9ms, mfu 9.1%
+[round] iter 944: loss 4.7234, time 1747.9ms, mfu 9.1%
+[round] iter 945: loss 4.9355, time 2385.8ms, mfu 8.9%
+[round] iter 946: loss 4.7042, time 1633.5ms, mfu 9.1%
+[round] iter 947: loss 4.6703, time 1669.8ms, mfu 9.2%
+[round] iter 948: loss 4.8183, time 1637.6ms, mfu 9.3%
+[round] iter 949: loss 4.8156, time 1973.0ms, mfu 9.2%
+[round] iter 950: loss 4.6124, time 1674.0ms, mfu 9.3%
+[round] iter 951: loss 4.6376, time 2002.3ms, mfu 9.2%
+[round] iter 952: loss 4.7991, time 1875.6ms, mfu 9.2%
+[round] iter 953: loss 4.7257, time 1509.3ms, mfu 9.4%
+[round] iter 954: loss 4.6186, time 2040.2ms, mfu 9.3%
+[round] iter 955: loss 4.8432, time 1938.8ms, mfu 9.2%
+[round] iter 956: loss 4.7139, time 1827.4ms, mfu 9.2%
+[round] iter 957: loss 4.6479, time 1647.9ms, mfu 9.3%
+[round] iter 958: loss 4.7681, time 1610.2ms, mfu 9.4%
+[round] iter 959: loss 4.6667, time 1742.7ms, mfu 9.4%
+[round] iter 960: loss 4.7204, time 1738.8ms, mfu 9.5%
+[round] iter 961: loss 4.5571, time 1869.2ms, mfu 9.4%
+[round] iter 962: loss 4.7934, time 1787.1ms, mfu 9.4%
+[round] iter 963: loss 4.5782, time 1694.7ms, mfu 9.5%
+[round] iter 964: loss 4.6239, time 1762.9ms, mfu 9.5%
+[round] iter 965: loss 4.8507, time 2033.0ms, mfu 9.4%
+[round] iter 966: loss 4.7260, time 1945.9ms, mfu 9.3%
+[round] iter 967: loss 4.6717, time 2111.9ms, mfu 9.2%
+[round] iter 968: loss 4.6780, time 1873.9ms, mfu 9.1%
+[round] iter 969: loss 4.7801, time 1995.2ms, mfu 9.1%
+[round] iter 970: loss 4.8262, time 2324.9ms, mfu 8.9%
+[round] iter 971: loss 4.6737, time 1591.3ms, mfu 9.1%
+[round] iter 972: loss 4.7537, time 1704.2ms, mfu 9.1%
+[round] iter 973: loss 4.6162, time 1737.2ms, mfu 9.2%
+[round] iter 974: loss 4.7735, time 1444.5ms, mfu 9.4%
+[round] iter 975: loss 4.6752, time 2000.9ms, mfu 9.3%
+[round] iter 976: loss 4.8943, time 1546.6ms, mfu 9.5%
+[round] iter 977: loss 4.5349, time 1687.2ms, mfu 9.5%
+[round] iter 978: loss 4.6717, time 1609.3ms, mfu 9.6%
+[round] iter 979: loss 4.6260, time 1771.2ms, mfu 9.6%
+[round] iter 980: loss 4.7348, time 1782.0ms, mfu 9.6%
+[round] iter 981: loss 4.3509, time 1879.1ms, mfu 9.5%
+[round] iter 982: loss 4.7101, time 1739.6ms, mfu 9.6%
+[round] iter 983: loss 4.4454, time 1864.8ms, mfu 9.5%
+[round] iter 984: loss 4.8021, time 1740.1ms, mfu 9.5%
+[round] iter 985: loss 4.5825, time 1537.2ms, mfu 9.7%
+[round] iter 986: loss 4.7755, time 1782.0ms, mfu 9.6%
+[round] iter 987: loss 4.6212, time 1515.2ms, mfu 9.8%
+[round] iter 988: loss 4.6481, time 1593.8ms, mfu 9.9%
+[round] iter 989: loss 4.6407, time 3214.9ms, mfu 9.4%
+[round] iter 990: loss 4.8517, time 1727.9ms, mfu 9.4%
+[round] iter 991: loss 4.7354, time 2221.3ms, mfu 9.2%
+[round] iter 992: loss 4.8342, time 1437.5ms, mfu 9.5%
+[round] iter 993: loss 4.7122, time 1753.8ms, mfu 9.5%
+[round] iter 994: loss 4.4854, time 1695.9ms, mfu 9.5%
+[round] iter 995: loss 4.5290, time 1679.3ms, mfu 9.6%
+[round] iter 996: loss 4.6353, time 1711.5ms, mfu 9.6%
+[round] iter 997: loss 4.6859, time 2089.5ms, mfu 9.5%
+[round] iter 998: loss 4.4843, time 2136.8ms, mfu 9.3%
+[round] iter 999: loss 4.6877, time 1802.6ms, mfu 9.3%
+[round] step 1000: train 4.6463, val 4.6543, ppl 105.0319
+[round] iter 1000: loss 4.5672, time 74354.4ms, mfu 8.4%
+[round] iter 1001: loss 4.5079, time 1296.6ms, mfu 8.9%
+[round] iter 1002: loss 4.6842, time 1196.0ms, mfu 9.4%
+[round] iter 1003: loss 4.6957, time 1259.7ms, mfu 9.8%
+[round] iter 1004: loss 4.6404, time 1021.3ms, mfu 10.4%
+[round] iter 1005: loss 4.7494, time 2631.3ms, mfu 10.0%
+[round] iter 1006: loss 4.6704, time 2118.9ms, mfu 9.8%
+[round] iter 1007: loss 4.5910, time 1038.3ms, mfu 10.5%
+[round] iter 1008: loss 4.6128, time 1105.2ms, mfu 10.9%
+[round] iter 1009: loss 4.5400, time 1159.1ms, mfu 11.3%
+[round] iter 1010: loss 4.5321, time 1102.6ms, mfu 11.7%
+[round] iter 1011: loss 4.7160, time 1044.4ms, mfu 12.1%
+[round] iter 1012: loss 4.9826, time 1025.8ms, mfu 12.6%
+[round] iter 1013: loss 4.6437, time 1073.3ms, mfu 12.9%
+[round] iter 1014: loss 4.6448, time 2387.5ms, mfu 12.3%
+[round] iter 1015: loss 4.6320, time 1664.7ms, mfu 12.1%
+[round] iter 1016: loss 4.3880, time 1004.4ms, mfu 12.5%
+[round] iter 1017: loss 4.6263, time 1168.9ms, mfu 12.7%
+[round] iter 1018: loss 4.4553, time 1405.0ms, mfu 12.7%
+[round] iter 1019: loss 4.4850, time 1175.6ms, mfu 12.8%
+[round] iter 1020: loss 4.5956, time 1312.8ms, mfu 12.8%
+[round] iter 1021: loss 4.5046, time 1085.7ms, mfu 13.1%
+[round] iter 1022: loss 4.5594, time 1109.2ms, mfu 13.3%
+[round] iter 1023: loss 4.5045, time 2098.9ms, mfu 12.8%
+[round] iter 1024: loss 4.5482, time 1172.1ms, mfu 12.9%
+[round] iter 1025: loss 4.5766, time 1059.4ms, mfu 13.2%
+[round] iter 1026: loss 4.4332, time 1092.8ms, mfu 13.4%
+[round] iter 1027: loss 4.5882, time 1732.3ms, mfu 13.1%
+[round] iter 1028: loss 4.6485, time 2018.8ms, mfu 12.6%
+[round] iter 1029: loss 4.4002, time 1681.9ms, mfu 12.3%
+[round] iter 1030: loss 4.5320, time 1836.6ms, mfu 12.0%
+[round] iter 1031: loss 4.4072, time 2084.0ms, mfu 11.6%
+[round] iter 1032: loss 4.6283, time 1850.3ms, mfu 11.4%
+[round] iter 1033: loss 4.5806, time 1873.7ms, mfu 11.1%
+[round] iter 1034: loss 4.6134, time 1848.1ms, mfu 10.9%
+[round] iter 1035: loss 4.6358, time 2495.6ms, mfu 10.5%
+[round] iter 1036: loss 4.6808, time 1876.6ms, mfu 10.4%
+[round] iter 1037: loss 4.6925, time 1780.8ms, mfu 10.3%
+[round] iter 1038: loss 4.4345, time 1876.7ms, mfu 10.1%
+[round] iter 1039: loss 4.7428, time 1711.2ms, mfu 10.1%
+[round] iter 1040: loss 4.5361, time 1780.6ms, mfu 10.0%
+[round] iter 1041: loss 4.4591, time 2346.9ms, mfu 9.8%
+[round] iter 1042: loss 4.5012, time 1790.4ms, mfu 9.7%
+[round] iter 1043: loss 4.5810, time 1910.5ms, mfu 9.6%
+[round] iter 1044: loss 4.8063, time 1791.6ms, mfu 9.6%
+[round] iter 1045: loss 4.6131, time 1683.4ms, mfu 9.6%
+[round] iter 1046: loss 4.7618, time 2137.2ms, mfu 9.5%
+[round] iter 1047: loss 4.4699, time 1660.3ms, mfu 9.5%
+[round] iter 1048: loss 4.6043, time 1820.9ms, mfu 9.5%
+[round] iter 1049: loss 4.4527, time 1705.6ms, mfu 9.5%
+[round] iter 1050: loss 4.5650, time 1834.4ms, mfu 9.5%
+[round] iter 1051: loss 4.6603, time 1619.8ms, mfu 9.6%
+[round] iter 1052: loss 4.6597, time 1708.4ms, mfu 9.6%
+[round] iter 1053: loss 4.5254, time 2124.5ms, mfu 9.5%
+[round] iter 1054: loss 4.5831, time 1199.4ms, mfu 9.9%
+[round] iter 1055: loss 4.2937, time 1836.6ms, mfu 9.8%
+[round] iter 1056: loss 4.6481, time 1713.4ms, mfu 9.8%
+[round] iter 1057: loss 4.6540, time 1889.6ms, mfu 9.7%
+[round] iter 1058: loss 4.7294, time 3055.5ms, mfu 9.3%
+[round] iter 1059: loss 4.6026, time 1030.8ms, mfu 10.0%
+[round] iter 1060: loss 4.5726, time 1669.5ms, mfu 10.0%
+[round] iter 1061: loss 4.4687, time 1767.6ms, mfu 10.0%
+[round] iter 1062: loss 4.8274, time 2070.9ms, mfu 9.8%
+[round] iter 1063: loss 4.6759, time 1456.8ms, mfu 10.0%
+[round] iter 1064: loss 4.5832, time 1725.3ms, mfu 9.9%
+[round] iter 1065: loss 4.6507, time 1798.6ms, mfu 9.9%
+[round] iter 1066: loss 4.4765, time 1712.4ms, mfu 9.9%
+[round] iter 1067: loss 4.4699, time 1626.3ms, mfu 9.9%
+[round] iter 1068: loss 4.6274, time 2066.5ms, mfu 9.7%
+[round] iter 1069: loss 4.5888, time 1319.6ms, mfu 10.1%
+[round] iter 1070: loss 4.6871, time 1622.2ms, mfu 10.1%
+[round] iter 1071: loss 4.5572, time 1592.3ms, mfu 10.1%
+[round] iter 1072: loss 4.4891, time 1745.4ms, mfu 10.1%
+[round] iter 1073: loss 4.6353, time 1868.7ms, mfu 10.0%
+[round] iter 1074: loss 4.6486, time 1844.7ms, mfu 9.9%
+[round] iter 1075: loss 4.4722, time 1669.1ms, mfu 9.9%
+[round] iter 1076: loss 4.6119, time 1793.3ms, mfu 9.9%
+[round] iter 1077: loss 4.4439, time 1824.2ms, mfu 9.8%
+[round] iter 1078: loss 4.7086, time 1631.3ms, mfu 9.8%
+[round] iter 1079: loss 4.6243, time 1803.7ms, mfu 9.8%
+[round] iter 1080: loss 4.4913, time 1703.6ms, mfu 9.8%
+[round] iter 1081: loss 4.5163, time 1624.6ms, mfu 9.9%
+[round] iter 1082: loss 4.5502, time 1782.3ms, mfu 9.8%
+[round] iter 1083: loss 4.4698, time 1666.2ms, mfu 9.8%
+[round] iter 1084: loss 5.1299, time 1811.6ms, mfu 9.8%
+[round] iter 1085: loss 4.5677, time 1712.2ms, mfu 9.8%
+[round] iter 1086: loss 4.6333, time 2677.1ms, mfu 9.4%
+[round] iter 1087: loss 4.5330, time 1808.9ms, mfu 9.4%
+[round] iter 1088: loss 4.4436, time 1890.9ms, mfu 9.4%
+[round] iter 1089: loss 4.6307, time 1868.8ms, mfu 9.3%
+[round] iter 1090: loss 4.4949, time 2062.4ms, mfu 9.2%
+[round] iter 1091: loss 4.4076, time 1898.3ms, mfu 9.2%
+[round] iter 1092: loss 4.5140, time 1737.9ms, mfu 9.2%
+[round] iter 1093: loss 4.3254, time 2026.0ms, mfu 9.1%
+[round] iter 1094: loss 4.6880, time 1558.2ms, mfu 9.3%
+[round] iter 1095: loss 4.3891, time 1899.8ms, mfu 9.3%
+[round] iter 1096: loss 4.3684, time 1638.4ms, mfu 9.4%
+[round] iter 1097: loss 4.6570, time 1778.7ms, mfu 9.4%
+[round] iter 1098: loss 4.4519, time 1843.4ms, mfu 9.4%
+[round] iter 1099: loss 4.5851, time 2018.0ms, mfu 9.2%
+[round] iter 1100: loss 4.5341, time 1897.8ms, mfu 9.2%
+[round] iter 1101: loss 4.5356, time 1787.7ms, mfu 9.2%
+[round] iter 1102: loss 4.5246, time 1719.8ms, mfu 9.3%
+[round] iter 1103: loss 4.5080, time 2084.9ms, mfu 9.2%
+[round] iter 1104: loss 4.5154, time 1193.8ms, mfu 9.7%
+[round] iter 1105: loss 4.4746, time 1559.1ms, mfu 9.8%
+[round] iter 1106: loss 4.5847, time 1672.3ms, mfu 9.8%
+[round] iter 1107: loss 4.2641, time 1742.4ms, mfu 9.8%
+[round] iter 1108: loss 4.5470, time 1809.2ms, mfu 9.7%
+[round] iter 1109: loss 4.5145, time 1710.1ms, mfu 9.8%
+[round] iter 1110: loss 4.5916, time 1846.9ms, mfu 9.7%
+[round] iter 1111: loss 4.4567, time 1657.0ms, mfu 9.7%
+[round] iter 1112: loss 4.4034, time 1734.3ms, mfu 9.7%
+[round] iter 1113: loss 4.5061, time 1884.8ms, mfu 9.7%
+[round] iter 1114: loss 4.4790, time 1812.9ms, mfu 9.6%
+[round] iter 1115: loss 4.8310, time 1621.0ms, mfu 9.7%
+[round] iter 1116: loss 4.6115, time 1877.0ms, mfu 9.6%
+[round] iter 1117: loss 4.4446, time 1861.2ms, mfu 9.6%
+[round] iter 1118: loss 4.5576, time 1880.7ms, mfu 9.5%
+[round] iter 1119: loss 4.3542, time 1912.0ms, mfu 9.4%
+[round] iter 1120: loss 4.4552, time 1593.5ms, mfu 9.5%
+[round] iter 1121: loss 4.4649, time 1726.0ms, mfu 9.6%
+[round] iter 1122: loss 4.3569, time 1634.5ms, mfu 9.6%
+[round] iter 1123: loss 4.7160, time 1776.2ms, mfu 9.6%
+[round] iter 1124: loss 4.4591, time 1706.7ms, mfu 9.6%
+[round] iter 1125: loss 4.4394, time 1894.2ms, mfu 9.6%
+[round] iter 1126: loss 4.4179, time 1761.0ms, mfu 9.6%
+[round] iter 1127: loss 4.4102, time 1900.2ms, mfu 9.5%
+[round] iter 1128: loss 4.3309, time 1895.3ms, mfu 9.4%
+[round] iter 1129: loss 4.4365, time 1784.5ms, mfu 9.4%
+[round] iter 1130: loss 4.4611, time 1786.8ms, mfu 9.4%
+[round] iter 1131: loss 4.4474, time 1624.5ms, mfu 9.5%
+[round] iter 1132: loss 4.4609, time 1795.1ms, mfu 9.5%
+[round] iter 1133: loss 4.5575, time 1896.3ms, mfu 9.4%
+[round] iter 1134: loss 4.6637, time 1758.8ms, mfu 9.5%
+[round] iter 1135: loss 4.5454, time 1883.1ms, mfu 9.4%
+[round] iter 1136: loss 4.5410, time 1822.3ms, mfu 9.4%
+[round] iter 1137: loss 4.4914, time 1687.4ms, mfu 9.4%
+[round] iter 1138: loss 4.3466, time 1659.9ms, mfu 9.5%
+[round] iter 1139: loss 4.4211, time 1855.5ms, mfu 9.5%
+[round] iter 1140: loss 4.4760, time 1730.4ms, mfu 9.5%
+[round] iter 1141: loss 4.4656, time 1785.4ms, mfu 9.5%
+[round] iter 1142: loss 4.4029, time 1758.3ms, mfu 9.5%
+[round] iter 1143: loss 4.5359, time 1616.6ms, mfu 9.6%
+[round] iter 1144: loss 4.6583, time 2048.3ms, mfu 9.5%
+[round] iter 1145: loss 4.4215, time 2026.7ms, mfu 9.3%
+[round] iter 1146: loss 4.2366, time 1501.1ms, mfu 9.5%
+[round] iter 1147: loss 4.3696, time 1819.1ms, mfu 9.5%
+[round] iter 1148: loss 4.4840, time 3450.0ms, mfu 9.0%
+[round] iter 1149: loss 4.4456, time 1655.6ms, mfu 9.2%
+[round] iter 1150: loss 4.2909, time 1771.7ms, mfu 9.2%
+[round] iter 1151: loss 4.5071, time 1675.5ms, mfu 9.3%
+[round] iter 1152: loss 4.5097, time 1840.0ms, mfu 9.3%
+[round] iter 1153: loss 4.5542, time 1772.2ms, mfu 9.3%
+[round] iter 1154: loss 4.5073, time 1885.2ms, mfu 9.2%
+[round] iter 1155: loss 4.5461, time 1865.0ms, mfu 9.2%
+[round] iter 1156: loss 4.3116, time 1938.7ms, mfu 9.2%
+[round] iter 1157: loss 4.2480, time 1939.8ms, mfu 9.1%
+[round] iter 1158: loss 4.4289, time 2024.4ms, mfu 9.0%
+[round] iter 1159: loss 4.5577, time 1813.3ms, mfu 9.1%
+[round] iter 1160: loss 4.5430, time 1886.0ms, mfu 9.1%
+[round] iter 1161: loss 4.4976, time 1739.1ms, mfu 9.1%
+[round] iter 1162: loss 4.5955, time 1718.4ms, mfu 9.2%
+[round] iter 1163: loss 4.3297, time 2116.5ms, mfu 9.1%
+[round] iter 1164: loss 4.3831, time 1675.8ms, mfu 9.2%
+[round] iter 1165: loss 4.4695, time 1979.0ms, mfu 9.1%
+[round] iter 1166: loss 4.3767, time 1770.0ms, mfu 9.1%
+[round] iter 1167: loss 4.5904, time 1843.9ms, mfu 9.1%
+[round] iter 1168: loss 4.2709, time 1856.5ms, mfu 9.1%
+[round] iter 1169: loss 4.6457, time 1843.3ms, mfu 9.1%
+[round] iter 1170: loss 4.4092, time 1799.0ms, mfu 9.2%
+[round] iter 1171: loss 4.4956, time 1946.5ms, mfu 9.1%
+[round] iter 1172: loss 4.3499, time 1572.0ms, mfu 9.3%
+[round] iter 1173: loss 4.4982, time 1841.3ms, mfu 9.2%
+[round] iter 1174: loss 4.4286, time 1797.1ms, mfu 9.3%
+[round] iter 1175: loss 4.3046, time 1638.0ms, mfu 9.4%
+[round] iter 1176: loss 4.3329, time 1938.0ms, mfu 9.3%
+[round] iter 1177: loss 4.6020, time 1841.3ms, mfu 9.3%
+[round] iter 1178: loss 4.4100, time 1846.0ms, mfu 9.3%
+[round] iter 1179: loss 4.4098, time 1576.5ms, mfu 9.4%
+[round] iter 1180: loss 4.4900, time 1850.8ms, mfu 9.4%
+[round] iter 1181: loss 4.3764, time 2158.5ms, mfu 9.2%
+[round] iter 1182: loss 4.3991, time 1403.6ms, mfu 9.5%
+[round] iter 1183: loss 4.4296, time 1721.7ms, mfu 9.5%
+[round] iter 1184: loss 4.5604, time 1884.3ms, mfu 9.5%
+[round] iter 1185: loss 4.4942, time 1707.5ms, mfu 9.5%
+[round] iter 1186: loss 4.5788, time 2031.7ms, mfu 9.4%
+[round] iter 1187: loss 4.4393, time 2013.5ms, mfu 9.3%
+[round] iter 1188: loss 4.5983, time 1843.0ms, mfu 9.3%
+[round] iter 1189: loss 4.4765, time 1784.9ms, mfu 9.3%
+[round] iter 1190: loss 4.4341, time 6069.9ms, mfu 8.6%
+[round] iter 1191: loss 4.5293, time 1791.0ms, mfu 8.7%
+[round] iter 1192: loss 4.3443, time 1902.9ms, mfu 8.7%
+[round] iter 1193: loss 4.5311, time 2382.3ms, mfu 8.6%
+[round] iter 1194: loss 4.5073, time 1254.4ms, mfu 9.0%
+[round] iter 1195: loss 4.4852, time 1807.8ms, mfu 9.1%
+[round] iter 1196: loss 4.3143, time 2224.6ms, mfu 8.9%
+[round] iter 1197: loss 4.1551, time 2896.8ms, mfu 8.6%
+[round] iter 1198: loss 4.2915, time 2022.6ms, mfu 8.6%
+[round] iter 1199: loss 4.4557, time 1634.1ms, mfu 8.8%
+[round] iter 1200: loss 4.3262, time 1939.5ms, mfu 8.7%
+[round] iter 1201: loss 4.3464, time 2512.1ms, mfu 8.5%
+[round] iter 1202: loss 4.4806, time 981.0ms, mfu 9.4%
+[round] iter 1203: loss 4.4203, time 1720.5ms, mfu 9.4%
+[round] iter 1204: loss 4.4195, time 1694.6ms, mfu 9.5%
+[round] iter 1205: loss 4.3590, time 1862.8ms, mfu 9.4%
+[round] iter 1206: loss 4.5749, time 2005.4ms, mfu 9.3%
+[round] iter 1207: loss 4.4584, time 1909.0ms, mfu 9.3%
+[round] iter 1208: loss 4.4989, time 1818.6ms, mfu 9.3%
+[round] iter 1209: loss 4.1873, time 1796.0ms, mfu 9.3%
+[round] iter 1210: loss 4.4045, time 1931.3ms, mfu 9.2%
+[round] iter 1211: loss 4.4147, time 1894.0ms, mfu 9.2%
+[round] iter 1212: loss 4.1977, time 2101.6ms, mfu 9.1%
+[round] iter 1213: loss 4.4313, time 1164.7ms, mfu 9.6%
+[round] iter 1214: loss 4.4798, time 1610.9ms, mfu 9.7%
+[round] iter 1215: loss 4.4829, time 1995.7ms, mfu 9.6%
+[round] iter 1216: loss 4.3480, time 2295.7ms, mfu 9.4%
+[round] iter 1217: loss 4.3328, time 1811.3ms, mfu 9.3%
+[round] iter 1218: loss 4.4294, time 1789.0ms, mfu 9.4%
+[round] iter 1219: loss 4.5534, time 1760.9ms, mfu 9.4%
+[round] iter 1220: loss 4.3892, time 1747.3ms, mfu 9.4%
+[round] iter 1221: loss 4.3884, time 1763.1ms, mfu 9.4%
+[round] iter 1222: loss 4.6338, time 1822.7ms, mfu 9.4%
+[round] iter 1223: loss 4.3054, time 1940.8ms, mfu 9.3%
+[round] iter 1224: loss 4.4010, time 1664.9ms, mfu 9.4%
+[round] iter 1225: loss 4.4159, time 1704.0ms, mfu 9.4%
+[round] iter 1226: loss 4.3588, time 2348.8ms, mfu 9.2%
+[round] iter 1227: loss 4.3216, time 1736.8ms, mfu 9.3%
+[round] iter 1228: loss 4.3417, time 1813.0ms, mfu 9.3%
+[round] iter 1229: loss 4.3918, time 2190.7ms, mfu 9.1%
+[round] iter 1230: loss 4.4617, time 2084.5ms, mfu 9.0%
+[round] iter 1231: loss 4.4003, time 1668.8ms, mfu 9.1%
+[round] iter 1232: loss 4.5536, time 1948.1ms, mfu 9.1%
+[round] iter 1233: loss 4.5001, time 1944.0ms, mfu 9.0%
+[round] iter 1234: loss 4.3305, time 2062.1ms, mfu 8.9%
+[round] iter 1235: loss 4.4688, time 1403.9ms, mfu 9.2%
+[round] iter 1236: loss 4.4136, time 2038.3ms, mfu 9.1%
+[round] iter 1237: loss 4.3570, time 1808.9ms, mfu 9.2%
+[round] iter 1238: loss 4.4826, time 2032.7ms, mfu 9.1%
+[round] iter 1239: loss 4.5147, time 1621.3ms, mfu 9.2%
+[round] iter 1240: loss 4.4747, time 1573.4ms, mfu 9.4%
+[round] iter 1241: loss 4.7142, time 1704.5ms, mfu 9.4%
+[round] iter 1242: loss 4.4296, time 1774.4ms, mfu 9.4%
+[round] iter 1243: loss 4.5874, time 1644.2ms, mfu 9.5%
+[round] iter 1244: loss 4.2816, time 1633.3ms, mfu 9.6%
+[round] iter 1245: loss 4.0912, time 1562.9ms, mfu 9.7%
+[round] iter 1246: loss 4.6019, time 2003.3ms, mfu 9.6%
+[round] iter 1247: loss 4.3940, time 1677.5ms, mfu 9.6%
+[round] iter 1248: loss 4.7090, time 1760.4ms, mfu 9.6%
+[round] iter 1249: loss 4.2776, time 1714.3ms, mfu 9.6%
+[round] iter 1250: loss 4.4061, time 1738.9ms, mfu 9.6%
+[round] iter 1251: loss 4.5061, time 1769.7ms, mfu 9.6%
+[round] iter 1252: loss 4.2779, time 1981.7ms, mfu 9.5%
+[round] iter 1253: loss 4.3186, time 1898.8ms, mfu 9.4%
+[round] iter 1254: loss 4.0464, time 1755.4ms, mfu 9.5%
+[round] iter 1255: loss 4.3478, time 1812.2ms, mfu 9.4%
+[round] iter 1256: loss 4.4751, time 1811.2ms, mfu 9.4%
+[round] iter 1257: loss 4.3054, time 1712.5ms, mfu 9.5%
+[round] iter 1258: loss 4.7291, time 1883.9ms, mfu 9.4%
+[round] iter 1259: loss 4.7466, time 1587.2ms, mfu 9.5%
+[round] iter 1260: loss 4.3456, time 1970.6ms, mfu 9.4%
+[round] iter 1261: loss 4.4423, time 2086.1ms, mfu 9.3%
+[round] iter 1262: loss 4.3866, time 1705.6ms, mfu 9.4%
+[round] iter 1263: loss 4.4266, time 1959.4ms, mfu 9.3%
+[round] iter 1264: loss 4.2788, time 1788.7ms, mfu 9.3%
+[round] iter 1265: loss 4.4086, time 1584.7ms, mfu 9.4%
+[round] iter 1266: loss 4.4578, time 1639.3ms, mfu 9.5%
+[round] iter 1267: loss 4.3215, time 1806.8ms, mfu 9.5%
+[round] iter 1268: loss 4.4197, time 1678.7ms, mfu 9.5%
+[round] iter 1269: loss 4.3685, time 1979.4ms, mfu 9.4%
+[round] iter 1270: loss 4.3518, time 1518.2ms, mfu 9.6%
+[round] iter 1271: loss 4.4293, time 1761.6ms, mfu 9.6%
+[round] iter 1272: loss 4.4416, time 1727.8ms, mfu 9.6%
+[round] iter 1273: loss 4.3487, time 2001.3ms, mfu 9.5%
+[round] iter 1274: loss 4.1597, time 1729.3ms, mfu 9.5%
+[round] iter 1275: loss 4.3890, time 2035.5ms, mfu 9.4%
+[round] iter 1276: loss 4.3842, time 1428.7ms, mfu 9.6%
+[round] iter 1277: loss 4.3597, time 1786.0ms, mfu 9.6%
+[round] iter 1278: loss 4.2944, time 1870.9ms, mfu 9.5%
+[round] iter 1279: loss 4.3751, time 1783.2ms, mfu 9.5%
+[round] iter 1280: loss 4.1846, time 2002.5ms, mfu 9.4%
+[round] iter 1281: loss 4.3686, time 2175.9ms, mfu 9.3%
+[round] iter 1282: loss 4.1646, time 1762.6ms, mfu 9.3%
+[round] iter 1283: loss 4.4588, time 1882.0ms, mfu 9.3%
+[round] iter 1284: loss 4.4319, time 1746.0ms, mfu 9.3%
+[round] iter 1285: loss 4.4367, time 1599.2ms, mfu 9.4%
+[round] iter 1286: loss 4.5466, time 1726.9ms, mfu 9.4%
+[round] iter 1287: loss 4.3268, time 1810.4ms, mfu 9.4%
+[round] iter 1288: loss 4.3424, time 2056.5ms, mfu 9.3%
+[round] iter 1289: loss 4.3259, time 1479.4ms, mfu 9.5%
+[round] iter 1290: loss 4.3353, time 1775.1ms, mfu 9.5%
+[round] iter 1291: loss 4.2758, time 1860.6ms, mfu 9.5%
+[round] iter 1292: loss 4.4520, time 1989.9ms, mfu 9.4%
+[round] iter 1293: loss 4.2099, time 1839.8ms, mfu 9.3%
+[round] iter 1294: loss 4.2563, time 1759.0ms, mfu 9.4%
+[round] iter 1295: loss 4.3292, time 1927.2ms, mfu 9.3%
+[round] iter 1296: loss 4.3018, time 1708.9ms, mfu 9.4%
+[round] iter 1297: loss 4.2161, time 1979.3ms, mfu 9.3%
+[round] iter 1298: loss 4.4522, time 1555.1ms, mfu 9.4%
+[round] iter 1299: loss 4.3189, time 1876.4ms, mfu 9.4%
+[round] iter 1300: loss 4.2746, time 1913.8ms, mfu 9.3%
+[round] iter 1301: loss 4.3460, time 1653.4ms, mfu 9.4%
+[round] iter 1302: loss 4.1960, time 2006.6ms, mfu 9.3%
+[round] iter 1303: loss 4.1958, time 1725.8ms, mfu 9.4%
+[round] iter 1304: loss 4.2340, time 1617.8ms, mfu 9.5%
+[round] iter 1305: loss 4.3788, time 2027.8ms, mfu 9.3%
+[round] iter 1306: loss 4.4667, time 1753.8ms, mfu 9.4%
+[round] iter 1307: loss 4.2845, time 1764.4ms, mfu 9.4%
+[round] iter 1308: loss 4.4262, time 1906.6ms, mfu 9.3%
+[round] iter 1309: loss 4.1795, time 1815.3ms, mfu 9.3%
+[round] iter 1310: loss 4.3340, time 1831.9ms, mfu 9.3%
+[round] iter 1311: loss 4.3159, time 1705.2ms, mfu 9.4%
+[round] iter 1312: loss 4.3046, time 1680.2ms, mfu 9.4%
+[round] iter 1313: loss 4.3750, time 1902.3ms, mfu 9.4%
+[round] iter 1314: loss 4.2776, time 1770.6ms, mfu 9.4%
+[round] iter 1315: loss 3.9937, time 1776.7ms, mfu 9.4%
+[round] iter 1316: loss 4.2178, time 1794.7ms, mfu 9.4%
+[round] iter 1317: loss 4.3574, time 1601.3ms, mfu 9.5%
+[round] iter 1318: loss 4.4399, time 1949.3ms, mfu 9.4%
+[round] iter 1319: loss 4.0966, time 1654.0ms, mfu 9.5%
+[round] iter 1320: loss 4.3538, time 1689.3ms, mfu 9.5%
+[round] iter 1321: loss 4.3359, time 1847.6ms, mfu 9.5%
+[round] iter 1322: loss 4.2828, time 1762.0ms, mfu 9.5%
+[round] iter 1323: loss 4.2704, time 1984.2ms, mfu 9.4%
+[round] iter 1324: loss 4.3147, time 1813.9ms, mfu 9.4%
+[round] iter 1325: loss 4.2260, time 2158.5ms, mfu 9.2%
+[round] iter 1326: loss 4.3511, time 1899.6ms, mfu 9.2%
+[round] iter 1327: loss 4.4079, time 2052.4ms, mfu 9.1%
+[round] iter 1328: loss 4.4733, time 1454.0ms, mfu 9.3%
+[round] iter 1329: loss 4.2458, time 2056.0ms, mfu 9.2%
+[round] iter 1330: loss 4.5862, time 2176.4ms, mfu 9.1%
+[round] iter 1331: loss 4.3296, time 1711.6ms, mfu 9.2%
+[round] iter 1332: loss 4.3335, time 1722.2ms, mfu 9.2%
+[round] iter 1333: loss 4.1080, time 1733.3ms, mfu 9.3%
+[round] iter 1334: loss 4.4509, time 1799.1ms, mfu 9.3%
+[round] iter 1335: loss 4.2625, time 1773.4ms, mfu 9.3%
+[round] iter 1336: loss 4.4420, time 2266.5ms, mfu 9.1%
+[round] iter 1337: loss 4.1874, time 1287.7ms, mfu 9.5%
+[round] iter 1338: loss 4.2777, time 1589.0ms, mfu 9.6%
+[round] iter 1339: loss 4.2021, time 1985.9ms, mfu 9.5%
+[round] iter 1340: loss 4.4257, time 1799.5ms, mfu 9.5%
+[round] iter 1341: loss 4.2609, time 1858.9ms, mfu 9.4%
+[round] iter 1342: loss 4.2419, time 1864.9ms, mfu 9.4%
+[round] iter 1343: loss 4.4203, time 1748.4ms, mfu 9.4%
+[round] iter 1344: loss 4.2153, time 2040.9ms, mfu 9.3%
+[round] iter 1345: loss 4.2447, time 1886.0ms, mfu 9.3%
+[round] iter 1346: loss 4.3912, time 1928.3ms, mfu 9.2%
+[round] iter 1347: loss 4.2666, time 2088.3ms, mfu 9.1%
+[round] iter 1348: loss 4.3837, time 2008.3ms, mfu 9.0%
+[round] iter 1349: loss 4.2604, time 2428.6ms, mfu 8.8%
+[round] iter 1350: loss 4.2173, time 1009.9ms, mfu 9.6%
+[round] iter 1351: loss 4.2875, time 1830.6ms, mfu 9.6%
+[round] iter 1352: loss 4.1987, time 1672.9ms, mfu 9.6%
+[round] iter 1353: loss 4.2831, time 1637.5ms, mfu 9.7%
+[round] iter 1354: loss 4.4209, time 1881.1ms, mfu 9.6%
+[round] iter 1355: loss 4.3214, time 1846.3ms, mfu 9.6%
+[round] iter 1356: loss 4.2741, time 1877.4ms, mfu 9.5%
+[round] iter 1357: loss 4.2034, time 1581.5ms, mfu 9.6%
+[round] iter 1358: loss 4.3198, time 1838.6ms, mfu 9.6%
+[round] iter 1359: loss 4.3501, time 1729.1ms, mfu 9.6%
+[round] iter 1360: loss 4.3559, time 1857.9ms, mfu 9.5%
+[round] iter 1361: loss 4.2879, time 2908.6ms, mfu 9.2%
+[round] iter 1362: loss 4.1455, time 1188.9ms, mfu 9.7%
+[round] iter 1363: loss 4.3040, time 1734.6ms, mfu 9.7%
+[round] iter 1364: loss 4.4142, time 2159.9ms, mfu 9.5%
+[round] iter 1365: loss 4.2855, time 1400.0ms, mfu 9.7%
+[round] iter 1366: loss 4.1511, time 1775.0ms, mfu 9.7%
+[round] iter 1367: loss 4.2585, time 1796.7ms, mfu 9.7%
+[round] iter 1368: loss 4.3410, time 1914.6ms, mfu 9.6%
+[round] iter 1369: loss 4.2869, time 5151.7ms, mfu 9.0%
+[round] iter 1370: loss 4.2107, time 1683.8ms, mfu 9.1%
+[round] iter 1371: loss 4.2737, time 2361.6ms, mfu 8.9%
+[round] iter 1372: loss 4.4335, time 1201.3ms, mfu 9.4%
+[round] iter 1373: loss 4.3033, time 1938.3ms, mfu 9.3%
+[round] iter 1374: loss 4.0155, time 1817.1ms, mfu 9.3%
+[round] iter 1375: loss 4.4472, time 2039.8ms, mfu 9.2%
+[round] iter 1376: loss 4.1728, time 1809.3ms, mfu 9.2%
+[round] iter 1377: loss 3.9084, time 1783.6ms, mfu 9.2%
+[round] iter 1378: loss 4.1330, time 2117.4ms, mfu 9.1%
+[round] iter 1379: loss 4.2734, time 1831.8ms, mfu 9.1%
+[round] iter 1380: loss 4.3238, time 1922.4ms, mfu 9.1%
+[round] iter 1381: loss 4.1436, time 1920.2ms, mfu 9.0%
+[round] iter 1382: loss 4.2008, time 1808.7ms, mfu 9.1%
+[round] iter 1383: loss 4.2831, time 1892.9ms, mfu 9.1%
+[round] iter 1384: loss 4.2803, time 1790.8ms, mfu 9.1%
+[round] iter 1385: loss 4.2847, time 1770.1ms, mfu 9.1%
+[round] iter 1386: loss 4.2115, time 1722.7ms, mfu 9.2%
+[round] iter 1387: loss 4.1969, time 1784.1ms, mfu 9.2%
+[round] iter 1388: loss 4.3086, time 1709.9ms, mfu 9.3%
+[round] iter 1389: loss 4.3579, time 1801.4ms, mfu 9.3%
+[round] iter 1390: loss 4.2839, time 1895.1ms, mfu 9.2%
+[round] iter 1391: loss 4.2747, time 1776.5ms, mfu 9.3%
+[round] iter 1392: loss 4.1897, time 2337.3ms, mfu 9.1%
+[round] iter 1393: loss 4.2451, time 1721.9ms, mfu 9.1%
+[round] iter 1394: loss 4.2117, time 1909.9ms, mfu 9.1%
+[round] iter 1395: loss 4.3468, time 1915.0ms, mfu 9.1%
+[round] iter 1396: loss 4.1910, time 1936.8ms, mfu 9.0%
+[round] iter 1397: loss 4.3795, time 1780.8ms, mfu 9.1%
+[round] iter 1398: loss 4.3166, time 5505.7ms, mfu 8.5%
+[round] iter 1399: loss 4.2457, time 1932.3ms, mfu 8.5%
+[round] iter 1400: loss 4.0141, time 1787.9ms, mfu 8.6%
+[round] iter 1401: loss 4.3156, time 1924.0ms, mfu 8.6%
+[round] iter 1402: loss 4.1935, time 1526.6ms, mfu 8.8%
+[round] iter 1403: loss 4.4616, time 1851.6ms, mfu 8.9%
+[round] iter 1404: loss 4.3246, time 2153.7ms, mfu 8.8%
+[round] iter 1405: loss 4.1929, time 1958.8ms, mfu 8.7%
+[round] iter 1406: loss 4.0969, time 1819.7ms, mfu 8.8%
+[round] iter 1407: loss 4.1715, time 1891.9ms, mfu 8.8%
+[round] iter 1408: loss 4.2330, time 1861.9ms, mfu 8.8%
+[round] iter 1409: loss 4.3604, time 1992.4ms, mfu 8.8%
+[round] iter 1410: loss 4.3197, time 1955.9ms, mfu 8.8%
+[round] iter 1411: loss 4.0838, time 2004.9ms, mfu 8.7%
+[round] iter 1412: loss 4.1170, time 1919.5ms, mfu 8.7%
+[round] iter 1413: loss 4.1270, time 1798.5ms, mfu 8.8%
+[round] iter 1414: loss 4.2548, time 1794.2ms, mfu 8.9%
+[round] iter 1415: loss 4.4161, time 1845.6ms, mfu 8.9%
+[round] iter 1416: loss 4.0265, time 2568.8ms, mfu 8.7%
+[round] iter 1417: loss 4.0742, time 1259.2ms, mfu 9.1%
+[round] iter 1418: loss 4.2544, time 1846.2ms, mfu 9.1%
+[round] iter 1419: loss 4.1974, time 1753.2ms, mfu 9.2%
+[round] iter 1420: loss 4.1908, time 1854.0ms, mfu 9.2%
+[round] iter 1421: loss 4.1963, time 1908.1ms, mfu 9.1%
+[round] iter 1422: loss 4.1924, time 1751.5ms, mfu 9.2%
+[round] iter 1423: loss 4.2936, time 1782.2ms, mfu 9.2%
+[round] iter 1424: loss 3.9987, time 1910.0ms, mfu 9.2%
+[round] iter 1425: loss 4.2372, time 1650.1ms, mfu 9.3%
+[round] iter 1426: loss 3.9503, time 2059.6ms, mfu 9.2%
+[round] iter 1427: loss 4.2061, time 1588.4ms, mfu 9.3%
+[round] iter 1428: loss 4.1604, time 1742.8ms, mfu 9.3%
+[round] iter 1429: loss 4.1892, time 1943.7ms, mfu 9.3%
+[round] iter 1430: loss 4.2278, time 1870.9ms, mfu 9.2%
+[round] iter 1431: loss 4.4620, time 1777.7ms, mfu 9.3%
+[round] iter 1432: loss 4.4210, time 1802.5ms, mfu 9.3%
+[round] iter 1433: loss 4.1189, time 1696.1ms, mfu 9.3%
+[round] iter 1434: loss 4.0621, time 2536.1ms, mfu 9.1%
+[round] iter 1435: loss 4.0268, time 1144.1ms, mfu 9.6%
+[round] iter 1436: loss 4.3238, time 1654.1ms, mfu 9.7%
+[round] iter 1437: loss 4.3552, time 1820.8ms, mfu 9.6%
+[round] iter 1438: loss 4.2112, time 1826.7ms, mfu 9.6%
+[round] iter 1439: loss 4.3130, time 2087.8ms, mfu 9.4%
+[round] iter 1440: loss 4.1973, time 1519.7ms, mfu 9.6%
+[round] iter 1441: loss 4.1674, time 2026.3ms, mfu 9.5%
+[round] iter 1442: loss 4.1968, time 1645.8ms, mfu 9.6%
+[round] iter 1443: loss 4.3318, time 2014.2ms, mfu 9.4%
+[round] iter 1444: loss 4.2404, time 1737.8ms, mfu 9.5%
+[round] iter 1445: loss 4.3740, time 33320.8ms, mfu 8.6%
+[round] iter 1446: loss 4.2182, time 1069.3ms, mfu 9.3%
+[round] iter 1447: loss 4.1520, time 1580.3ms, mfu 9.4%
+[round] iter 1448: loss 4.2050, time 2142.1ms, mfu 9.3%
+[round] iter 1449: loss 4.0670, time 1193.1ms, mfu 9.7%
+[round] iter 1450: loss 4.1461, time 1043.8ms, mfu 10.4%
+[round] iter 1451: loss 4.0703, time 1208.7ms, mfu 10.7%
+[round] iter 1452: loss 4.1675, time 1138.6ms, mfu 11.1%
+[round] iter 1453: loss 4.2157, time 955.3ms, mfu 11.8%
+[round] iter 1454: loss 4.2179, time 1084.4ms, mfu 12.2%
+[round] iter 1455: loss 4.3102, time 1025.9ms, mfu 12.6%
+[round] iter 1456: loss 3.9368, time 2249.4ms, mfu 12.1%
+[round] iter 1457: loss 4.1579, time 1087.0ms, mfu 12.4%
+[round] iter 1458: loss 4.2561, time 1561.3ms, mfu 12.3%
+[round] iter 1459: loss 4.0350, time 1023.9ms, mfu 12.7%
+[round] iter 1460: loss 4.3144, time 1925.7ms, mfu 12.3%
+[round] iter 1461: loss 4.0176, time 1041.7ms, mfu 12.7%
+[round] iter 1462: loss 3.8950, time 1089.8ms, mfu 12.9%
+[round] iter 1463: loss 4.4371, time 1234.0ms, mfu 13.0%
+[round] iter 1464: loss 4.0030, time 1167.4ms, mfu 13.2%
+[round] iter 1465: loss 4.1979, time 1046.9ms, mfu 13.4%
+[round] iter 1466: loss 4.2825, time 1041.0ms, mfu 13.7%
+[round] iter 1467: loss 4.3795, time 1115.8ms, mfu 13.9%
+[round] iter 1468: loss 4.1928, time 1157.4ms, mfu 13.9%
+[round] iter 1469: loss 4.2586, time 1036.3ms, mfu 14.2%
+[round] iter 1470: loss 4.2564, time 1163.0ms, mfu 14.2%
+[round] iter 1471: loss 4.1556, time 1257.5ms, mfu 14.1%
+[round] iter 1472: loss 4.1370, time 1092.9ms, mfu 14.2%
+[round] iter 1473: loss 4.4214, time 1194.8ms, mfu 14.2%
+[round] iter 1474: loss 4.2502, time 1079.8ms, mfu 14.4%
+[round] iter 1475: loss 4.3545, time 1105.9ms, mfu 14.4%
+[round] iter 1476: loss 4.2970, time 1039.1ms, mfu 14.6%
+[round] iter 1477: loss 4.2792, time 1444.1ms, mfu 14.3%
+[round] iter 1478: loss 4.2381, time 1048.1ms, mfu 14.5%
+[round] iter 1479: loss 4.1660, time 1279.2ms, mfu 14.4%
+[round] iter 1480: loss 4.1244, time 1062.6ms, mfu 14.5%
+[round] iter 1481: loss 4.2328, time 1862.4ms, mfu 14.0%
+[round] iter 1482: loss 4.3197, time 1428.4ms, mfu 13.7%
+[round] iter 1483: loss 4.1537, time 1358.4ms, mfu 13.6%
+[round] iter 1484: loss 4.2974, time 1045.0ms, mfu 13.9%
+[round] iter 1485: loss 4.2566, time 1075.7ms, mfu 14.0%
+[round] iter 1486: loss 4.3223, time 1048.7ms, mfu 14.2%
+[round] iter 1487: loss 4.2601, time 1042.4ms, mfu 14.4%
+[round] iter 1488: loss 4.2952, time 1112.0ms, mfu 14.5%
+[round] iter 1489: loss 4.2480, time 1079.2ms, mfu 14.6%
+[round] iter 1490: loss 4.3909, time 1553.7ms, mfu 14.2%
+[round] iter 1491: loss 4.2638, time 1335.5ms, mfu 14.1%
+[round] iter 1492: loss 4.0395, time 1089.4ms, mfu 14.2%
+[round] iter 1493: loss 4.1049, time 1050.9ms, mfu 14.4%
+[round] iter 1494: loss 4.2582, time 1035.0ms, mfu 14.6%
+[round] iter 1495: loss 4.3529, time 1319.3ms, mfu 14.4%
+[round] iter 1496: loss 4.3352, time 1020.4ms, mfu 14.6%
+[round] iter 1497: loss 4.3864, time 1131.1ms, mfu 14.6%
+[round] iter 1498: loss 4.1738, time 1092.3ms, mfu 14.7%
+[round] iter 1499: loss 4.2492, time 1019.4ms, mfu 14.9%
+[round] iter 1500: loss 4.2653, time 1956.9ms, mfu 14.3%
+[round] iter 1501: loss 3.9604, time 1672.6ms, mfu 13.8%
+[round] iter 1502: loss 4.1577, time 1696.3ms, mfu 13.4%
+[round] iter 1503: loss 4.4235, time 1690.0ms, mfu 13.1%
+[round] iter 1504: loss 4.2331, time 2048.0ms, mfu 12.6%
+[round] iter 1505: loss 4.1951, time 1697.6ms, mfu 12.3%
+[round] iter 1506: loss 4.1151, time 1744.2ms, mfu 12.1%
+[round] iter 1507: loss 4.2170, time 1581.2ms, mfu 11.9%
+[round] iter 1508: loss 4.2274, time 1616.8ms, mfu 11.8%
+[round] iter 1509: loss 4.1543, time 1807.2ms, mfu 11.5%
+[round] iter 1510: loss 4.4240, time 1694.5ms, mfu 11.4%
+[round] iter 1511: loss 4.0828, time 1526.2ms, mfu 11.3%
+[round] iter 1512: loss 4.2032, time 1743.5ms, mfu 11.2%
+[round] iter 1513: loss 4.2409, time 1815.5ms, mfu 11.0%
+[round] iter 1514: loss 4.3970, time 1702.1ms, mfu 10.9%
+[round] iter 1515: loss 4.1662, time 2121.0ms, mfu 10.6%
+[round] iter 1516: loss 4.1992, time 1427.1ms, mfu 10.7%
+[round] iter 1517: loss 4.1226, time 1789.2ms, mfu 10.6%
+[round] iter 1518: loss 4.0433, time 1749.8ms, mfu 10.5%
+[round] iter 1519: loss 4.0172, time 1787.3ms, mfu 10.4%
+[round] iter 1520: loss 4.2055, time 1752.7ms, mfu 10.3%
+[round] iter 1521: loss 4.0557, time 1612.2ms, mfu 10.3%
+[round] iter 1522: loss 4.0878, time 1705.4ms, mfu 10.3%
+[round] iter 1523: loss 4.0062, time 1700.8ms, mfu 10.2%
+[round] iter 1524: loss 4.0703, time 1680.3ms, mfu 10.2%
+[round] iter 1525: loss 4.2252, time 1828.0ms, mfu 10.1%
+[round] iter 1526: loss 4.1387, time 1748.5ms, mfu 10.1%
+[round] iter 1527: loss 4.0873, time 1810.8ms, mfu 10.0%
+[round] iter 1528: loss 4.2201, time 1867.4ms, mfu 9.9%
+[round] iter 1529: loss 4.1738, time 3024.7ms, mfu 9.5%
+[round] iter 1530: loss 4.2044, time 1623.0ms, mfu 9.5%
+[round] iter 1531: loss 4.4329, time 2061.7ms, mfu 9.4%
+[round] iter 1532: loss 4.3949, time 2262.9ms, mfu 9.2%
+[round] iter 1533: loss 4.1740, time 1909.0ms, mfu 9.2%
+[round] iter 1534: loss 3.9274, time 1633.1ms, mfu 9.3%
+[round] iter 1535: loss 4.0320, time 1756.7ms, mfu 9.3%
+[round] iter 1536: loss 4.1704, time 3459.3ms, mfu 8.9%
+[round] iter 1537: loss 4.1679, time 1642.8ms, mfu 9.0%
+[round] iter 1538: loss 4.1902, time 1903.4ms, mfu 9.0%
+[round] iter 1539: loss 4.3197, time 2033.7ms, mfu 8.9%
+[round] iter 1540: loss 4.2927, time 2125.9ms, mfu 8.8%
+[round] iter 1541: loss 4.1420, time 1887.9ms, mfu 8.8%
+[round] iter 1542: loss 4.0855, time 2054.0ms, mfu 8.8%
+[round] iter 1543: loss 4.4059, time 1660.8ms, mfu 8.9%
+[round] iter 1544: loss 4.3189, time 2033.9ms, mfu 8.8%
+[round] iter 1545: loss 4.1026, time 1713.7ms, mfu 8.9%
+[round] iter 1546: loss 4.0882, time 1639.0ms, mfu 9.1%
+[round] iter 1547: loss 4.0825, time 2022.8ms, mfu 9.0%
+[round] iter 1548: loss 3.9009, time 1788.9ms, mfu 9.0%
+[round] iter 1549: loss 4.1906, time 1849.7ms, mfu 9.0%
+[round] iter 1550: loss 4.3401, time 1724.2ms, mfu 9.1%
+[round] iter 1551: loss 4.4715, time 1898.1ms, mfu 9.1%
+[round] iter 1552: loss 4.2605, time 1777.4ms, mfu 9.1%
+[round] iter 1553: loss 3.9495, time 1639.3ms, mfu 9.2%
+[round] iter 1554: loss 4.0010, time 1815.9ms, mfu 9.2%
+[round] iter 1555: loss 4.0212, time 1910.6ms, mfu 9.2%
+[round] iter 1556: loss 4.1490, time 1736.5ms, mfu 9.3%
+[round] iter 1557: loss 3.8974, time 1782.7ms, mfu 9.3%
+[round] iter 1558: loss 4.1877, time 3986.2ms, mfu 8.8%
+[round] iter 1559: loss 4.1730, time 2005.4ms, mfu 8.7%
+[round] iter 1560: loss 4.2700, time 1752.2ms, mfu 8.8%
+[round] iter 1561: loss 3.9698, time 1663.6ms, mfu 8.9%
+[round] iter 1562: loss 4.0509, time 2063.7ms, mfu 8.9%
+[round] iter 1563: loss 4.4223, time 1322.5ms, mfu 9.3%
+[round] iter 1564: loss 4.1336, time 1869.8ms, mfu 9.2%
+[round] iter 1565: loss 4.2143, time 2102.7ms, mfu 9.1%
+[round] iter 1566: loss 4.3090, time 1698.5ms, mfu 9.2%
+[round] iter 1567: loss 3.8503, time 1768.4ms, mfu 9.2%
+[round] iter 1568: loss 4.3089, time 1675.0ms, mfu 9.3%
+[round] iter 1569: loss 3.7755, time 1929.3ms, mfu 9.2%
+[round] iter 1570: loss 4.0974, time 2044.6ms, mfu 9.1%
+[round] iter 1571: loss 4.1858, time 1820.0ms, mfu 9.2%
+[round] iter 1572: loss 4.2706, time 1805.5ms, mfu 9.2%
+[round] iter 1573: loss 4.1560, time 1758.8ms, mfu 9.2%
+[round] iter 1574: loss 3.9132, time 1807.1ms, mfu 9.2%
+[round] iter 1575: loss 4.0924, time 1875.8ms, mfu 9.2%
+[round] iter 1576: loss 4.1882, time 1866.4ms, mfu 9.2%
+[round] iter 1577: loss 4.3198, time 1784.6ms, mfu 9.2%
+[round] iter 1578: loss 4.3488, time 1865.8ms, mfu 9.2%
+[round] iter 1579: loss 4.1104, time 2411.8ms, mfu 9.0%
+[round] iter 1580: loss 4.2585, time 1823.2ms, mfu 9.0%
+[round] iter 1581: loss 4.1545, time 1728.1ms, mfu 9.1%
+[round] iter 1582: loss 3.9939, time 1726.8ms, mfu 9.1%
+[round] iter 1583: loss 4.1460, time 1698.7ms, mfu 9.2%
+[round] iter 1584: loss 4.0649, time 1899.3ms, mfu 9.2%
+[round] iter 1585: loss 4.1707, time 2136.6ms, mfu 9.0%
+[round] iter 1586: loss 4.1631, time 1764.2ms, mfu 9.1%
+[round] iter 1587: loss 4.2909, time 1581.6ms, mfu 9.3%
+[round] iter 1588: loss 4.2849, time 1663.8ms, mfu 9.3%
+[round] iter 1589: loss 4.2076, time 1925.8ms, mfu 9.3%
+[round] iter 1590: loss 4.2100, time 1646.2ms, mfu 9.4%
+[round] iter 1591: loss 4.2545, time 1925.5ms, mfu 9.3%
+[round] iter 1592: loss 4.2011, time 1730.9ms, mfu 9.4%
+[round] iter 1593: loss 4.3351, time 2071.2ms, mfu 9.2%
+[round] iter 1594: loss 4.0348, time 1809.3ms, mfu 9.2%
+[round] iter 1595: loss 4.1971, time 1780.2ms, mfu 9.3%
+[round] iter 1596: loss 4.1379, time 1715.6ms, mfu 9.3%
+[round] iter 1597: loss 3.9716, time 1739.0ms, mfu 9.4%
+[round] iter 1598: loss 3.9985, time 1870.2ms, mfu 9.3%
+[round] iter 1599: loss 4.2044, time 1928.8ms, mfu 9.3%
+[round] iter 1600: loss 3.7927, time 2135.7ms, mfu 9.1%
+[round] iter 1601: loss 4.0553, time 1865.9ms, mfu 9.1%
+[round] iter 1602: loss 4.1414, time 1794.3ms, mfu 9.1%
+[round] iter 1603: loss 4.0968, time 1645.4ms, mfu 9.2%
+[round] iter 1604: loss 3.9889, time 2000.2ms, mfu 9.2%
+[round] iter 1605: loss 4.2572, time 1500.5ms, mfu 9.4%
+[round] iter 1606: loss 4.0344, time 1758.7ms, mfu 9.4%
+[round] iter 1607: loss 4.0957, time 2026.7ms, mfu 9.3%
+[round] iter 1608: loss 4.1442, time 1984.9ms, mfu 9.2%
+[round] iter 1609: loss 4.0784, time 1337.3ms, mfu 9.5%
+[round] iter 1610: loss 4.1279, time 1703.2ms, mfu 9.6%
+[round] iter 1611: loss 3.9893, time 1496.7ms, mfu 9.7%
+[round] iter 1612: loss 4.0397, time 1960.6ms, mfu 9.6%
+[round] iter 1613: loss 4.0918, time 2015.4ms, mfu 9.5%
+[round] iter 1614: loss 4.1245, time 1725.7ms, mfu 9.5%
+[round] iter 1615: loss 4.0694, time 1757.2ms, mfu 9.5%
+[round] iter 1616: loss 4.1770, time 1730.1ms, mfu 9.5%
+[round] iter 1617: loss 4.2121, time 1814.1ms, mfu 9.5%
+[round] iter 1618: loss 3.8958, time 1878.5ms, mfu 9.5%
+[round] iter 1619: loss 4.1477, time 2113.8ms, mfu 9.3%
+[round] iter 1620: loss 4.0520, time 1617.8ms, mfu 9.4%
+[round] iter 1621: loss 3.9683, time 1731.5ms, mfu 9.5%
+[round] iter 1622: loss 3.9776, time 2002.8ms, mfu 9.3%
+[round] iter 1623: loss 4.0295, time 1821.8ms, mfu 9.3%
+[round] iter 1624: loss 4.0966, time 1735.8ms, mfu 9.4%
+[round] iter 1625: loss 4.1565, time 1631.9ms, mfu 9.5%
+[round] iter 1626: loss 4.0850, time 1909.4ms, mfu 9.4%
+[round] iter 1627: loss 4.0140, time 1454.4ms, mfu 9.6%
+[round] iter 1628: loss 4.2970, time 1998.5ms, mfu 9.5%
+[round] iter 1629: loss 4.1093, time 1464.7ms, mfu 9.7%
+[round] iter 1630: loss 4.0057, time 1932.9ms, mfu 9.6%
+[round] iter 1631: loss 4.0872, time 1643.0ms, mfu 9.7%
+[round] iter 1632: loss 4.1411, time 1732.0ms, mfu 9.7%
+[round] iter 1633: loss 4.1320, time 2034.2ms, mfu 9.5%
+[round] iter 1634: loss 3.9065, time 1882.4ms, mfu 9.5%
+[round] iter 1635: loss 4.0397, time 1647.3ms, mfu 9.5%
+[round] iter 1636: loss 4.1601, time 2125.9ms, mfu 9.4%
+[round] iter 1637: loss 4.0972, time 1387.2ms, mfu 9.7%
+[round] iter 1638: loss 4.0295, time 1874.7ms, mfu 9.6%
+[round] iter 1639: loss 3.9633, time 1707.6ms, mfu 9.6%
+[round] iter 1640: loss 4.1467, time 1585.5ms, mfu 9.7%
+[round] iter 1641: loss 4.0345, time 1640.9ms, mfu 9.8%
+[round] iter 1642: loss 4.0365, time 1672.8ms, mfu 9.8%
+[round] iter 1643: loss 3.9835, time 1495.7ms, mfu 9.9%
+[round] iter 1644: loss 3.9865, time 1595.1ms, mfu 10.0%
+[round] iter 1645: loss 4.1200, time 1668.6ms, mfu 10.0%
+[round] iter 1646: loss 3.9741, time 1888.5ms, mfu 9.9%
+[round] iter 1647: loss 4.0472, time 1815.7ms, mfu 9.8%
+[round] iter 1648: loss 4.1852, time 1689.8ms, mfu 9.9%
+[round] iter 1649: loss 4.2569, time 1692.9ms, mfu 9.9%
+[round] iter 1650: loss 4.2099, time 1613.1ms, mfu 9.9%
+[round] iter 1651: loss 4.2354, time 1641.8ms, mfu 10.0%
+[round] iter 1652: loss 4.1352, time 1861.3ms, mfu 9.9%
+[round] iter 1653: loss 4.0699, time 1566.3ms, mfu 10.0%
+[round] iter 1654: loss 4.2680, time 1808.7ms, mfu 9.9%
+[round] iter 1655: loss 4.0802, time 1422.8ms, mfu 10.1%
+[round] iter 1656: loss 3.9569, time 1628.7ms, mfu 10.1%
+[round] iter 1657: loss 4.2105, time 1828.5ms, mfu 10.0%
+[round] iter 1658: loss 4.3777, time 1845.1ms, mfu 9.9%
+[round] iter 1659: loss 3.8222, time 1713.1ms, mfu 9.9%
+[round] iter 1660: loss 4.1083, time 1776.2ms, mfu 9.9%
+[round] iter 1661: loss 3.9977, time 1881.7ms, mfu 9.8%
+[round] iter 1662: loss 4.1354, time 1905.6ms, mfu 9.7%
+[round] iter 1663: loss 4.1660, time 1816.2ms, mfu 9.6%
+[round] iter 1664: loss 4.0263, time 1737.5ms, mfu 9.6%
+[round] iter 1665: loss 4.1737, time 1880.6ms, mfu 9.6%
+[round] iter 1666: loss 4.0821, time 1941.0ms, mfu 9.5%
+[round] iter 1667: loss 4.0807, time 1887.9ms, mfu 9.4%
+[round] iter 1668: loss 4.1909, time 1776.7ms, mfu 9.4%
+[round] iter 1669: loss 4.0771, time 2027.0ms, mfu 9.3%
+[round] iter 1670: loss 4.1348, time 1613.5ms, mfu 9.4%
+[round] iter 1671: loss 4.3615, time 2056.5ms, mfu 9.3%
+[round] iter 1672: loss 4.1505, time 1496.7ms, mfu 9.5%
+[round] iter 1673: loss 3.8433, time 1714.9ms, mfu 9.5%
+[round] iter 1674: loss 4.0759, time 1724.1ms, mfu 9.6%
+[round] iter 1675: loss 4.1692, time 1742.3ms, mfu 9.6%
+[round] iter 1676: loss 4.2459, time 1836.7ms, mfu 9.5%
+[round] iter 1677: loss 4.0461, time 1928.4ms, mfu 9.4%
+[round] iter 1678: loss 4.2309, time 1858.4ms, mfu 9.4%
+[round] iter 1679: loss 4.2982, time 1899.1ms, mfu 9.4%
+[round] iter 1680: loss 4.2540, time 2033.9ms, mfu 9.2%
+[round] iter 1681: loss 4.1144, time 1794.4ms, mfu 9.3%
+[round] iter 1682: loss 4.2311, time 1736.1ms, mfu 9.3%
+[round] iter 1683: loss 4.0468, time 1564.5ms, mfu 9.4%
+[round] iter 1684: loss 4.0773, time 1877.4ms, mfu 9.4%
+[round] iter 1685: loss 4.0785, time 1932.9ms, mfu 9.3%
+[round] iter 1686: loss 4.2469, time 1727.9ms, mfu 9.4%
+[round] iter 1687: loss 4.2121, time 1938.9ms, mfu 9.3%
+[round] iter 1688: loss 3.8056, time 1719.8ms, mfu 9.4%
+[round] iter 1689: loss 3.9792, time 1668.0ms, mfu 9.4%
+[round] iter 1690: loss 4.0360, time 1622.1ms, mfu 9.5%
+[round] iter 1691: loss 4.0093, time 1776.5ms, mfu 9.5%
+[round] iter 1692: loss 3.8478, time 2196.7ms, mfu 9.3%
+[round] iter 1693: loss 4.0683, time 1674.6ms, mfu 9.4%
+[round] iter 1694: loss 3.9376, time 1586.0ms, mfu 9.5%
+[round] iter 1695: loss 3.9689, time 1751.2ms, mfu 9.5%
+[round] iter 1696: loss 4.3098, time 1887.2ms, mfu 9.5%
+[round] iter 1697: loss 3.8864, time 1676.6ms, mfu 9.5%
+[round] iter 1698: loss 4.1567, time 1989.7ms, mfu 9.4%
+[round] iter 1699: loss 4.2009, time 1807.9ms, mfu 9.4%
+[round] iter 1700: loss 3.9793, time 1803.7ms, mfu 9.4%
+[round] iter 1701: loss 3.9989, time 1787.2ms, mfu 9.4%
+[round] iter 1702: loss 3.9915, time 1797.1ms, mfu 9.4%
+[round] iter 1703: loss 4.2504, time 1721.7ms, mfu 9.4%
+[round] iter 1704: loss 4.1570, time 1726.7ms, mfu 9.5%
+[round] iter 1705: loss 4.0333, time 1833.0ms, mfu 9.4%
+[round] iter 1706: loss 4.1357, time 1574.2ms, mfu 9.6%
+[round] iter 1707: loss 4.0952, time 1904.1ms, mfu 9.5%
+[round] iter 1708: loss 4.0395, time 2089.8ms, mfu 9.3%
+[round] iter 1709: loss 4.0872, time 1554.1ms, mfu 9.5%
+[round] iter 1710: loss 4.0653, time 1822.3ms, mfu 9.5%
+[round] iter 1711: loss 4.0835, time 1728.3ms, mfu 9.5%
+[round] iter 1712: loss 3.9105, time 1809.4ms, mfu 9.5%
+[round] iter 1713: loss 4.0906, time 1639.6ms, mfu 9.6%
+[round] iter 1714: loss 4.3176, time 1632.9ms, mfu 9.6%
+[round] iter 1715: loss 3.9730, time 1743.4ms, mfu 9.6%
+[round] iter 1716: loss 4.1168, time 1839.5ms, mfu 9.6%
+[round] iter 1717: loss 4.1705, time 1707.2ms, mfu 9.6%
+[round] iter 1718: loss 4.1031, time 1739.9ms, mfu 9.6%
+[round] iter 1719: loss 4.1756, time 1730.4ms, mfu 9.6%
+[round] iter 1720: loss 3.9350, time 1952.4ms, mfu 9.5%
+[round] iter 1721: loss 4.0522, time 1834.0ms, mfu 9.5%
+[round] iter 1722: loss 4.0097, time 1567.5ms, mfu 9.6%
+[round] iter 1723: loss 4.0315, time 1709.2ms, mfu 9.6%
+[round] iter 1724: loss 4.0322, time 1697.5ms, mfu 9.7%
+[round] iter 1725: loss 4.0918, time 1779.4ms, mfu 9.6%
+[round] iter 1726: loss 4.0267, time 1924.2ms, mfu 9.6%
+[round] iter 1727: loss 4.0281, time 1668.5ms, mfu 9.6%
+[round] iter 1728: loss 3.9097, time 2011.1ms, mfu 9.5%
+[round] iter 1729: loss 3.9391, time 1862.4ms, mfu 9.4%
+[round] iter 1730: loss 4.2038, time 1843.9ms, mfu 9.4%
+[round] iter 1731: loss 3.9628, time 1890.2ms, mfu 9.4%
+[round] iter 1732: loss 4.0904, time 1740.7ms, mfu 9.4%
+[round] iter 1733: loss 4.0100, time 1920.0ms, mfu 9.3%
+[round] iter 1734: loss 4.1514, time 1665.9ms, mfu 9.4%
+[round] iter 1735: loss 4.0465, time 1625.2ms, mfu 9.5%
+[round] iter 1736: loss 4.1018, time 1755.8ms, mfu 9.5%
+[round] iter 1737: loss 4.2085, time 1676.4ms, mfu 9.6%
+[round] iter 1738: loss 4.2358, time 1920.5ms, mfu 9.5%
+[round] iter 1739: loss 4.2834, time 2077.0ms, mfu 9.3%
+[round] iter 1740: loss 4.1159, time 1243.6ms, mfu 9.8%
+[round] iter 1741: loss 4.0788, time 1614.0ms, mfu 9.8%
+[round] iter 1742: loss 4.0234, time 1908.0ms, mfu 9.7%
+[round] iter 1743: loss 4.2349, time 1876.7ms, mfu 9.7%
+[round] iter 1744: loss 4.1376, time 1720.0ms, mfu 9.7%
+[round] iter 1745: loss 3.9888, time 1581.0ms, mfu 9.8%
+[round] iter 1746: loss 3.9868, time 1671.7ms, mfu 9.8%
+[round] iter 1747: loss 4.1860, time 1994.5ms, mfu 9.7%
+[round] iter 1748: loss 4.0897, time 1311.4ms, mfu 10.0%
+[round] iter 1749: loss 3.9877, time 2003.3ms, mfu 9.8%
+[round] iter 1750: loss 4.1973, time 1689.5ms, mfu 9.8%
+[round] iter 1751: loss 4.0022, time 1627.8ms, mfu 9.9%
+[round] iter 1752: loss 4.1088, time 1753.6ms, mfu 9.9%
+[round] iter 1753: loss 4.0668, time 1956.0ms, mfu 9.7%
+[round] iter 1754: loss 3.9715, time 4347.0ms, mfu 9.1%
+[round] iter 1755: loss 3.9479, time 2159.0ms, mfu 9.0%
+[round] iter 1756: loss 4.1104, time 1904.9ms, mfu 9.0%
+[round] iter 1757: loss 4.2964, time 1493.3ms, mfu 9.2%
+[round] iter 1758: loss 4.2508, time 1545.0ms, mfu 9.4%
+[round] iter 1759: loss 4.1529, time 1732.2ms, mfu 9.4%
+[round] iter 1760: loss 4.1843, time 1859.3ms, mfu 9.4%
+[round] iter 1761: loss 4.1700, time 1658.2ms, mfu 9.5%
+[round] iter 1762: loss 4.0717, time 1826.5ms, mfu 9.4%
+[round] iter 1763: loss 3.9157, time 1799.7ms, mfu 9.4%
+[round] iter 1764: loss 4.0325, time 1912.9ms, mfu 9.4%
+[round] iter 1765: loss 4.1536, time 1618.0ms, mfu 9.5%
+[round] iter 1766: loss 4.3238, time 1780.1ms, mfu 9.5%
+[round] iter 1767: loss 4.0423, time 1947.9ms, mfu 9.4%
+[round] iter 1768: loss 4.1452, time 1659.1ms, mfu 9.5%
+[round] iter 1769: loss 3.9771, time 1913.8ms, mfu 9.4%
+[round] iter 1770: loss 4.0036, time 1695.1ms, mfu 9.4%
+[round] iter 1771: loss 4.0489, time 1687.1ms, mfu 9.5%
+[round] iter 1772: loss 4.1341, time 2305.4ms, mfu 9.3%
+[round] iter 1773: loss 4.2614, time 1658.4ms, mfu 9.4%
+[round] iter 1774: loss 4.0155, time 1912.9ms, mfu 9.3%
+[round] iter 1775: loss 4.0444, time 1519.6ms, mfu 9.5%
+[round] iter 1776: loss 3.9732, time 1552.8ms, mfu 9.6%
+[round] iter 1777: loss 4.0007, time 2158.0ms, mfu 9.4%
+[round] iter 1778: loss 4.1690, time 1797.0ms, mfu 9.4%
+[round] iter 1779: loss 4.0041, time 1723.9ms, mfu 9.5%
+[round] iter 1780: loss 4.0288, time 1997.9ms, mfu 9.4%
+[round] iter 1781: loss 3.9682, time 1699.3ms, mfu 9.4%
+[round] iter 1782: loss 4.1503, time 1748.7ms, mfu 9.4%
+[round] iter 1783: loss 3.9192, time 1905.6ms, mfu 9.4%
+[round] iter 1784: loss 4.2429, time 2208.0ms, mfu 9.2%
+[round] iter 1785: loss 3.9833, time 1779.6ms, mfu 9.2%
+[round] iter 1786: loss 4.1321, time 2073.9ms, mfu 9.1%
+[round] iter 1787: loss 4.1341, time 1643.7ms, mfu 9.2%
+[round] iter 1788: loss 3.9498, time 1735.5ms, mfu 9.3%
+[round] iter 1789: loss 4.2541, time 1675.0ms, mfu 9.4%
+[round] iter 1790: loss 4.0022, time 1682.1ms, mfu 9.4%
+[round] iter 1791: loss 4.0506, time 1534.3ms, mfu 9.6%
+[round] iter 1792: loss 4.2851, time 1906.0ms, mfu 9.5%
+[round] iter 1793: loss 4.1652, time 2141.1ms, mfu 9.3%
+[round] iter 1794: loss 4.0842, time 1743.2ms, mfu 9.4%
+[round] iter 1795: loss 4.1050, time 1618.2ms, mfu 9.5%
+[round] iter 1796: loss 3.7658, time 1870.6ms, mfu 9.4%
+[round] iter 1797: loss 4.0391, time 1594.1ms, mfu 9.5%
+[round] iter 1798: loss 4.0448, time 1877.8ms, mfu 9.5%
+[round] iter 1799: loss 4.2640, time 1787.2ms, mfu 9.5%
+[round] iter 1800: loss 4.0172, time 1733.3ms, mfu 9.5%
+[round] iter 1801: loss 4.1574, time 1804.8ms, mfu 9.5%
+[round] iter 1802: loss 4.1439, time 1734.7ms, mfu 9.5%
+[round] iter 1803: loss 3.9714, time 1703.1ms, mfu 9.5%
+[round] iter 1804: loss 4.0276, time 1923.7ms, mfu 9.5%
+[round] iter 1805: loss 4.0941, time 1846.7ms, mfu 9.4%
+[round] iter 1806: loss 4.0615, time 1675.9ms, mfu 9.5%
+[round] iter 1807: loss 3.9759, time 1851.1ms, mfu 9.4%
+[round] iter 1808: loss 3.7956, time 1849.4ms, mfu 9.4%
+[round] iter 1809: loss 4.1869, time 1873.9ms, mfu 9.4%
+[round] iter 1810: loss 4.2251, time 1817.3ms, mfu 9.4%
+[round] iter 1811: loss 4.2239, time 1782.0ms, mfu 9.4%
+[round] iter 1812: loss 3.9369, time 2137.7ms, mfu 9.2%
+[round] iter 1813: loss 4.0899, time 1568.0ms, mfu 9.4%
+[round] iter 1814: loss 4.2642, time 1648.0ms, mfu 9.5%
+[round] iter 1815: loss 4.1235, time 1762.9ms, mfu 9.5%
+[round] iter 1816: loss 4.1340, time 1821.3ms, mfu 9.4%
+[round] iter 1817: loss 4.0627, time 1885.1ms, mfu 9.4%
+[round] iter 1818: loss 3.9432, time 1857.3ms, mfu 9.4%
+[round] iter 1819: loss 3.9214, time 1524.0ms, mfu 9.5%
+[round] iter 1820: loss 4.0853, time 1776.2ms, mfu 9.5%
+[round] iter 1821: loss 3.9829, time 1846.0ms, mfu 9.5%
+[round] iter 1822: loss 4.1218, time 2104.1ms, mfu 9.3%
+[round] iter 1823: loss 3.9742, time 1555.6ms, mfu 9.5%
+[round] iter 1824: loss 4.2064, time 1743.5ms, mfu 9.5%
+[round] iter 1825: loss 4.1539, time 1664.9ms, mfu 9.6%
+[round] iter 1826: loss 3.8789, time 1799.5ms, mfu 9.5%
+[round] iter 1827: loss 4.1142, time 1828.2ms, mfu 9.5%
+[round] iter 1828: loss 3.9536, time 1686.3ms, mfu 9.6%
+[round] iter 1829: loss 4.0524, time 1776.2ms, mfu 9.5%
+[round] iter 1830: loss 3.8320, time 1808.1ms, mfu 9.5%
+[round] iter 1831: loss 4.1181, time 1964.1ms, mfu 9.4%
+[round] iter 1832: loss 4.0444, time 1801.0ms, mfu 9.4%
+[round] iter 1833: loss 4.0889, time 1640.0ms, mfu 9.5%
+[round] iter 1834: loss 3.8972, time 1723.4ms, mfu 9.5%
+[round] iter 1835: loss 3.9806, time 1694.2ms, mfu 9.6%
+[round] iter 1836: loss 4.0513, time 1702.9ms, mfu 9.6%
+[round] iter 1837: loss 3.9983, time 1672.0ms, mfu 9.6%
+[round] iter 1838: loss 4.1181, time 1766.4ms, mfu 9.6%
+[round] iter 1839: loss 4.0960, time 1500.7ms, mfu 9.8%
+[round] iter 1840: loss 3.8963, time 1839.0ms, mfu 9.7%
+[round] iter 1841: loss 3.9647, time 1820.6ms, mfu 9.7%
+[round] iter 1842: loss 4.1111, time 1951.0ms, mfu 9.6%
+[round] iter 1843: loss 3.9776, time 2024.4ms, mfu 9.5%
+[round] iter 1844: loss 3.9060, time 1541.7ms, mfu 9.6%
+[round] iter 1845: loss 4.0285, time 1723.4ms, mfu 9.6%
+[round] iter 1846: loss 4.1995, time 1715.4ms, mfu 9.6%
+[round] iter 1847: loss 3.8301, time 1974.9ms, mfu 9.5%
+[round] iter 1848: loss 3.9577, time 1954.5ms, mfu 9.4%
+[round] iter 1849: loss 3.8976, time 1792.5ms, mfu 9.4%
+[round] iter 1850: loss 4.0871, time 2035.1ms, mfu 9.3%
+[round] iter 1851: loss 3.9928, time 1763.7ms, mfu 9.3%
+[round] iter 1852: loss 4.0969, time 1829.0ms, mfu 9.3%
+[round] iter 1853: loss 4.0490, time 1737.3ms, mfu 9.4%
+[round] iter 1854: loss 4.0002, time 1910.7ms, mfu 9.3%
+[round] iter 1855: loss 4.1361, time 1877.4ms, mfu 9.3%
+[round] iter 1856: loss 4.1061, time 1613.3ms, mfu 9.4%
+[round] iter 1857: loss 3.9680, time 1724.6ms, mfu 9.4%
+[round] iter 1858: loss 3.9694, time 1635.8ms, mfu 9.5%
+[round] iter 1859: loss 3.9538, time 2158.1ms, mfu 9.3%
+[round] iter 1860: loss 4.1792, time 1531.0ms, mfu 9.5%
+[round] iter 1861: loss 4.0039, time 1964.3ms, mfu 9.4%
+[round] iter 1862: loss 4.0142, time 1809.3ms, mfu 9.4%
+[round] iter 1863: loss 3.9857, time 2036.6ms, mfu 9.3%
+[round] iter 1864: loss 3.9507, time 1706.4ms, mfu 9.3%
+[round] iter 1865: loss 3.9393, time 1759.2ms, mfu 9.4%
+[round] iter 1866: loss 4.0658, time 1904.7ms, mfu 9.3%
+[round] iter 1867: loss 4.0630, time 1727.1ms, mfu 9.4%
+[round] iter 1868: loss 4.2675, time 2105.3ms, mfu 9.2%
+[round] iter 1869: loss 3.9876, time 1713.2ms, mfu 9.3%
+[round] iter 1870: loss 4.0155, time 2068.0ms, mfu 9.2%
+[round] iter 1871: loss 4.0613, time 1971.2ms, mfu 9.1%
+[round] iter 1872: loss 4.1386, time 1948.9ms, mfu 9.1%
+[round] iter 1873: loss 4.0302, time 1795.1ms, mfu 9.1%
+[round] iter 1874: loss 4.0189, time 2010.7ms, mfu 9.0%
+[round] iter 1875: loss 4.2179, time 1902.4ms, mfu 9.0%
+[round] iter 1876: loss 4.2564, time 1867.2ms, mfu 9.0%
+[round] iter 1877: loss 3.9287, time 1752.9ms, mfu 9.1%
+[round] iter 1878: loss 4.0470, time 2002.7ms, mfu 9.0%
+[round] iter 1879: loss 3.8373, time 1872.2ms, mfu 9.0%
+[round] iter 1880: loss 4.1080, time 1847.4ms, mfu 9.0%
+[round] iter 1881: loss 3.9377, time 1875.0ms, mfu 9.0%
+[round] iter 1882: loss 4.0763, time 1911.4ms, mfu 9.0%
+[round] iter 1883: loss 3.6290, time 1922.4ms, mfu 9.0%
+[round] iter 1884: loss 3.9582, time 1875.3ms, mfu 9.0%
+[round] iter 1885: loss 3.9230, time 1790.5ms, mfu 9.0%
+[round] iter 1886: loss 3.9991, time 1633.5ms, mfu 9.1%
+[round] iter 1887: loss 3.9303, time 1808.5ms, mfu 9.2%
+[round] iter 1888: loss 4.1529, time 1942.9ms, mfu 9.1%
+[round] iter 1889: loss 4.0022, time 1976.4ms, mfu 9.0%
+[round] iter 1890: loss 3.9310, time 1655.2ms, mfu 9.2%
+[round] iter 1891: loss 4.2911, time 1745.2ms, mfu 9.2%
+[round] iter 1892: loss 4.0272, time 1921.0ms, mfu 9.2%
+[round] iter 1893: loss 3.7894, time 1743.8ms, mfu 9.2%
+[round] iter 1894: loss 3.9430, time 1663.8ms, mfu 9.3%
+[round] iter 1895: loss 4.1112, time 1777.1ms, mfu 9.3%
+[round] iter 1896: loss 3.9954, time 1777.7ms, mfu 9.3%
+[round] iter 1897: loss 4.1118, time 1840.0ms, mfu 9.3%
+[round] iter 1898: loss 4.0061, time 1750.0ms, mfu 9.3%
+[round] iter 1899: loss 3.9035, time 1663.6ms, mfu 9.4%
+[round] iter 1900: loss 4.0939, time 1670.2ms, mfu 9.5%
+[round] iter 1901: loss 4.1800, time 1889.7ms, mfu 9.4%
+[round] iter 1902: loss 3.8984, time 1982.3ms, mfu 9.3%
+[round] iter 1903: loss 3.9723, time 1529.1ms, mfu 9.5%
+[round] iter 1904: loss 3.9658, time 1734.3ms, mfu 9.5%
+[round] iter 1905: loss 4.1783, time 1627.4ms, mfu 9.6%
+[round] iter 1906: loss 3.9476, time 1724.1ms, mfu 9.6%
+[round] iter 1907: loss 4.1852, time 1812.3ms, mfu 9.6%
+[round] iter 1908: loss 4.0624, time 1717.1ms, mfu 9.6%
+[round] iter 1909: loss 3.8830, time 1632.3ms, mfu 9.7%
+[round] iter 1910: loss 4.1405, time 1926.8ms, mfu 9.6%
+[round] iter 1911: loss 4.0423, time 2846.9ms, mfu 9.2%
+[round] iter 1912: loss 4.0506, time 1716.1ms, mfu 9.3%
+[round] iter 1913: loss 4.0388, time 1785.3ms, mfu 9.3%
+[round] iter 1914: loss 4.1057, time 1721.6ms, mfu 9.3%
+[round] iter 1915: loss 4.0913, time 1600.6ms, mfu 9.5%
+[round] iter 1916: loss 4.1216, time 1775.4ms, mfu 9.5%
+[round] iter 1917: loss 3.8783, time 1768.9ms, mfu 9.5%
+[round] iter 1918: loss 3.8981, time 1710.1ms, mfu 9.5%
+[round] iter 1919: loss 3.9970, time 1818.2ms, mfu 9.5%
+[round] iter 1920: loss 3.9497, time 1788.8ms, mfu 9.5%
+[round] iter 1921: loss 4.0929, time 1650.2ms, mfu 9.5%
+[round] iter 1922: loss 3.9523, time 1857.9ms, mfu 9.5%
+[round] iter 1923: loss 4.1460, time 1921.7ms, mfu 9.4%
+[round] iter 1924: loss 4.0348, time 1687.7ms, mfu 9.5%
+[round] iter 1925: loss 4.1047, time 1622.9ms, mfu 9.6%
+[round] iter 1926: loss 4.0171, time 1911.1ms, mfu 9.5%
+[round] iter 1927: loss 3.9517, time 1533.6ms, mfu 9.6%
+[round] iter 1928: loss 4.0088, time 1688.2ms, mfu 9.7%
+[round] iter 1929: loss 3.9799, time 1804.9ms, mfu 9.6%
+[round] iter 1930: loss 3.8512, time 1763.9ms, mfu 9.6%
+[round] iter 1931: loss 3.9766, time 1761.6ms, mfu 9.6%
+[round] iter 1932: loss 4.0582, time 1721.8ms, mfu 9.6%
+[round] iter 1933: loss 3.8942, time 1752.5ms, mfu 9.6%
+[round] iter 1934: loss 3.9162, time 1639.9ms, mfu 9.7%
+[round] iter 1935: loss 4.0898, time 1727.5ms, mfu 9.7%
+[round] iter 1936: loss 4.4540, time 2645.0ms, mfu 9.4%
+[round] iter 1937: loss 4.0509, time 2018.9ms, mfu 9.3%
+[round] iter 1938: loss 4.0845, time 2148.9ms, mfu 9.1%
+[round] iter 1939: loss 3.9633, time 1782.2ms, mfu 9.2%
+[round] iter 1940: loss 3.7402, time 1805.9ms, mfu 9.2%
+[round] iter 1941: loss 3.9859, time 1846.9ms, mfu 9.2%
+[round] iter 1942: loss 4.0802, time 1726.3ms, mfu 9.2%
+[round] iter 1943: loss 4.0420, time 1750.6ms, mfu 9.3%
+[round] iter 1944: loss 4.0467, time 1776.6ms, mfu 9.3%
+[round] iter 1945: loss 4.0110, time 1740.1ms, mfu 9.3%
+[round] iter 1946: loss 3.8284, time 1993.9ms, mfu 9.2%
+[round] iter 1947: loss 4.1061, time 1773.0ms, mfu 9.3%
+[round] iter 1948: loss 4.0166, time 1720.5ms, mfu 9.3%
+[round] iter 1949: loss 3.9495, time 2044.4ms, mfu 9.2%
+[round] iter 1950: loss 3.9637, time 1598.1ms, mfu 9.3%
+[round] iter 1951: loss 3.8501, time 1628.2ms, mfu 9.4%
+[round] iter 1952: loss 4.1712, time 1908.6ms, mfu 9.4%
+[round] iter 1953: loss 3.8562, time 3906.7ms, mfu 8.9%
+[round] iter 1954: loss 4.0701, time 1057.4ms, mfu 9.6%
+[round] iter 1955: loss 4.0646, time 1448.4ms, mfu 9.8%
+[round] iter 1956: loss 3.8678, time 1082.9ms, mfu 10.4%
+[round] iter 1957: loss 4.1157, time 1820.9ms, mfu 10.2%
+[round] iter 1958: loss 4.1258, time 1809.3ms, mfu 10.1%
+[round] iter 1959: loss 3.8438, time 2129.3ms, mfu 9.9%
+[round] iter 1960: loss 3.8407, time 1635.1ms, mfu 10.0%
+[round] iter 1961: loss 4.1090, time 1846.5ms, mfu 9.9%
+[round] iter 1962: loss 4.1024, time 1836.6ms, mfu 9.8%
+[round] iter 1963: loss 3.9882, time 1708.5ms, mfu 9.8%
+[round] iter 1964: loss 4.1813, time 2026.4ms, mfu 9.7%
+[round] iter 1965: loss 4.0602, time 1832.3ms, mfu 9.6%
+[round] iter 1966: loss 4.0844, time 1769.4ms, mfu 9.6%
+[round] iter 1967: loss 3.9935, time 2287.9ms, mfu 9.4%
+[round] iter 1968: loss 4.0094, time 1353.5ms, mfu 9.7%
+[round] iter 1969: loss 4.0096, time 1809.4ms, mfu 9.6%
+[round] iter 1970: loss 3.9632, time 1591.2ms, mfu 9.7%
+[round] iter 1971: loss 3.9627, time 1701.4ms, mfu 9.8%
+[round] iter 1972: loss 4.0590, time 1916.2ms, mfu 9.7%
+[round] iter 1973: loss 3.8891, time 1683.5ms, mfu 9.7%
+[round] iter 1974: loss 4.0070, time 1656.8ms, mfu 9.7%
+[round] iter 1975: loss 4.0920, time 1993.1ms, mfu 9.6%
+[round] iter 1976: loss 3.8392, time 1667.4ms, mfu 9.7%
+[round] iter 1977: loss 4.0123, time 1738.0ms, mfu 9.7%
+[round] iter 1978: loss 3.9447, time 2716.1ms, mfu 9.3%
+[round] iter 1979: loss 3.9538, time 968.1ms, mfu 10.1%
+[round] iter 1980: loss 4.1495, time 1660.3ms, mfu 10.1%
+[round] iter 1981: loss 3.8127, time 1917.0ms, mfu 10.0%
+[round] iter 1982: loss 3.8423, time 2046.6ms, mfu 9.8%
+[round] iter 1983: loss 4.0004, time 1664.7ms, mfu 9.8%
+[round] iter 1984: loss 4.1611, time 1913.4ms, mfu 9.7%
+[round] iter 1985: loss 3.8776, time 1795.1ms, mfu 9.7%
+[round] iter 1986: loss 3.9325, time 1775.6ms, mfu 9.7%
+[round] iter 1987: loss 3.9824, time 2156.3ms, mfu 9.5%
+[round] iter 1988: loss 4.1029, time 1795.3ms, mfu 9.5%
+[round] iter 1989: loss 3.9524, time 1723.0ms, mfu 9.5%
+[round] iter 1990: loss 3.9295, time 2049.8ms, mfu 9.4%
+[round] iter 1991: loss 3.9652, time 1684.0ms, mfu 9.4%
+[round] iter 1992: loss 3.9511, time 1856.8ms, mfu 9.4%
+[round] iter 1993: loss 3.9588, time 1693.2ms, mfu 9.5%
+[round] iter 1994: loss 4.0418, time 1820.5ms, mfu 9.4%
+[round] iter 1995: loss 3.9066, time 1772.3ms, mfu 9.4%
+[round] iter 1996: loss 3.9941, time 1894.4ms, mfu 9.4%
+[round] iter 1997: loss 3.9797, time 1813.7ms, mfu 9.4%
+[round] iter 1998: loss 3.9808, time 1872.2ms, mfu 9.3%
+[round] iter 1999: loss 3.9751, time 1721.1ms, mfu 9.4%
+[round] step 2000: train 3.9493, val 3.9788, ppl 53.4548
+🏃 View run A2_seed2 at: http://172.26.52.49/#/experiments/235/runs/0d4349588ecd4048a76924ac151247ba
+🧪 View experiment at: http://172.26.52.49/#/experiments/235
+i8016:1110398:1110472 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+i8016:1110398:1130088 [0] NCCL INFO comm 0xb4bee20 rank 0 nranks 4 cudaDev 0 busId b000 - Abort COMPLETE

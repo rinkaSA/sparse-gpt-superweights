@@ -1,0 +1,114 @@
+W0627 13:00:24.065000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] 
+W0627 13:00:24.065000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+W0627 13:00:24.065000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0627 13:00:24.065000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+2025/06/27 13:00:51 INFO mlflow.system_metrics.system_metrics_monitor: Started monitoring system metrics.
+[rank0]: urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+[rank0]:     resp = conn.urlopen(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+[rank0]:     return self.urlopen(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+[rank0]:     return self.urlopen(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+[rank0]:     return self.urlopen(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   [Previous line repeated 4 more times]
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+[rank0]:     retries = retries.increment(
+[rank0]:               ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+[rank0]:     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='172.26.52.49', port=80): Max retries exceeded with url: /api/2.0/mlflow-artifacts/artifacts/235/269628bf8ba34d5496fe8b8b492d6643/artifacts/c_proj_boxplots/round_1/c_proj_box_round_1_iter_2999.html (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 181, in http_request
+[rank0]:     return _get_http_response_with_retries(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/utils/request_utils.py", line 237, in _get_http_response_with_retries
+[rank0]:     return session.request(method, url, allow_redirects=allow_redirects, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+[rank0]:     resp = self.send(prep, **send_kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+[rank0]:     r = adapter.send(request, **kwargs)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+[rank0]:     raise ConnectionError(e, request=request)
+[rank0]: requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.26.52.49', port=80): Max retries exceeded with url: /api/2.0/mlflow-artifacts/artifacts/235/269628bf8ba34d5496fe8b8b492d6643/artifacts/c_proj_boxplots/round_1/c_proj_box_round_1_iter_2999.html (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 642, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 579, in main
+[rank0]:     records = train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 426, in train_one_round
+[rank0]:     plot_c_proj_box(model, round_idx, iter_num, out_dir)
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 263, in plot_c_proj_box
+[rank0]:     mlflow.log_artifact(html_path, artifact_path=f"c_proj_boxplots/round_{round_idx}")
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 1179, in log_artifact
+[rank0]:     MlflowClient().log_artifact(run_id, local_path, artifact_path)
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/tracking/client.py", line 1939, in log_artifact
+[rank0]:     self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 842, in log_artifact
+[rank0]:     artifact_repo.log_artifact(local_path, artifact_path)
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/store/artifact/http_artifact_repo.py", line 63, in log_artifact
+[rank0]:     resp = http_request(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 204, in http_request
+[rank0]:     raise MlflowException(f"API request to {url} failed with exception {e}")
+[rank0]: mlflow.exceptions.MlflowException: API request to http://172.26.52.49/api/2.0/mlflow-artifacts/artifacts/235/269628bf8ba34d5496fe8b8b492d6643/artifacts/c_proj_boxplots/round_1/c_proj_box_round_1_iter_2999.html failed with exception HTTPConnectionPool(host='172.26.52.49', port=80): Max retries exceeded with url: /api/2.0/mlflow-artifacts/artifacts/235/269628bf8ba34d5496fe8b8b492d6643/artifacts/c_proj_boxplots/round_1/c_proj_box_round_1_iter_2999.html (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025/06/27 14:43:12 INFO mlflow.system_metrics.system_metrics_monitor: Stopping system metrics monitoring...
+2025/06/27 14:43:12 INFO mlflow.system_metrics.system_metrics_monitor: Successfully terminated system metrics monitoring!
+[rank0]:[W627 14:43:16.055777045 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0627 14:43:35.945000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1072189 closing signal SIGTERM
+W0627 14:43:35.952000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1072190 closing signal SIGTERM
+W0627 14:43:35.952000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1072191 closing signal SIGTERM
+E0627 14:43:36.933000 1072170 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 1072188) of binary: /data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/bin/python3.12
+Traceback (most recent call last):
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/LWT/func_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-27_14:43:35
+  host      : i8006.alpha.hpc.tu-dresden.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1072188)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: i8006: task 0: Exited with exit code 1

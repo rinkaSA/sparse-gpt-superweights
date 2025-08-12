@@ -1,0 +1,66 @@
+W0702 19:36:03.845230 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0702 19:36:03.845230 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0702 19:36:03.845230 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0702 19:36:03.845230 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 638, in <module>
+[rank3]:     main()
+[rank3]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 575, in main
+[rank3]:     records = train_one_round(model, optimizer, scaler, args, get_batch_fn, ctx, args.device, round_idx, args.out_dir)
+[rank3]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 436, in train_one_round
+[rank3]:     logits, loss = model(X, Y)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+[rank3]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+[rank3]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/gpt2/nanoGPT/model.py", line 187, in forward
+[rank3]:     loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+[rank3]:   File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/nn/functional.py", line 3479, in cross_entropy
+[rank3]:     return torch._C._nn.cross_entropy_loss(
+[rank3]: RuntimeError: CUDA error: uncorrectable ECC error encountered
+[rank3]: CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+[rank3]: For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+[rank3]: Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+W0702 19:36:54.078391 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 735543 closing signal SIGTERM
+W0702 19:36:54.081422 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 735544 closing signal SIGTERM
+W0702 19:36:54.081708 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 735545 closing signal SIGTERM
+E0702 19:36:55.111127 735523 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 735546) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/LWT/func_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-07-02_19:36:54
+  host      : c90.capella.hpc.tu-dresden.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 735546)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: c90: task 0: Exited with exit code 1

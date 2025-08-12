@@ -1,0 +1,1303 @@
+number of parameters: 123.59M
+number of parameters: 123.59M
+number of parameters: 123.59M
+number of parameters: 123.59M
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: True
+using fused AdamW: True
+c72:467622:467622 [0] NCCL INFO Bootstrap : Using ibp163s0.8002:10.24.8.30<0>
+c72:467622:467622 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+c72:467622:467622 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+c72:467622:467622 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+c72:467622:467622 [0] NCCL INFO cudaDriverVersion 12060
+NCCL version 2.21.5+cuda12.4
+c72:467624:467624 [2] NCCL INFO cudaDriverVersion 12060
+c72:467625:467625 [3] NCCL INFO cudaDriverVersion 12060
+c72:467625:467625 [3] NCCL INFO Bootstrap : Using ibp163s0.8002:10.24.8.30<0>
+c72:467624:467624 [2] NCCL INFO Bootstrap : Using ibp163s0.8002:10.24.8.30<0>
+c72:467624:467624 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+c72:467624:467624 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+c72:467625:467625 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+c72:467624:467624 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+c72:467625:467625 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+c72:467625:467625 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+c72:467624:467676 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+c72:467625:467675 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+c72:467622:467674 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+c72:467625:467675 [3] NCCL INFO NET/IB : Using [0]mlx5_2:1/IB [1]mlx5_3:1/IB [2]mlx5_4:1/IB [3]mlx5_5:1/IB [RO]; OOB ibp163s0.8002:10.24.8.30<0>
+c72:467622:467674 [0] NCCL INFO NET/IB : Using [0]mlx5_2:1/IB [1]mlx5_3:1/IB [2]mlx5_4:1/IB [3]mlx5_5:1/IB [RO]; OOB ibp163s0.8002:10.24.8.30<0>
+c72:467625:467675 [3] NCCL INFO Using non-device net plugin version 0
+c72:467625:467675 [3] NCCL INFO Using network IB
+c72:467622:467674 [0] NCCL INFO Using non-device net plugin version 0
+c72:467622:467674 [0] NCCL INFO Using network IB
+c72:467624:467676 [2] NCCL INFO NET/IB : Using [0]mlx5_2:1/IB [1]mlx5_3:1/IB [2]mlx5_4:1/IB [3]mlx5_5:1/IB [RO]; OOB ibp163s0.8002:10.24.8.30<0>
+c72:467624:467676 [2] NCCL INFO Using non-device net plugin version 0
+c72:467624:467676 [2] NCCL INFO Using network IB
+c72:467625:467675 [3] NCCL INFO DMA-BUF is available on GPU device 3
+c72:467622:467674 [0] NCCL INFO DMA-BUF is available on GPU device 0
+c72:467624:467676 [2] NCCL INFO DMA-BUF is available on GPU device 2
+using fused AdamW: True
+c72:467623:467623 [1] NCCL INFO cudaDriverVersion 12060
+c72:467623:467623 [1] NCCL INFO Bootstrap : Using ibp163s0.8002:10.24.8.30<0>
+c72:467623:467623 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+c72:467623:467623 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+c72:467623:467623 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+c72:467623:467696 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+c72:467623:467696 [1] NCCL INFO NET/IB : Using [0]mlx5_2:1/IB [1]mlx5_3:1/IB [2]mlx5_4:1/IB [3]mlx5_5:1/IB [RO]; OOB ibp163s0.8002:10.24.8.30<0>
+c72:467623:467696 [1] NCCL INFO Using non-device net plugin version 0
+c72:467623:467696 [1] NCCL INFO Using network IB
+c72:467623:467696 [1] NCCL INFO DMA-BUF is available on GPU device 1
+c72:467623:467696 [1] NCCL INFO ncclCommInitRank comm 0xbd70c20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 26000 commId 0x34a2d913536e0063 - Init START
+c72:467622:467674 [0] NCCL INFO ncclCommInitRank comm 0xa3d47b0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0x34a2d913536e0063 - Init START
+c72:467625:467675 [3] NCCL INFO ncclCommInitRank comm 0xb4c07c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0x34a2d913536e0063 - Init START
+c72:467624:467676 [2] NCCL INFO ncclCommInitRank comm 0xb6cee70 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0x34a2d913536e0063 - Init START
+c72:467622:467674 [0] NCCL INFO NVLS multicast support is not available on dev 0
+c72:467625:467675 [3] NCCL INFO Setting affinity for GPU 3 to 0f,00000000
+c72:467625:467675 [3] NCCL INFO NVLS multicast support is not available on dev 3
+c72:467623:467696 [1] NCCL INFO NVLS multicast support is not available on dev 1
+c72:467624:467676 [2] NCCL INFO NVLS multicast support is not available on dev 2
+c72:467623:467696 [1] NCCL INFO comm 0xbd70c20 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+c72:467622:467674 [0] NCCL INFO comm 0xa3d47b0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+c72:467625:467675 [3] NCCL INFO comm 0xb4c07c0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+c72:467624:467676 [2] NCCL INFO comm 0xb6cee70 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+c72:467622:467674 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+c72:467622:467674 [0] NCCL INFO Channel 01/24 :    0   1   3   2
+c72:467622:467674 [0] NCCL INFO Channel 02/24 :    0   2   3   1
+c72:467622:467674 [0] NCCL INFO Channel 03/24 :    0   2   1   3
+c72:467622:467674 [0] NCCL INFO Channel 04/24 :    0   3   1   2
+c72:467622:467674 [0] NCCL INFO Channel 05/24 :    0   3   2   1
+c72:467625:467675 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->1 [5] -1/-1/-1->3->1 [6] -1/-1/-1->3->1 [7] -1/-1/-1->3->1 [8] 2/-1/-1->3->0 [9] 2/-1/-1->3->0 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->1 [17] -1/-1/-1->3->1 [18] -1/-1/-1->3->1 [19] -1/-1/-1->3->1 [20] 2/-1/-1->3->0 [21] 2/-1/-1->3->0 [22] 2/-1/-1->3->0 [23] 2/-1/-1->3->0
+c72:467622:467674 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+c72:467623:467696 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 3/-1/-1->1->2 [5] 3/-1/-1->1->2 [6] 3/-1/-1->1->2 [7] 3/-1/-1->1->2 [8] 0/-1/-1->1->-1 [9] 0/-1/-1->1->-1 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 3/-1/-1->1->2 [17] 3/-1/-1->1->2 [18] 3/-1/-1->1->2 [19] 3/-1/-1->1->2 [20] 0/-1/-1->1->-1 [21] 0/-1/-1->1->-1 [22] 0/-1/-1->1->-1 [23] 0/-1/-1->1->-1
+c72:467622:467674 [0] NCCL INFO Channel 07/24 :    0   1   3   2
+c72:467625:467675 [3] NCCL INFO P2P Chunksize set to 524288
+c72:467622:467674 [0] NCCL INFO Channel 08/24 :    0   2   3   1
+c72:467623:467696 [1] NCCL INFO P2P Chunksize set to 524288
+c72:467622:467674 [0] NCCL INFO Channel 09/24 :    0   2   1   3
+c72:467624:467676 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 1/-1/-1->2->0 [5] 1/-1/-1->2->0 [6] 1/-1/-1->2->0 [7] 1/-1/-1->2->0 [8] -1/-1/-1->2->3 [9] -1/-1/-1->2->3 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 1/-1/-1->2->0 [17] 1/-1/-1->2->0 [18] 1/-1/-1->2->0 [19] 1/-1/-1->2->0 [20] -1/-1/-1->2->3 [21] -1/-1/-1->2->3 [22] -1/-1/-1->2->3 [23] -1/-1/-1->2->3
+c72:467622:467674 [0] NCCL INFO Channel 10/24 :    0   3   1   2
+c72:467624:467676 [2] NCCL INFO P2P Chunksize set to 524288
+c72:467622:467674 [0] NCCL INFO Channel 11/24 :    0   3   2   1
+c72:467622:467674 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+c72:467622:467674 [0] NCCL INFO Channel 13/24 :    0   1   3   2
+c72:467622:467674 [0] NCCL INFO Channel 14/24 :    0   2   3   1
+c72:467622:467674 [0] NCCL INFO Channel 15/24 :    0   2   1   3
+c72:467622:467674 [0] NCCL INFO Channel 16/24 :    0   3   1   2
+c72:467622:467674 [0] NCCL INFO Channel 17/24 :    0   3   2   1
+c72:467622:467674 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+c72:467622:467674 [0] NCCL INFO Channel 19/24 :    0   1   3   2
+c72:467622:467674 [0] NCCL INFO Channel 20/24 :    0   2   3   1
+c72:467622:467674 [0] NCCL INFO Channel 21/24 :    0   2   1   3
+c72:467622:467674 [0] NCCL INFO Channel 22/24 :    0   3   1   2
+c72:467622:467674 [0] NCCL INFO Channel 23/24 :    0   3   2   1
+c72:467622:467674 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 2/-1/-1->0->-1 [5] 2/-1/-1->0->-1 [6] 2/-1/-1->0->-1 [7] 2/-1/-1->0->-1 [8] 3/-1/-1->0->1 [9] 3/-1/-1->0->1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 2/-1/-1->0->-1 [17] 2/-1/-1->0->-1 [18] 2/-1/-1->0->-1 [19] 2/-1/-1->0->-1 [20] 3/-1/-1->0->1 [21] 3/-1/-1->0->1 [22] 3/-1/-1->0->1 [23] 3/-1/-1->0->1
+c72:467622:467674 [0] NCCL INFO P2P Chunksize set to 524288
+c72:467623:467696 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 14/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 16/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 20/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 13/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 22/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 15/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 19/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 13/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 16/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 21/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 19/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 22/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 17/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 20/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 13/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 17/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 23/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 19/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 23/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 14/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 15/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 20/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 21/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 16/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 17/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 22/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 23/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Connected all rings
+c72:467622:467674 [0] NCCL INFO Connected all rings
+c72:467623:467696 [1] NCCL INFO Connected all rings
+c72:467625:467675 [3] NCCL INFO Connected all rings
+c72:467625:467675 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 05/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 06/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 17/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 18/0 : 2[2] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 05/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 06/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 04/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 07/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 17/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 18/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 19/0 : 3[3] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 05/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 06/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 07/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 16/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 17/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 04/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 18/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 05/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 06/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 16/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 19/0 : 0[0] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 17/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 18/0 : 1[1] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 08/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 09/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 20/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467622:467674 [0] NCCL INFO Channel 21/0 : 0[0] -> 3[3] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 14/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 15/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 20/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 21/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467624:467676 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+c72:467625:467675 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM
+c72:467623:467696 [1] NCCL INFO Connected all trees
+c72:467622:467674 [0] NCCL INFO Connected all trees
+c72:467624:467676 [2] NCCL INFO Connected all trees
+c72:467624:467676 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+c72:467623:467696 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+c72:467625:467675 [3] NCCL INFO Connected all trees
+c72:467624:467676 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+c72:467623:467696 [1] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+c72:467622:467674 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+c72:467622:467674 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+c72:467625:467675 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+c72:467625:467675 [3] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+c72:467622:467674 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+c72:467622:467674 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+c72:467622:467674 [0] NCCL INFO ncclCommInitRank comm 0xa3d47b0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0x34a2d913536e0063 - Init COMPLETE
+c72:467625:467675 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+c72:467625:467675 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+c72:467625:467675 [3] NCCL INFO ncclCommInitRank comm 0xb4c07c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0x34a2d913536e0063 - Init COMPLETE
+c72:467624:467676 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+c72:467624:467676 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+c72:467624:467676 [2] NCCL INFO ncclCommInitRank comm 0xb6cee70 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0x34a2d913536e0063 - Init COMPLETE
+c72:467623:467696 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+c72:467623:467696 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+c72:467623:467696 [1] NCCL INFO ncclCommInitRank comm 0xbd70c20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 26000 commId 0x34a2d913536e0063 - Init COMPLETE
+[debug] initial mask 124373760
+[debug] initial canonical mask 124373760
+
+=== ROUND 1/5 ===
+[debug] Round 1 starting: 124373760/124373760 (100.00%) unmasked
+[round] step 0: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 0: loss 10.8125, time 49906.7ms, mfu -100.0%
+[round] iter 1: loss 10.8125, time 1068.8ms, mfu -100.0%
+[round] iter 2: loss 10.8125, time 1011.3ms, mfu -100.0%
+[round] iter 3: loss 10.8125, time 1263.3ms, mfu -100.0%
+[round] iter 4: loss 10.8125, time 1020.0ms, mfu -100.0%
+[round] iter 5: loss 10.8125, time 910.2ms, mfu 18.5%
+[round] iter 6: loss 10.8125, time 1050.1ms, mfu 18.2%
+[round] iter 7: loss 10.8125, time 1083.4ms, mfu 18.0%
+[round] iter 8: loss 10.8125, time 945.7ms, mfu 18.0%
+[round] step 9: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 9: loss 10.8125, time 47940.6ms, mfu 16.2%
+[prune][debug] param transformer.wte.weight: 38633472/38633472 unmasked
+[prune][debug] param transformer.wpe.weight: 786432/786432 unmasked
+[prune][debug] param transformer.h.0.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.0.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.0.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.0.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.0.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.0.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.1.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.1.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.1.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.1.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.1.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.1.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.2.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.2.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.2.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.2.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.2.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.2.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.3.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.3.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.3.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.3.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.3.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.3.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.4.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.4.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.4.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.4.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.4.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.4.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.5.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.5.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.5.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.5.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.5.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.5.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.6.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.6.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.6.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.6.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.6.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.6.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.7.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.7.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.7.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.7.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.7.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.7.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.8.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.8.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.8.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.8.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.8.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.8.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.9.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.9.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.9.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.9.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.9.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.9.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.10.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.10.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.10.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.10.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.10.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.10.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.11.ln_1.weight: 768/768 unmasked
+[prune][debug] param transformer.h.11.attn.c_attn.weight: 1769472/1769472 unmasked
+[prune][debug] param transformer.h.11.attn.c_proj.weight: 589824/589824 unmasked
+[prune][debug] param transformer.h.11.ln_2.weight: 768/768 unmasked
+[prune][debug] param transformer.h.11.mlp.c_fc.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.h.11.mlp.c_proj.weight: 2359296/2359296 unmasked
+[prune][debug] param transformer.ln_f.weight: 768/768 unmasked
+[prune][debug] total unmasked vals = 124373760, k = 12437376 (10.0%)
+[prune][debug] threshold = 2.216731e-03
+[prune][debug] sample smallest: [7.275957614183426e-10, 8.149072527885437e-10, 8.697043085703626e-10, 1.0186340659856796e-09, 1.0477378964424133e-09, 1.121861714636907e-09, 1.382431946694851e-09, 1.3969838619232178e-09, 1.6007106751203537e-09, 2.1755113266408443e-09]
+
+[prune][debug] transformer.wte.weight: kept 30722930/38633472
+[prune][debug] transformer.wpe.weight: kept 756042/786432
+[prune][debug] transformer.h.0.ln_1.weight: kept 662/768
+[prune][debug] transformer.h.0.attn.c_attn.weight: kept 1681000/1769472
+[prune][debug] transformer.h.0.attn.c_proj.weight: kept 569047/589824
+[prune][debug] transformer.h.0.ln_2.weight: kept 613/768
+[prune][debug] transformer.h.0.mlp.c_fc.weight: kept 2226353/2359296
+[prune][debug] transformer.h.0.mlp.c_proj.weight: kept 2226903/2359296
+[prune][debug] transformer.h.1.ln_1.weight: kept 655/768
+[prune][debug] transformer.h.1.attn.c_attn.weight: kept 1680506/1769472
+[prune][debug] transformer.h.1.attn.c_proj.weight: kept 569033/589824
+[prune][debug] transformer.h.1.ln_2.weight: kept 610/768
+[prune][debug] transformer.h.1.mlp.c_fc.weight: kept 2226476/2359296
+[prune][debug] transformer.h.1.mlp.c_proj.weight: kept 2226457/2359296
+[prune][debug] transformer.h.2.ln_1.weight: kept 634/768
+[prune][debug] transformer.h.2.attn.c_attn.weight: kept 1681184/1769472
+[prune][debug] transformer.h.2.attn.c_proj.weight: kept 569161/589824
+[prune][debug] transformer.h.2.ln_2.weight: kept 612/768
+[prune][debug] transformer.h.2.mlp.c_fc.weight: kept 2227431/2359296
+[prune][debug] transformer.h.2.mlp.c_proj.weight: kept 2226699/2359296
+[prune][debug] transformer.h.3.ln_1.weight: kept 637/768
+[prune][debug] transformer.h.3.attn.c_attn.weight: kept 1680506/1769472
+[prune][debug] transformer.h.3.attn.c_proj.weight: kept 568764/589824
+[prune][debug] transformer.h.3.ln_2.weight: kept 619/768
+[prune][debug] transformer.h.3.mlp.c_fc.weight: kept 2227064/2359296
+[prune][debug] transformer.h.3.mlp.c_proj.weight: kept 2227149/2359296
+[prune][debug] transformer.h.4.ln_1.weight: kept 635/768
+[prune][debug] transformer.h.4.attn.c_attn.weight: kept 1680212/1769472
+[prune][debug] transformer.h.4.attn.c_proj.weight: kept 569107/589824
+[prune][debug] transformer.h.4.ln_2.weight: kept 603/768
+[prune][debug] transformer.h.4.mlp.c_fc.weight: kept 2227791/2359296
+[prune][debug] transformer.h.4.mlp.c_proj.weight: kept 2226850/2359296
+[prune][debug] transformer.h.5.ln_1.weight: kept 633/768
+[prune][debug] transformer.h.5.attn.c_attn.weight: kept 1680135/1769472
+[prune][debug] transformer.h.5.attn.c_proj.weight: kept 568926/589824
+[prune][debug] transformer.h.5.ln_2.weight: kept 615/768
+[prune][debug] transformer.h.5.mlp.c_fc.weight: kept 2227248/2359296
+[prune][debug] transformer.h.5.mlp.c_proj.weight: kept 2227403/2359296
+[prune][debug] transformer.h.6.ln_1.weight: kept 624/768
+[prune][debug] transformer.h.6.attn.c_attn.weight: kept 1680324/1769472
+[prune][debug] transformer.h.6.attn.c_proj.weight: kept 568991/589824
+[prune][debug] transformer.h.6.ln_2.weight: kept 611/768
+[prune][debug] transformer.h.6.mlp.c_fc.weight: kept 2227065/2359296
+[prune][debug] transformer.h.6.mlp.c_proj.weight: kept 2227031/2359296
+[prune][debug] transformer.h.7.ln_1.weight: kept 617/768
+[prune][debug] transformer.h.7.attn.c_attn.weight: kept 1680471/1769472
+[prune][debug] transformer.h.7.attn.c_proj.weight: kept 568804/589824
+[prune][debug] transformer.h.7.ln_2.weight: kept 621/768
+[prune][debug] transformer.h.7.mlp.c_fc.weight: kept 2227337/2359296
+[prune][debug] transformer.h.7.mlp.c_proj.weight: kept 2226912/2359296
+[prune][debug] transformer.h.8.ln_1.weight: kept 620/768
+[prune][debug] transformer.h.8.attn.c_attn.weight: kept 1680933/1769472
+[prune][debug] transformer.h.8.attn.c_proj.weight: kept 568682/589824
+[prune][debug] transformer.h.8.ln_2.weight: kept 634/768
+[prune][debug] transformer.h.8.mlp.c_fc.weight: kept 2227023/2359296
+[prune][debug] transformer.h.8.mlp.c_proj.weight: kept 2226698/2359296
+[prune][debug] transformer.h.9.ln_1.weight: kept 622/768
+[prune][debug] transformer.h.9.attn.c_attn.weight: kept 1680513/1769472
+[prune][debug] transformer.h.9.attn.c_proj.weight: kept 568909/589824
+[prune][debug] transformer.h.9.ln_2.weight: kept 622/768
+[prune][debug] transformer.h.9.mlp.c_fc.weight: kept 2227289/2359296
+[prune][debug] transformer.h.9.mlp.c_proj.weight: kept 2226579/2359296
+[prune][debug] transformer.h.10.ln_1.weight: kept 614/768
+[prune][debug] transformer.h.10.attn.c_attn.weight: kept 1680729/1769472
+[prune][debug] transformer.h.10.attn.c_proj.weight: kept 569146/589824
+[prune][debug] transformer.h.10.ln_2.weight: kept 632/768
+[prune][debug] transformer.h.10.mlp.c_fc.weight: kept 2226573/2359296
+[prune][debug] transformer.h.10.mlp.c_proj.weight: kept 2227138/2359296
+[prune][debug] transformer.h.11.ln_1.weight: kept 620/768
+[prune][debug] transformer.h.11.attn.c_attn.weight: kept 1681139/1769472
+[prune][debug] transformer.h.11.attn.c_proj.weight: kept 568696/589824
+[prune][debug] transformer.h.11.ln_2.weight: kept 612/768
+[prune][debug] transformer.h.11.mlp.c_fc.weight: kept 2226546/2359296
+[prune][debug] transformer.h.11.mlp.c_proj.weight: kept 2226751/2359296
+[prune][debug] transformer.ln_f.weight: kept 749/768
+[prune][debug] remaining unmasked after prune: 111936382/124373760
+
+[monitor] SW is → non-zero
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: True
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[sparsity] 111936382/124373760 non-zero → 90.00%
+[round] metrics saved to experiment_results/NAN_1/losses_ppl_round_1.csv
+{'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+True
+90.0
+
+=== ROUND 2/5 ===
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[round] step 0: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 0: loss 10.8125, time 48596.4ms, mfu -100.0%
+[round] iter 1: loss 10.8125, time 975.2ms, mfu -100.0%
+[round] iter 2: loss 10.8125, time 1133.4ms, mfu -100.0%
+[round] iter 3: loss 10.8125, time 1117.0ms, mfu -100.0%
+[round] iter 4: loss 10.8125, time 1186.8ms, mfu -100.0%
+[round] iter 5: loss 10.8125, time 1130.9ms, mfu 14.9%
+[round] iter 6: loss 10.8125, time 1134.4ms, mfu 14.9%
+[round] iter 7: loss 10.8125, time 1146.0ms, mfu 14.9%
+[round] iter 8: loss 10.8125, time 1022.4ms, mfu 15.0%
+[round] step 9: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 9: loss 10.8125, time 47324.1ms, mfu 13.6%
+[prune][debug] param transformer.wte.weight: 30722930/38633472 unmasked
+[prune][debug] param transformer.wpe.weight: 756042/786432 unmasked
+[prune][debug] param transformer.h.0.ln_1.weight: 662/768 unmasked
+[prune][debug] param transformer.h.0.attn.c_attn.weight: 1681000/1769472 unmasked
+[prune][debug] param transformer.h.0.attn.c_proj.weight: 569047/589824 unmasked
+[prune][debug] param transformer.h.0.ln_2.weight: 613/768 unmasked
+[prune][debug] param transformer.h.0.mlp.c_fc.weight: 2226353/2359296 unmasked
+[prune][debug] param transformer.h.0.mlp.c_proj.weight: 2226903/2359296 unmasked
+[prune][debug] param transformer.h.1.ln_1.weight: 655/768 unmasked
+[prune][debug] param transformer.h.1.attn.c_attn.weight: 1680506/1769472 unmasked
+[prune][debug] param transformer.h.1.attn.c_proj.weight: 569033/589824 unmasked
+[prune][debug] param transformer.h.1.ln_2.weight: 610/768 unmasked
+[prune][debug] param transformer.h.1.mlp.c_fc.weight: 2226476/2359296 unmasked
+[prune][debug] param transformer.h.1.mlp.c_proj.weight: 2226457/2359296 unmasked
+[prune][debug] param transformer.h.2.ln_1.weight: 634/768 unmasked
+[prune][debug] param transformer.h.2.attn.c_attn.weight: 1681184/1769472 unmasked
+[prune][debug] param transformer.h.2.attn.c_proj.weight: 569161/589824 unmasked
+[prune][debug] param transformer.h.2.ln_2.weight: 612/768 unmasked
+[prune][debug] param transformer.h.2.mlp.c_fc.weight: 2227431/2359296 unmasked
+[prune][debug] param transformer.h.2.mlp.c_proj.weight: 2226699/2359296 unmasked
+[prune][debug] param transformer.h.3.ln_1.weight: 637/768 unmasked
+[prune][debug] param transformer.h.3.attn.c_attn.weight: 1680506/1769472 unmasked
+[prune][debug] param transformer.h.3.attn.c_proj.weight: 568764/589824 unmasked
+[prune][debug] param transformer.h.3.ln_2.weight: 619/768 unmasked
+[prune][debug] param transformer.h.3.mlp.c_fc.weight: 2227064/2359296 unmasked
+[prune][debug] param transformer.h.3.mlp.c_proj.weight: 2227149/2359296 unmasked
+[prune][debug] param transformer.h.4.ln_1.weight: 635/768 unmasked
+[prune][debug] param transformer.h.4.attn.c_attn.weight: 1680212/1769472 unmasked
+[prune][debug] param transformer.h.4.attn.c_proj.weight: 569107/589824 unmasked
+[prune][debug] param transformer.h.4.ln_2.weight: 603/768 unmasked
+[prune][debug] param transformer.h.4.mlp.c_fc.weight: 2227791/2359296 unmasked
+[prune][debug] param transformer.h.4.mlp.c_proj.weight: 2226850/2359296 unmasked
+[prune][debug] param transformer.h.5.ln_1.weight: 633/768 unmasked
+[prune][debug] param transformer.h.5.attn.c_attn.weight: 1680135/1769472 unmasked
+[prune][debug] param transformer.h.5.attn.c_proj.weight: 568926/589824 unmasked
+[prune][debug] param transformer.h.5.ln_2.weight: 615/768 unmasked
+[prune][debug] param transformer.h.5.mlp.c_fc.weight: 2227248/2359296 unmasked
+[prune][debug] param transformer.h.5.mlp.c_proj.weight: 2227403/2359296 unmasked
+[prune][debug] param transformer.h.6.ln_1.weight: 624/768 unmasked
+[prune][debug] param transformer.h.6.attn.c_attn.weight: 1680324/1769472 unmasked
+[prune][debug] param transformer.h.6.attn.c_proj.weight: 568991/589824 unmasked
+[prune][debug] param transformer.h.6.ln_2.weight: 611/768 unmasked
+[prune][debug] param transformer.h.6.mlp.c_fc.weight: 2227065/2359296 unmasked
+[prune][debug] param transformer.h.6.mlp.c_proj.weight: 2227031/2359296 unmasked
+[prune][debug] param transformer.h.7.ln_1.weight: 617/768 unmasked
+[prune][debug] param transformer.h.7.attn.c_attn.weight: 1680471/1769472 unmasked
+[prune][debug] param transformer.h.7.attn.c_proj.weight: 568804/589824 unmasked
+[prune][debug] param transformer.h.7.ln_2.weight: 621/768 unmasked
+[prune][debug] param transformer.h.7.mlp.c_fc.weight: 2227337/2359296 unmasked
+[prune][debug] param transformer.h.7.mlp.c_proj.weight: 2226912/2359296 unmasked
+[prune][debug] param transformer.h.8.ln_1.weight: 620/768 unmasked
+[prune][debug] param transformer.h.8.attn.c_attn.weight: 1680933/1769472 unmasked
+[prune][debug] param transformer.h.8.attn.c_proj.weight: 568682/589824 unmasked
+[prune][debug] param transformer.h.8.ln_2.weight: 634/768 unmasked
+[prune][debug] param transformer.h.8.mlp.c_fc.weight: 2227023/2359296 unmasked
+[prune][debug] param transformer.h.8.mlp.c_proj.weight: 2226698/2359296 unmasked
+[prune][debug] param transformer.h.9.ln_1.weight: 622/768 unmasked
+[prune][debug] param transformer.h.9.attn.c_attn.weight: 1680513/1769472 unmasked
+[prune][debug] param transformer.h.9.attn.c_proj.weight: 568909/589824 unmasked
+[prune][debug] param transformer.h.9.ln_2.weight: 622/768 unmasked
+[prune][debug] param transformer.h.9.mlp.c_fc.weight: 2227289/2359296 unmasked
+[prune][debug] param transformer.h.9.mlp.c_proj.weight: 2226579/2359296 unmasked
+[prune][debug] param transformer.h.10.ln_1.weight: 614/768 unmasked
+[prune][debug] param transformer.h.10.attn.c_attn.weight: 1680729/1769472 unmasked
+[prune][debug] param transformer.h.10.attn.c_proj.weight: 569146/589824 unmasked
+[prune][debug] param transformer.h.10.ln_2.weight: 632/768 unmasked
+[prune][debug] param transformer.h.10.mlp.c_fc.weight: 2226573/2359296 unmasked
+[prune][debug] param transformer.h.10.mlp.c_proj.weight: 2227138/2359296 unmasked
+[prune][debug] param transformer.h.11.ln_1.weight: 620/768 unmasked
+[prune][debug] param transformer.h.11.attn.c_attn.weight: 1681139/1769472 unmasked
+[prune][debug] param transformer.h.11.attn.c_proj.weight: 568696/589824 unmasked
+[prune][debug] param transformer.h.11.ln_2.weight: 612/768 unmasked
+[prune][debug] param transformer.h.11.mlp.c_fc.weight: 2226546/2359296 unmasked
+[prune][debug] param transformer.h.11.mlp.c_proj.weight: 2226751/2359296 unmasked
+[prune][debug] param transformer.ln_f.weight: 749/768 unmasked
+[prune][debug] total unmasked vals = 111936382, k = 11193638 (10.0%)
+[prune][debug] threshold = 4.204663e-03
+[prune][debug] sample smallest: [5.165929906070232e-10, 3.1082890927791595e-08, 4.312369128456339e-08, 5.176116246730089e-08, 6.789196049794555e-08, 7.539347279816866e-08, 1.1819065548479557e-07, 1.2113014236092567e-07, 1.3741373550146818e-07, 1.3969838619232178e-07]
+
+[prune][debug] transformer.wte.weight: kept 23601138/30722930
+[prune][debug] transformer.wpe.weight: kept 728082/756042
+[prune][debug] transformer.h.0.ln_1.weight: kept 12/662
+[prune][debug] transformer.h.0.attn.c_attn.weight: kept 1601014/1681000
+[prune][debug] transformer.h.0.attn.c_proj.weight: kept 550436/569047
+[prune][debug] transformer.h.0.ln_2.weight: kept 26/613
+[prune][debug] transformer.h.0.mlp.c_fc.weight: kept 2107768/2226353
+[prune][debug] transformer.h.0.mlp.c_proj.weight: kept 2108540/2226903
+[prune][debug] transformer.h.1.ln_1.weight: kept 10/655
+[prune][debug] transformer.h.1.attn.c_attn.weight: kept 1600907/1680506
+[prune][debug] transformer.h.1.attn.c_proj.weight: kept 550255/569033
+[prune][debug] transformer.h.1.ln_2.weight: kept 23/610
+[prune][debug] transformer.h.1.mlp.c_fc.weight: kept 2107947/2226476
+[prune][debug] transformer.h.1.mlp.c_proj.weight: kept 2107915/2226457
+[prune][debug] transformer.h.2.ln_1.weight: kept 10/634
+[prune][debug] transformer.h.2.attn.c_attn.weight: kept 1601419/1681184
+[prune][debug] transformer.h.2.attn.c_proj.weight: kept 550282/569161
+[prune][debug] transformer.h.2.ln_2.weight: kept 24/612
+[prune][debug] transformer.h.2.mlp.c_fc.weight: kept 2108791/2227431
+[prune][debug] transformer.h.2.mlp.c_proj.weight: kept 2108007/2226699
+[prune][debug] transformer.h.3.ln_1.weight: kept 6/637
+[prune][debug] transformer.h.3.attn.c_attn.weight: kept 1600740/1680506
+[prune][debug] transformer.h.3.attn.c_proj.weight: kept 550019/568764
+[prune][debug] transformer.h.3.ln_2.weight: kept 29/619
+[prune][debug] transformer.h.3.mlp.c_fc.weight: kept 2108510/2227064
+[prune][debug] transformer.h.3.mlp.c_proj.weight: kept 2108813/2227149
+[prune][debug] transformer.h.4.ln_1.weight: kept 7/635
+[prune][debug] transformer.h.4.attn.c_attn.weight: kept 1601198/1680212
+[prune][debug] transformer.h.4.attn.c_proj.weight: kept 550365/569107
+[prune][debug] transformer.h.4.ln_2.weight: kept 34/603
+[prune][debug] transformer.h.4.mlp.c_fc.weight: kept 2108678/2227791
+[prune][debug] transformer.h.4.mlp.c_proj.weight: kept 2108197/2226850
+[prune][debug] transformer.h.5.ln_1.weight: kept 9/633
+[prune][debug] transformer.h.5.attn.c_attn.weight: kept 1599810/1680135
+[prune][debug] transformer.h.5.attn.c_proj.weight: kept 550175/568926
+[prune][debug] transformer.h.5.ln_2.weight: kept 28/615
+[prune][debug] transformer.h.5.mlp.c_fc.weight: kept 2108890/2227248
+[prune][debug] transformer.h.5.mlp.c_proj.weight: kept 2108658/2227403
+[prune][debug] transformer.h.6.ln_1.weight: kept 8/624
+[prune][debug] transformer.h.6.attn.c_attn.weight: kept 1599970/1680324
+[prune][debug] transformer.h.6.attn.c_proj.weight: kept 550107/568991
+[prune][debug] transformer.h.6.ln_2.weight: kept 32/611
+[prune][debug] transformer.h.6.mlp.c_fc.weight: kept 2108085/2227065
+[prune][debug] transformer.h.6.mlp.c_proj.weight: kept 2108770/2227031
+[prune][debug] transformer.h.7.ln_1.weight: kept 7/617
+[prune][debug] transformer.h.7.attn.c_attn.weight: kept 1600628/1680471
+[prune][debug] transformer.h.7.attn.c_proj.weight: kept 550042/568804
+[prune][debug] transformer.h.7.ln_2.weight: kept 34/621
+[prune][debug] transformer.h.7.mlp.c_fc.weight: kept 2109025/2227337
+[prune][debug] transformer.h.7.mlp.c_proj.weight: kept 2108372/2226912
+[prune][debug] transformer.h.8.ln_1.weight: kept 11/620
+[prune][debug] transformer.h.8.attn.c_attn.weight: kept 1601515/1680933
+[prune][debug] transformer.h.8.attn.c_proj.weight: kept 549746/568682
+[prune][debug] transformer.h.8.ln_2.weight: kept 31/634
+[prune][debug] transformer.h.8.mlp.c_fc.weight: kept 2108209/2227023
+[prune][debug] transformer.h.8.mlp.c_proj.weight: kept 2108438/2226698
+[prune][debug] transformer.h.9.ln_1.weight: kept 14/622
+[prune][debug] transformer.h.9.attn.c_attn.weight: kept 1600809/1680513
+[prune][debug] transformer.h.9.attn.c_proj.weight: kept 550200/568909
+[prune][debug] transformer.h.9.ln_2.weight: kept 25/622
+[prune][debug] transformer.h.9.mlp.c_fc.weight: kept 2108313/2227289
+[prune][debug] transformer.h.9.mlp.c_proj.weight: kept 2108208/2226579
+[prune][debug] transformer.h.10.ln_1.weight: kept 11/614
+[prune][debug] transformer.h.10.attn.c_attn.weight: kept 1600871/1680729
+[prune][debug] transformer.h.10.attn.c_proj.weight: kept 550422/569146
+[prune][debug] transformer.h.10.ln_2.weight: kept 28/632
+[prune][debug] transformer.h.10.mlp.c_fc.weight: kept 2108087/2226573
+[prune][debug] transformer.h.10.mlp.c_proj.weight: kept 2108605/2227138
+[prune][debug] transformer.h.11.ln_1.weight: kept 25/620
+[prune][debug] transformer.h.11.attn.c_attn.weight: kept 1601239/1681139
+[prune][debug] transformer.h.11.attn.c_proj.weight: kept 550001/568696
+[prune][debug] transformer.h.11.ln_2.weight: kept 29/612
+[prune][debug] transformer.h.11.mlp.c_fc.weight: kept 2107379/2226546
+[prune][debug] transformer.h.11.mlp.c_proj.weight: kept 2107944/2226751
+[prune][debug] transformer.ln_f.weight: kept 728/749
+[prune][debug] remaining unmasked after prune: 100742740/111936382
+
+[monitor] SW is → non-zero
+[sparsity] 100742740/124373760 non-zero → 81.00%
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: Trueusing fused AdamW: True
+
+[round] metrics saved to experiment_results/NAN_1/losses_ppl_round_2.csv
+{'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+True
+81.0
+
+=== ROUND 3/5 ===
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[round] step 0: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 0: loss 10.8125, time 49786.3ms, mfu -100.0%
+[round] iter 1: loss 10.8125, time 1006.8ms, mfu -100.0%
+[round] iter 2: loss 10.8125, time 1438.4ms, mfu -100.0%
+[round] iter 3: loss 10.8125, time 967.3ms, mfu -100.0%
+[round] iter 4: loss 10.8125, time 1169.5ms, mfu -100.0%
+[round] iter 5: loss 10.8125, time 1116.3ms, mfu 15.1%
+[round] iter 6: loss 10.8125, time 1067.7ms, mfu 15.1%
+[round] iter 7: loss 10.8125, time 1016.6ms, mfu 15.3%
+[round] iter 8: loss 10.8125, time 1247.6ms, mfu 15.1%
+[round] step 9: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 9: loss 10.8125, time 45921.7ms, mfu 13.6%
+[prune][debug] param transformer.wte.weight: 23601138/38633472 unmasked
+[prune][debug] param transformer.wpe.weight: 728082/786432 unmasked
+[prune][debug] param transformer.h.0.ln_1.weight: 12/768 unmasked
+[prune][debug] param transformer.h.0.attn.c_attn.weight: 1601014/1769472 unmasked
+[prune][debug] param transformer.h.0.attn.c_proj.weight: 550436/589824 unmasked
+[prune][debug] param transformer.h.0.ln_2.weight: 26/768 unmasked
+[prune][debug] param transformer.h.0.mlp.c_fc.weight: 2107768/2359296 unmasked
+[prune][debug] param transformer.h.0.mlp.c_proj.weight: 2108540/2359296 unmasked
+[prune][debug] param transformer.h.1.ln_1.weight: 10/768 unmasked
+[prune][debug] param transformer.h.1.attn.c_attn.weight: 1600907/1769472 unmasked
+[prune][debug] param transformer.h.1.attn.c_proj.weight: 550255/589824 unmasked
+[prune][debug] param transformer.h.1.ln_2.weight: 23/768 unmasked
+[prune][debug] param transformer.h.1.mlp.c_fc.weight: 2107947/2359296 unmasked
+[prune][debug] param transformer.h.1.mlp.c_proj.weight: 2107915/2359296 unmasked
+[prune][debug] param transformer.h.2.ln_1.weight: 10/768 unmasked
+[prune][debug] param transformer.h.2.attn.c_attn.weight: 1601419/1769472 unmasked
+[prune][debug] param transformer.h.2.attn.c_proj.weight: 550282/589824 unmasked
+[prune][debug] param transformer.h.2.ln_2.weight: 24/768 unmasked
+[prune][debug] param transformer.h.2.mlp.c_fc.weight: 2108791/2359296 unmasked
+[prune][debug] param transformer.h.2.mlp.c_proj.weight: 2108007/2359296 unmasked
+[prune][debug] param transformer.h.3.ln_1.weight: 6/768 unmasked
+[prune][debug] param transformer.h.3.attn.c_attn.weight: 1600740/1769472 unmasked
+[prune][debug] param transformer.h.3.attn.c_proj.weight: 550019/589824 unmasked
+[prune][debug] param transformer.h.3.ln_2.weight: 29/768 unmasked
+[prune][debug] param transformer.h.3.mlp.c_fc.weight: 2108510/2359296 unmasked
+[prune][debug] param transformer.h.3.mlp.c_proj.weight: 2108813/2359296 unmasked
+[prune][debug] param transformer.h.4.ln_1.weight: 7/768 unmasked
+[prune][debug] param transformer.h.4.attn.c_attn.weight: 1601198/1769472 unmasked
+[prune][debug] param transformer.h.4.attn.c_proj.weight: 550365/589824 unmasked
+[prune][debug] param transformer.h.4.ln_2.weight: 34/768 unmasked
+[prune][debug] param transformer.h.4.mlp.c_fc.weight: 2108678/2359296 unmasked
+[prune][debug] param transformer.h.4.mlp.c_proj.weight: 2108197/2359296 unmasked
+[prune][debug] param transformer.h.5.ln_1.weight: 9/768 unmasked
+[prune][debug] param transformer.h.5.attn.c_attn.weight: 1599810/1769472 unmasked
+[prune][debug] param transformer.h.5.attn.c_proj.weight: 550175/589824 unmasked
+[prune][debug] param transformer.h.5.ln_2.weight: 28/768 unmasked
+[prune][debug] param transformer.h.5.mlp.c_fc.weight: 2108890/2359296 unmasked
+[prune][debug] param transformer.h.5.mlp.c_proj.weight: 2108658/2359296 unmasked
+[prune][debug] param transformer.h.6.ln_1.weight: 8/768 unmasked
+[prune][debug] param transformer.h.6.attn.c_attn.weight: 1599970/1769472 unmasked
+[prune][debug] param transformer.h.6.attn.c_proj.weight: 550107/589824 unmasked
+[prune][debug] param transformer.h.6.ln_2.weight: 32/768 unmasked
+[prune][debug] param transformer.h.6.mlp.c_fc.weight: 2108085/2359296 unmasked
+[prune][debug] param transformer.h.6.mlp.c_proj.weight: 2108770/2359296 unmasked
+[prune][debug] param transformer.h.7.ln_1.weight: 7/768 unmasked
+[prune][debug] param transformer.h.7.attn.c_attn.weight: 1600628/1769472 unmasked
+[prune][debug] param transformer.h.7.attn.c_proj.weight: 550042/589824 unmasked
+[prune][debug] param transformer.h.7.ln_2.weight: 34/768 unmasked
+[prune][debug] param transformer.h.7.mlp.c_fc.weight: 2109025/2359296 unmasked
+[prune][debug] param transformer.h.7.mlp.c_proj.weight: 2108372/2359296 unmasked
+[prune][debug] param transformer.h.8.ln_1.weight: 11/768 unmasked
+[prune][debug] param transformer.h.8.attn.c_attn.weight: 1601515/1769472 unmasked
+[prune][debug] param transformer.h.8.attn.c_proj.weight: 549746/589824 unmasked
+[prune][debug] param transformer.h.8.ln_2.weight: 31/768 unmasked
+[prune][debug] param transformer.h.8.mlp.c_fc.weight: 2108209/2359296 unmasked
+[prune][debug] param transformer.h.8.mlp.c_proj.weight: 2108438/2359296 unmasked
+[prune][debug] param transformer.h.9.ln_1.weight: 14/768 unmasked
+[prune][debug] param transformer.h.9.attn.c_attn.weight: 1600809/1769472 unmasked
+[prune][debug] param transformer.h.9.attn.c_proj.weight: 550200/589824 unmasked
+[prune][debug] param transformer.h.9.ln_2.weight: 25/768 unmasked
+[prune][debug] param transformer.h.9.mlp.c_fc.weight: 2108313/2359296 unmasked
+[prune][debug] param transformer.h.9.mlp.c_proj.weight: 2108208/2359296 unmasked
+[prune][debug] param transformer.h.10.ln_1.weight: 11/768 unmasked
+[prune][debug] param transformer.h.10.attn.c_attn.weight: 1600871/1769472 unmasked
+[prune][debug] param transformer.h.10.attn.c_proj.weight: 550422/589824 unmasked
+[prune][debug] param transformer.h.10.ln_2.weight: 28/768 unmasked
+[prune][debug] param transformer.h.10.mlp.c_fc.weight: 2108087/2359296 unmasked
+[prune][debug] param transformer.h.10.mlp.c_proj.weight: 2108605/2359296 unmasked
+[prune][debug] param transformer.h.11.ln_1.weight: 25/768 unmasked
+[prune][debug] param transformer.h.11.attn.c_attn.weight: 1601239/1769472 unmasked
+[prune][debug] param transformer.h.11.attn.c_proj.weight: 550001/589824 unmasked
+[prune][debug] param transformer.h.11.ln_2.weight: 29/768 unmasked
+[prune][debug] param transformer.h.11.mlp.c_fc.weight: 2107379/2359296 unmasked
+[prune][debug] param transformer.h.11.mlp.c_proj.weight: 2107944/2359296 unmasked
+[prune][debug] param transformer.ln_f.weight: 728/768 unmasked
+[prune][debug] total unmasked vals = 100742740, k = 10074274 (10.0%)
+[prune][debug] threshold = 5.992346e-03
+[prune][debug] sample smallest: [9.825744200497866e-07, 1.5762925613671541e-06, 1.7347629182040691e-06, 3.2581592677161098e-06, 4.503148375079036e-06, 5.014419002691284e-06, 7.065362296998501e-06, 7.218855898827314e-06, 8.305913070216775e-06, 9.42562473937869e-06]
+
+[prune][debug] transformer.wte.weight: kept 17204517/23601138
+[prune][debug] transformer.wpe.weight: kept 703371/728082
+[prune][debug] transformer.h.0.ln_1.weight: kept 0/12
+[prune][debug] transformer.h.0.attn.c_attn.weight: kept 1529020/1601014
+[prune][debug] transformer.h.0.attn.c_proj.weight: kept 532976/550436
+[prune][debug] transformer.h.0.ln_2.weight: kept 0/26
+[prune][debug] transformer.h.0.mlp.c_fc.weight: kept 2000670/2107768
+[prune][debug] transformer.h.0.mlp.c_proj.weight: kept 2001150/2108540
+[prune][debug] transformer.h.1.ln_1.weight: kept 0/10
+[prune][debug] transformer.h.1.attn.c_attn.weight: kept 1528722/1600907
+[prune][debug] transformer.h.1.attn.c_proj.weight: kept 533084/550255
+[prune][debug] transformer.h.1.ln_2.weight: kept 0/23
+[prune][debug] transformer.h.1.mlp.c_fc.weight: kept 2000516/2107947
+[prune][debug] transformer.h.1.mlp.c_proj.weight: kept 2000188/2107915
+[prune][debug] transformer.h.2.ln_1.weight: kept 0/10
+[prune][debug] transformer.h.2.attn.c_attn.weight: kept 1529254/1601419
+[prune][debug] transformer.h.2.attn.c_proj.weight: kept 532987/550282
+[prune][debug] transformer.h.2.ln_2.weight: kept 0/24
+[prune][debug] transformer.h.2.mlp.c_fc.weight: kept 2001496/2108791
+[prune][debug] transformer.h.2.mlp.c_proj.weight: kept 2000947/2108007
+[prune][debug] transformer.h.3.ln_1.weight: kept 0/6
+[prune][debug] transformer.h.3.attn.c_attn.weight: kept 1527856/1600740
+[prune][debug] transformer.h.3.attn.c_proj.weight: kept 532500/550019
+[prune][debug] transformer.h.3.ln_2.weight: kept 0/29
+[prune][debug] transformer.h.3.mlp.c_fc.weight: kept 2001549/2108510
+[prune][debug] transformer.h.3.mlp.c_proj.weight: kept 2001288/2108813
+[prune][debug] transformer.h.4.ln_1.weight: kept 0/7
+[prune][debug] transformer.h.4.attn.c_attn.weight: kept 1529185/1601198
+[prune][debug] transformer.h.4.attn.c_proj.weight: kept 532631/550365
+[prune][debug] transformer.h.4.ln_2.weight: kept 0/34
+[prune][debug] transformer.h.4.mlp.c_fc.weight: kept 2001506/2108678
+[prune][debug] transformer.h.4.mlp.c_proj.weight: kept 2000672/2108197
+[prune][debug] transformer.h.5.ln_1.weight: kept 0/9
+[prune][debug] transformer.h.5.attn.c_attn.weight: kept 1527473/1599810
+[prune][debug] transformer.h.5.attn.c_proj.weight: kept 532817/550175
+[prune][debug] transformer.h.5.ln_2.weight: kept 0/28
+[prune][debug] transformer.h.5.mlp.c_fc.weight: kept 2001543/2108890
+[prune][debug] transformer.h.5.mlp.c_proj.weight: kept 2001491/2108658
+[prune][debug] transformer.h.6.ln_1.weight: kept 0/8
+[prune][debug] transformer.h.6.attn.c_attn.weight: kept 1528135/1599970
+[prune][debug] transformer.h.6.attn.c_proj.weight: kept 532461/550107
+[prune][debug] transformer.h.6.ln_2.weight: kept 0/32
+[prune][debug] transformer.h.6.mlp.c_fc.weight: kept 2001651/2108085
+[prune][debug] transformer.h.6.mlp.c_proj.weight: kept 2000658/2108770
+[prune][debug] transformer.h.7.ln_1.weight: kept 0/7
+[prune][debug] transformer.h.7.attn.c_attn.weight: kept 1528576/1600628
+[prune][debug] transformer.h.7.attn.c_proj.weight: kept 532528/550042
+[prune][debug] transformer.h.7.ln_2.weight: kept 0/34
+[prune][debug] transformer.h.7.mlp.c_fc.weight: kept 2002268/2109025
+[prune][debug] transformer.h.7.mlp.c_proj.weight: kept 2000688/2108372
+[prune][debug] transformer.h.8.ln_1.weight: kept 0/11
+[prune][debug] transformer.h.8.attn.c_attn.weight: kept 1529383/1601515
+[prune][debug] transformer.h.8.attn.c_proj.weight: kept 532067/549746
+[prune][debug] transformer.h.8.ln_2.weight: kept 0/31
+[prune][debug] transformer.h.8.mlp.c_fc.weight: kept 2001081/2108209
+[prune][debug] transformer.h.8.mlp.c_proj.weight: kept 2000667/2108438
+[prune][debug] transformer.h.9.ln_1.weight: kept 0/14
+[prune][debug] transformer.h.9.attn.c_attn.weight: kept 1528374/1600809
+[prune][debug] transformer.h.9.attn.c_proj.weight: kept 532758/550200
+[prune][debug] transformer.h.9.ln_2.weight: kept 0/25
+[prune][debug] transformer.h.9.mlp.c_fc.weight: kept 2001353/2108313
+[prune][debug] transformer.h.9.mlp.c_proj.weight: kept 2000626/2108208
+[prune][debug] transformer.h.10.ln_1.weight: kept 0/11
+[prune][debug] transformer.h.10.attn.c_attn.weight: kept 1528818/1600871
+[prune][debug] transformer.h.10.attn.c_proj.weight: kept 532982/550422
+[prune][debug] transformer.h.10.ln_2.weight: kept 0/28
+[prune][debug] transformer.h.10.mlp.c_fc.weight: kept 2001070/2108087
+[prune][debug] transformer.h.10.mlp.c_proj.weight: kept 2001008/2108605
+[prune][debug] transformer.h.11.ln_1.weight: kept 0/25
+[prune][debug] transformer.h.11.attn.c_attn.weight: kept 1528803/1601239
+[prune][debug] transformer.h.11.attn.c_proj.weight: kept 532313/550001
+[prune][debug] transformer.h.11.ln_2.weight: kept 0/29
+[prune][debug] transformer.h.11.mlp.c_fc.weight: kept 2000221/2107379
+[prune][debug] transformer.h.11.mlp.c_proj.weight: kept 2000565/2107944
+[prune][debug] transformer.ln_f.weight: kept 0/728
+[prune][debug] remaining unmasked after prune: 90668462/100742740
+
+[monitor] SW is → non-zero
+[sparsity] 90668462/124373760 non-zero → 72.90%
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: True
+[round] metrics saved to experiment_results/NAN_1/losses_ppl_round_3.csv
+{'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+True
+72.9
+
+=== ROUND 4/5 ===
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[round] step 0: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 0: loss 10.8125, time 47618.7ms, mfu -100.0%
+[round] iter 1: loss 10.8125, time 1074.0ms, mfu -100.0%
+[round] iter 2: loss 10.8125, time 1174.5ms, mfu -100.0%
+[round] iter 3: loss 10.8125, time 945.2ms, mfu -100.0%
+[round] iter 4: loss 10.8125, time 1046.0ms, mfu -100.0%
+[round] iter 5: loss 10.8125, time 1033.5ms, mfu 16.3%
+[round] iter 6: loss 10.8125, time 1111.4ms, mfu 16.2%
+[round] iter 7: loss 10.8125, time 953.3ms, mfu 16.3%
+[round] iter 8: loss 10.8125, time 1131.4ms, mfu 16.2%
+[round] step 9: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 9: loss 10.8125, time 48091.1ms, mfu 14.6%
+[prune][debug] param transformer.wte.weight: 17204517/38633472 unmasked
+[prune][debug] param transformer.wpe.weight: 703371/786432 unmasked
+[prune][debug] param transformer.h.0.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.0.attn.c_attn.weight: 1529020/1769472 unmasked
+[prune][debug] param transformer.h.0.attn.c_proj.weight: 532976/589824 unmasked
+[prune][debug] param transformer.h.0.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.0.mlp.c_fc.weight: 2000670/2359296 unmasked
+[prune][debug] param transformer.h.0.mlp.c_proj.weight: 2001150/2359296 unmasked
+[prune][debug] param transformer.h.1.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.1.attn.c_attn.weight: 1528722/1769472 unmasked
+[prune][debug] param transformer.h.1.attn.c_proj.weight: 533084/589824 unmasked
+[prune][debug] param transformer.h.1.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.1.mlp.c_fc.weight: 2000516/2359296 unmasked
+[prune][debug] param transformer.h.1.mlp.c_proj.weight: 2000188/2359296 unmasked
+[prune][debug] param transformer.h.2.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.2.attn.c_attn.weight: 1529254/1769472 unmasked
+[prune][debug] param transformer.h.2.attn.c_proj.weight: 532987/589824 unmasked
+[prune][debug] param transformer.h.2.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.2.mlp.c_fc.weight: 2001496/2359296 unmasked
+[prune][debug] param transformer.h.2.mlp.c_proj.weight: 2000947/2359296 unmasked
+[prune][debug] param transformer.h.3.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.3.attn.c_attn.weight: 1527856/1769472 unmasked
+[prune][debug] param transformer.h.3.attn.c_proj.weight: 532500/589824 unmasked
+[prune][debug] param transformer.h.3.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.3.mlp.c_fc.weight: 2001549/2359296 unmasked
+[prune][debug] param transformer.h.3.mlp.c_proj.weight: 2001288/2359296 unmasked
+[prune][debug] param transformer.h.4.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.4.attn.c_attn.weight: 1529185/1769472 unmasked
+[prune][debug] param transformer.h.4.attn.c_proj.weight: 532631/589824 unmasked
+[prune][debug] param transformer.h.4.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.4.mlp.c_fc.weight: 2001506/2359296 unmasked
+[prune][debug] param transformer.h.4.mlp.c_proj.weight: 2000672/2359296 unmasked
+[prune][debug] param transformer.h.5.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.5.attn.c_attn.weight: 1527473/1769472 unmasked
+[prune][debug] param transformer.h.5.attn.c_proj.weight: 532817/589824 unmasked
+[prune][debug] param transformer.h.5.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.5.mlp.c_fc.weight: 2001543/2359296 unmasked
+[prune][debug] param transformer.h.5.mlp.c_proj.weight: 2001491/2359296 unmasked
+[prune][debug] param transformer.h.6.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.6.attn.c_attn.weight: 1528135/1769472 unmasked
+[prune][debug] param transformer.h.6.attn.c_proj.weight: 532461/589824 unmasked
+[prune][debug] param transformer.h.6.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.6.mlp.c_fc.weight: 2001651/2359296 unmasked
+[prune][debug] param transformer.h.6.mlp.c_proj.weight: 2000658/2359296 unmasked
+[prune][debug] param transformer.h.7.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.7.attn.c_attn.weight: 1528576/1769472 unmasked
+[prune][debug] param transformer.h.7.attn.c_proj.weight: 532528/589824 unmasked
+[prune][debug] param transformer.h.7.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.7.mlp.c_fc.weight: 2002268/2359296 unmasked
+[prune][debug] param transformer.h.7.mlp.c_proj.weight: 2000688/2359296 unmasked
+[prune][debug] param transformer.h.8.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.8.attn.c_attn.weight: 1529383/1769472 unmasked
+[prune][debug] param transformer.h.8.attn.c_proj.weight: 532067/589824 unmasked
+[prune][debug] param transformer.h.8.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.8.mlp.c_fc.weight: 2001081/2359296 unmasked
+[prune][debug] param transformer.h.8.mlp.c_proj.weight: 2000667/2359296 unmasked
+[prune][debug] param transformer.h.9.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.9.attn.c_attn.weight: 1528374/1769472 unmasked
+[prune][debug] param transformer.h.9.attn.c_proj.weight: 532758/589824 unmasked
+[prune][debug] param transformer.h.9.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.9.mlp.c_fc.weight: 2001353/2359296 unmasked
+[prune][debug] param transformer.h.9.mlp.c_proj.weight: 2000626/2359296 unmasked
+[prune][debug] param transformer.h.10.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.10.attn.c_attn.weight: 1528818/1769472 unmasked
+[prune][debug] param transformer.h.10.attn.c_proj.weight: 532982/589824 unmasked
+[prune][debug] param transformer.h.10.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.10.mlp.c_fc.weight: 2001070/2359296 unmasked
+[prune][debug] param transformer.h.10.mlp.c_proj.weight: 2001008/2359296 unmasked
+[prune][debug] param transformer.h.11.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.11.attn.c_attn.weight: 1528803/1769472 unmasked
+[prune][debug] param transformer.h.11.attn.c_proj.weight: 532313/589824 unmasked
+[prune][debug] param transformer.h.11.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.11.mlp.c_fc.weight: 2000221/2359296 unmasked
+[prune][debug] param transformer.h.11.mlp.c_proj.weight: 2000565/2359296 unmasked
+[prune][debug] param transformer.ln_f.weight: 0/768 unmasked
+[prune][debug] total unmasked vals = 90668463, k = 9066846 (10.0%)
+[prune][debug] threshold = 7.606671e-03
+[prune][debug] sample smallest: [0.0013165128184482455, 0.0013773459941148758, 0.0013832926051691175, 0.0013855885481461883, 0.0014050113968551159, 0.0014186566695570946, 0.0014203290920704603, 0.0014303468633443117, 0.0014414213364943862, 0.0014426541747525334]
+
+[prune][debug] transformer.wte.weight: kept 11422476/17204517
+[prune][debug] transformer.wpe.weight: kept 668860/703371
+[prune][debug] transformer.h.0.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.0.attn.c_attn.weight: kept 1464958/1529020
+[prune][debug] transformer.h.0.attn.c_proj.weight: kept 518155/532976
+[prune][debug] transformer.h.0.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.0.mlp.c_fc.weight: kept 1904661/2000670
+[prune][debug] transformer.h.0.mlp.c_proj.weight: kept 1905254/2001150
+[prune][debug] transformer.h.1.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.1.attn.c_attn.weight: kept 1465354/1528722
+[prune][debug] transformer.h.1.attn.c_proj.weight: kept 518341/533084
+[prune][debug] transformer.h.1.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.1.mlp.c_fc.weight: kept 1903848/2000516
+[prune][debug] transformer.h.1.mlp.c_proj.weight: kept 1904280/2000188
+[prune][debug] transformer.h.2.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.2.attn.c_attn.weight: kept 1464833/1529254
+[prune][debug] transformer.h.2.attn.c_proj.weight: kept 518061/532987
+[prune][debug] transformer.h.2.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.2.mlp.c_fc.weight: kept 1904890/2001496
+[prune][debug] transformer.h.2.mlp.c_proj.weight: kept 1904684/2000947
+[prune][debug] transformer.h.3.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.3.attn.c_attn.weight: kept 1464070/1527856
+[prune][debug] transformer.h.3.attn.c_proj.weight: kept 517650/532500
+[prune][debug] transformer.h.3.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.3.mlp.c_fc.weight: kept 1905035/2001549
+[prune][debug] transformer.h.3.mlp.c_proj.weight: kept 1905090/2001288
+[prune][debug] transformer.h.4.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.4.attn.c_attn.weight: kept 1465430/1529185
+[prune][debug] transformer.h.4.attn.c_proj.weight: kept 517824/532631
+[prune][debug] transformer.h.4.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.4.mlp.c_fc.weight: kept 1904956/2001506
+[prune][debug] transformer.h.4.mlp.c_proj.weight: kept 1904880/2000672
+[prune][debug] transformer.h.5.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.5.attn.c_attn.weight: kept 1463517/1527473
+[prune][debug] transformer.h.5.attn.c_proj.weight: kept 518044/532817
+[prune][debug] transformer.h.5.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.5.mlp.c_fc.weight: kept 1905173/2001543
+[prune][debug] transformer.h.5.mlp.c_proj.weight: kept 1905504/2001491
+[prune][debug] transformer.h.6.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.6.attn.c_attn.weight: kept 1464494/1528135
+[prune][debug] transformer.h.6.attn.c_proj.weight: kept 517826/532461
+[prune][debug] transformer.h.6.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.6.mlp.c_fc.weight: kept 1906075/2001651
+[prune][debug] transformer.h.6.mlp.c_proj.weight: kept 1904342/2000658
+[prune][debug] transformer.h.7.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.7.attn.c_attn.weight: kept 1464256/1528576
+[prune][debug] transformer.h.7.attn.c_proj.weight: kept 517979/532528
+[prune][debug] transformer.h.7.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.7.mlp.c_fc.weight: kept 1906043/2002268
+[prune][debug] transformer.h.7.mlp.c_proj.weight: kept 1904707/2000688
+[prune][debug] transformer.h.8.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.8.attn.c_attn.weight: kept 1465502/1529383
+[prune][debug] transformer.h.8.attn.c_proj.weight: kept 517451/532067
+[prune][debug] transformer.h.8.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.8.mlp.c_fc.weight: kept 1905304/2001081
+[prune][debug] transformer.h.8.mlp.c_proj.weight: kept 1904854/2000667
+[prune][debug] transformer.h.9.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.9.attn.c_attn.weight: kept 1464038/1528374
+[prune][debug] transformer.h.9.attn.c_proj.weight: kept 518032/532758
+[prune][debug] transformer.h.9.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.9.mlp.c_fc.weight: kept 1905166/2001353
+[prune][debug] transformer.h.9.mlp.c_proj.weight: kept 1904906/2000626
+[prune][debug] transformer.h.10.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.10.attn.c_attn.weight: kept 1465151/1528818
+[prune][debug] transformer.h.10.attn.c_proj.weight: kept 518644/532982
+[prune][debug] transformer.h.10.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.10.mlp.c_fc.weight: kept 1905474/2001070
+[prune][debug] transformer.h.10.mlp.c_proj.weight: kept 1905107/2001008
+[prune][debug] transformer.h.11.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.11.attn.c_attn.weight: kept 1464216/1528803
+[prune][debug] transformer.h.11.attn.c_proj.weight: kept 517652/532313
+[prune][debug] transformer.h.11.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.11.mlp.c_fc.weight: kept 1903991/2000221
+[prune][debug] transformer.h.11.mlp.c_proj.weight: kept 1904578/2000565
+[prune][debug] transformer.ln_f.weight: kept 0/0
+[prune][debug] remaining unmasked after prune: 81601616/90668463
+
+[monitor] SW is → non-zero
+[sparsity] 81601616/124373760 non-zero → 65.61%
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+using fused AdamW: True
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[round] metrics saved to experiment_results/NAN_1/losses_ppl_round_4.csv
+{'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+True
+65.61
+
+=== ROUND 5/5 ===
+num decayed parameter tensors: 50, with 124,354,560 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: True
+[round] step 0: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 0: loss 10.8125, time 47441.7ms, mfu -100.0%
+[round] iter 1: loss 10.8125, time 1093.8ms, mfu -100.0%
+[round] iter 2: loss 10.8125, time 1123.4ms, mfu -100.0%
+[round] iter 3: loss 10.8125, time 1169.9ms, mfu -100.0%
+[round] iter 4: loss 10.8125, time 1077.1ms, mfu -100.0%
+[round] iter 5: loss 10.8125, time 1093.9ms, mfu 15.4%
+[round] iter 6: loss 10.8125, time 973.7ms, mfu 15.6%
+[round] iter 7: loss 10.8125, time 1061.9ms, mfu 15.6%
+[round] iter 8: loss 10.8125, time 1119.8ms, mfu 15.5%
+[round] step 9: train 10.8125, val 10.8125, ppl 49637.4069
+[round] iter 9: loss 10.8125, time 45808.8ms, mfu 14.0%
+[prune][debug] param transformer.wte.weight: 11422476/38633472 unmasked
+[prune][debug] param transformer.wpe.weight: 668860/786432 unmasked
+[prune][debug] param transformer.h.0.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.0.attn.c_attn.weight: 1464958/1769472 unmasked
+[prune][debug] param transformer.h.0.attn.c_proj.weight: 518155/589824 unmasked
+[prune][debug] param transformer.h.0.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.0.mlp.c_fc.weight: 1904661/2359296 unmasked
+[prune][debug] param transformer.h.0.mlp.c_proj.weight: 1905254/2359296 unmasked
+[prune][debug] param transformer.h.1.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.1.attn.c_attn.weight: 1465354/1769472 unmasked
+[prune][debug] param transformer.h.1.attn.c_proj.weight: 518341/589824 unmasked
+[prune][debug] param transformer.h.1.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.1.mlp.c_fc.weight: 1903848/2359296 unmasked
+[prune][debug] param transformer.h.1.mlp.c_proj.weight: 1904280/2359296 unmasked
+[prune][debug] param transformer.h.2.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.2.attn.c_attn.weight: 1464833/1769472 unmasked
+[prune][debug] param transformer.h.2.attn.c_proj.weight: 518061/589824 unmasked
+[prune][debug] param transformer.h.2.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.2.mlp.c_fc.weight: 1904890/2359296 unmasked
+[prune][debug] param transformer.h.2.mlp.c_proj.weight: 1904684/2359296 unmasked
+[prune][debug] param transformer.h.3.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.3.attn.c_attn.weight: 1464070/1769472 unmasked
+[prune][debug] param transformer.h.3.attn.c_proj.weight: 517650/589824 unmasked
+[prune][debug] param transformer.h.3.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.3.mlp.c_fc.weight: 1905035/2359296 unmasked
+[prune][debug] param transformer.h.3.mlp.c_proj.weight: 1905090/2359296 unmasked
+[prune][debug] param transformer.h.4.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.4.attn.c_attn.weight: 1465430/1769472 unmasked
+[prune][debug] param transformer.h.4.attn.c_proj.weight: 517824/589824 unmasked
+[prune][debug] param transformer.h.4.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.4.mlp.c_fc.weight: 1904956/2359296 unmasked
+[prune][debug] param transformer.h.4.mlp.c_proj.weight: 1904880/2359296 unmasked
+[prune][debug] param transformer.h.5.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.5.attn.c_attn.weight: 1463517/1769472 unmasked
+[prune][debug] param transformer.h.5.attn.c_proj.weight: 518044/589824 unmasked
+[prune][debug] param transformer.h.5.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.5.mlp.c_fc.weight: 1905173/2359296 unmasked
+[prune][debug] param transformer.h.5.mlp.c_proj.weight: 1905504/2359296 unmasked
+[prune][debug] param transformer.h.6.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.6.attn.c_attn.weight: 1464494/1769472 unmasked
+[prune][debug] param transformer.h.6.attn.c_proj.weight: 517826/589824 unmasked
+[prune][debug] param transformer.h.6.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.6.mlp.c_fc.weight: 1906075/2359296 unmasked
+[prune][debug] param transformer.h.6.mlp.c_proj.weight: 1904342/2359296 unmasked
+[prune][debug] param transformer.h.7.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.7.attn.c_attn.weight: 1464256/1769472 unmasked
+[prune][debug] param transformer.h.7.attn.c_proj.weight: 517979/589824 unmasked
+[prune][debug] param transformer.h.7.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.7.mlp.c_fc.weight: 1906043/2359296 unmasked
+[prune][debug] param transformer.h.7.mlp.c_proj.weight: 1904707/2359296 unmasked
+[prune][debug] param transformer.h.8.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.8.attn.c_attn.weight: 1465502/1769472 unmasked
+[prune][debug] param transformer.h.8.attn.c_proj.weight: 517451/589824 unmasked
+[prune][debug] param transformer.h.8.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.8.mlp.c_fc.weight: 1905304/2359296 unmasked
+[prune][debug] param transformer.h.8.mlp.c_proj.weight: 1904854/2359296 unmasked
+[prune][debug] param transformer.h.9.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.9.attn.c_attn.weight: 1464038/1769472 unmasked
+[prune][debug] param transformer.h.9.attn.c_proj.weight: 518032/589824 unmasked
+[prune][debug] param transformer.h.9.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.9.mlp.c_fc.weight: 1905166/2359296 unmasked
+[prune][debug] param transformer.h.9.mlp.c_proj.weight: 1904906/2359296 unmasked
+[prune][debug] param transformer.h.10.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.10.attn.c_attn.weight: 1465151/1769472 unmasked
+[prune][debug] param transformer.h.10.attn.c_proj.weight: 518644/589824 unmasked
+[prune][debug] param transformer.h.10.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.10.mlp.c_fc.weight: 1905474/2359296 unmasked
+[prune][debug] param transformer.h.10.mlp.c_proj.weight: 1905107/2359296 unmasked
+[prune][debug] param transformer.h.11.ln_1.weight: 0/768 unmasked
+[prune][debug] param transformer.h.11.attn.c_attn.weight: 1464216/1769472 unmasked
+[prune][debug] param transformer.h.11.attn.c_proj.weight: 517652/589824 unmasked
+[prune][debug] param transformer.h.11.ln_2.weight: 0/768 unmasked
+[prune][debug] param transformer.h.11.mlp.c_fc.weight: 1903991/2359296 unmasked
+[prune][debug] param transformer.h.11.mlp.c_proj.weight: 1904578/2359296 unmasked
+[prune][debug] param transformer.ln_f.weight: 0/768 unmasked
+[prune][debug] total unmasked vals = 81601616, k = 8160161 (10.0%)
+[prune][debug] threshold = 9.075936e-03
+[prune][debug] sample smallest: [0.007606671191751957, 0.007606671191751957, 0.007606671191751957, 0.0076066721230745316, 0.007606672588735819, 0.007606672588735819, 0.007606672588735819, 0.007606672588735819, 0.007606672588735819, 0.007606672588735819]
+
+[prune][debug] transformer.wte.weight: kept 6252630/11422476
+[prune][debug] transformer.wpe.weight: kept 658034/668860
+[prune][debug] transformer.h.0.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.0.attn.c_attn.weight: kept 1406394/1464958
+[prune][debug] transformer.h.0.attn.c_proj.weight: kept 504303/518155
+[prune][debug] transformer.h.0.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.0.mlp.c_fc.weight: kept 1817317/1904661
+[prune][debug] transformer.h.0.mlp.c_proj.weight: kept 1817197/1905254
+[prune][debug] transformer.h.1.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.1.attn.c_attn.weight: kept 1406418/1465354
+[prune][debug] transformer.h.1.attn.c_proj.weight: kept 504583/518341
+[prune][debug] transformer.h.1.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.1.mlp.c_fc.weight: kept 1816140/1903848
+[prune][debug] transformer.h.1.mlp.c_proj.weight: kept 1816493/1904280
+[prune][debug] transformer.h.2.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.2.attn.c_attn.weight: kept 1406111/1464833
+[prune][debug] transformer.h.2.attn.c_proj.weight: kept 504193/518061
+[prune][debug] transformer.h.2.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.2.mlp.c_fc.weight: kept 1817337/1904890
+[prune][debug] transformer.h.2.mlp.c_proj.weight: kept 1816719/1904684
+[prune][debug] transformer.h.3.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.3.attn.c_attn.weight: kept 1405277/1464070
+[prune][debug] transformer.h.3.attn.c_proj.weight: kept 503932/517650
+[prune][debug] transformer.h.3.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.3.mlp.c_fc.weight: kept 1817321/1905035
+[prune][debug] transformer.h.3.mlp.c_proj.weight: kept 1817543/1905090
+[prune][debug] transformer.h.4.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.4.attn.c_attn.weight: kept 1406605/1465430
+[prune][debug] transformer.h.4.attn.c_proj.weight: kept 503805/517824
+[prune][debug] transformer.h.4.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.4.mlp.c_fc.weight: kept 1817934/1904956
+[prune][debug] transformer.h.4.mlp.c_proj.weight: kept 1817275/1904880
+[prune][debug] transformer.h.5.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.5.attn.c_attn.weight: kept 1404842/1463517
+[prune][debug] transformer.h.5.attn.c_proj.weight: kept 504222/518044
+[prune][debug] transformer.h.5.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.5.mlp.c_fc.weight: kept 1817556/1905173
+[prune][debug] transformer.h.5.mlp.c_proj.weight: kept 1817348/1905504
+[prune][debug] transformer.h.6.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.6.attn.c_attn.weight: kept 1405444/1464494
+[prune][debug] transformer.h.6.attn.c_proj.weight: kept 503823/517826
+[prune][debug] transformer.h.6.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.6.mlp.c_fc.weight: kept 1818006/1906075
+[prune][debug] transformer.h.6.mlp.c_proj.weight: kept 1816670/1904342
+[prune][debug] transformer.h.7.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.7.attn.c_attn.weight: kept 1405203/1464256
+[prune][debug] transformer.h.7.attn.c_proj.weight: kept 503893/517979
+[prune][debug] transformer.h.7.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.7.mlp.c_fc.weight: kept 1818381/1906043
+[prune][debug] transformer.h.7.mlp.c_proj.weight: kept 1816701/1904707
+[prune][debug] transformer.h.8.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.8.attn.c_attn.weight: kept 1406380/1465502
+[prune][debug] transformer.h.8.attn.c_proj.weight: kept 503691/517451
+[prune][debug] transformer.h.8.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.8.mlp.c_fc.weight: kept 1817516/1905304
+[prune][debug] transformer.h.8.mlp.c_proj.weight: kept 1816764/1904854
+[prune][debug] transformer.h.9.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.9.attn.c_attn.weight: kept 1405069/1464038
+[prune][debug] transformer.h.9.attn.c_proj.weight: kept 504038/518032
+[prune][debug] transformer.h.9.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.9.mlp.c_fc.weight: kept 1817324/1905166
+[prune][debug] transformer.h.9.mlp.c_proj.weight: kept 1817045/1904906
+[prune][debug] transformer.h.10.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.10.attn.c_attn.weight: kept 1405923/1465151
+[prune][debug] transformer.h.10.attn.c_proj.weight: kept 505141/518644
+[prune][debug] transformer.h.10.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.10.mlp.c_fc.weight: kept 1818246/1905474
+[prune][debug] transformer.h.10.mlp.c_proj.weight: kept 1816983/1905107
+[prune][debug] transformer.h.11.ln_1.weight: kept 0/0
+[prune][debug] transformer.h.11.attn.c_attn.weight: kept 1405309/1464216
+[prune][debug] transformer.h.11.attn.c_proj.weight: kept 503784/517652
+[prune][debug] transformer.h.11.ln_2.weight: kept 0/0
+[prune][debug] transformer.h.11.mlp.c_fc.weight: kept 1816206/1903991
+[prune][debug] transformer.h.11.mlp.c_proj.weight: kept 1816385/1904578
+[prune][debug] transformer.ln_f.weight: kept 0/0
+[prune][debug] remaining unmasked after prune: 73441454/81601616
+
+[monitor] SW is → non-zero
+[sparsity] 73441454/124373760 non-zero → 59.05%
+c72:467625:467703 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+c72:467623:467707 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+c72:467624:467705 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+c72:467625:468033 [3] NCCL INFO comm 0xb4c07c0 rank 3 nranks 4 cudaDev 3 busId c6000 - Abort COMPLETE
+c72:467624:468034 [2] NCCL INFO comm 0xb6cee70 rank 2 nranks 4 cudaDev 2 busId a6000 - Abort COMPLETE
+c72:467623:468032 [1] NCCL INFO comm 0xbd70c20 rank 1 nranks 4 cudaDev 1 busId 26000 - Abort COMPLETE
+[round] metrics saved to experiment_results/NAN_1/losses_ppl_round_5.csv
+{'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+True
+59.05
+for out all_round_metrics:
+  Round 1: {'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+  Round 2: {'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+  Round 3: {'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+  Round 4: {'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+  Round 5: {'step': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'train_loss': [10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81, 10.81], 'val_loss': [10.81, nan, nan, nan, nan, nan, nan, nan, nan, 10.81], 'val_ppl': [49637.41, nan, nan, nan, nan, nan, nan, nan, nan, 49637.41]}
+for out sw_preserved flags:
+  Round 1: True
+  Round 2: True
+  Round 3: True
+  Round 4: True
+  Round 5: True
+out sparsity_map:
+  Round 1: 90.0
+  Round 2: 81.0
+  Round 3: 72.9
+  Round 4: 65.61
+  Round 5: 59.05
+----------------------------------------
+Processing rounds: [1, 2, 3, 4, 5]
+1
+2
+3
+4
+2
+3
+4
+2
+3
+4
+2
+3
+4
+2
+3
+4
+🏃 View run NAN_1 at: http://172.26.52.49/#/experiments/235/runs/f9c2c47cbd004b099c1d6f2c40ffd139
+🧪 View experiment at: http://172.26.52.49/#/experiments/235
+c72:467622:467701 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+c72:467622:468040 [0] NCCL INFO comm 0xa3d47b0 rank 0 nranks 4 cudaDev 0 busId 6000 - Abort COMPLETE

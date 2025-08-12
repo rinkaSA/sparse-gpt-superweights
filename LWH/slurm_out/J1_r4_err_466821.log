@@ -1,0 +1,60 @@
+W0702 21:25:58.453197 3364911 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] 
+W0702 21:25:58.453197 3364911 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+W0702 21:25:58.453197 3364911 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0702 21:25:58.453197 3364911 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py:793] *****************************************
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py:524: FutureWarning:
+
+You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py:524: FutureWarning:
+
+You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py:524: FutureWarning:
+
+You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+
+/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py:524: FutureWarning:
+
+You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 654, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 643, in main
+[rank0]:     fig = plot_round_metrics_plotly(all_round_metrics, sw_preserved_map, sparsity_map)
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/visualizer.py", line 101, in plot_round_metrics_plotly
+[rank0]:     x_p, y_p = mask(steps, data['val_ppl'])
+[rank0]: KeyError: 'val_ppl'
+[rank0]:[W703 07:02:12.600844312 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+E0703 07:02:14.428568 3364911 /home/h3/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 3364923) of binary: /home/irve354e/.conda/envs/universal-ner/bin/python
+Traceback (most recent call last):
+  File "/home/irve354e/.conda/envs/universal-ner/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/irve354e/.conda/envs/universal-ner/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/LWT/func_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-07-03_07:02:14
+  host      : c121.capella.hpc.tu-dresden.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3364923)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: c121: task 0: Exited with exit code 1

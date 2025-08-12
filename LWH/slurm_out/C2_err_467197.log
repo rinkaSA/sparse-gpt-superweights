@@ -1,0 +1,50 @@
+W0702 23:23:09.947000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] 
+W0702 23:23:09.947000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+W0702 23:23:09.947000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0702 23:23:09.947000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 654, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/func_train.py", line 643, in main
+[rank0]:     fig = plot_round_metrics_plotly(all_round_metrics, sw_preserved_map, sparsity_map)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/src/LWT/visualizer.py", line 101, in plot_round_metrics_plotly
+[rank0]:     x_p, y_p = mask(steps, data['val_ppl'])
+[rank0]:                            ~~~~^^^^^^^^^^^
+[rank0]: KeyError: 'val_ppl'
+[rank0]:[W703 08:08:50.616342957 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0703 08:09:01.846000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 423187 closing signal SIGTERM
+E0703 08:09:02.227000 423174 universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 423186) of binary: /data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/bin/python3.12
+Traceback (most recent call last):
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/horse/ws/irve354e-energy_llm_ner/super_weights/universal-ner-py311/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/LWT/func_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-07-03_08:09:01
+  host      : c74.capella.hpc.tu-dresden.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 423186)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: c74: task 0: Exited with exit code 1
